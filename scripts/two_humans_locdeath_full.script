@@ -1,0 +1,131 @@
+' Two humans, no machine players. Anna hires in New Sandez, camps her man at
+' Bearwoods and waits **inside** Bearwoods until she starves: LocationScene
+' puts her out before World.Turn looks, so her camp and her man stay hers.
+' Her leader comes back ten days later, unseen; she stays out. Bob lives on
+' Sana's well.
+' Run with `menu seed 7 start 0 start2 1 savefile <f>`.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 161,165        ' MODE: Original
+menuclick 206,165        ' AI: none (DisableAI)
+menuclick 60,104
+type Anna
+menuclick 250,104
+type Bob
+menuclick 163,54         ' START
+wait 3
+' Day 1. Anna hires in New Sandez and sets out for Bearwoods.
+mapclick 75,303
+clickon 248
+hire
+wait 20
+esc                      ' out to the map
+mapclick 61,355          ' sets out: two days
+' Bob goes into Sana and drinks at the well.
+mapclick 150,318
+wait 10
+mapclick 303,115
+wait 5
+esc
+day
+' Day 2: Anna on the road; Bob drinks.
+mapclick 303,115
+wait 5
+esc
+day
+' Anna arrives: into Bearwoods, water for both, the man stays, back to the map.
+mapclick 61,355
+wait 120
+mapclick 500,233
+wait 20
+esc
+wait 30
+join
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+esc                      ' Anna's DeathScene: a key goes back to WaitScene
+save                     ' the cut, here too
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+save
+
+' Anna's leader comes back at Bearwoods ten days after her death — unseen,
+' and she stays out. Saved on day 23, Bob still alive.
+mapclick 303,115
+wait 5
+esc
+day
+mapclick 303,115
+wait 5
+esc
+day
+mapclick 303,115
+wait 5
+esc
+day
+save

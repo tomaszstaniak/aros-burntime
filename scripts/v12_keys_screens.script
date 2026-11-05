@@ -1,0 +1,27 @@
+' INFO and the statistics by keys (`preset classic|extended ai none seed 3 start
+' 30 party`: the companion camped at Paradise Camp, a prepared state). R opens
+' INFO; Left takes the next production (maggots, by choice) and Right the
+' previous — here back to automatic (`NextProduction`, `PreviousProduction`;
+' v1.2 has Left for the next); Down and Up scroll its list; Escape closes it.
+' H opens the statistics; Q does nothing there, Space closes them
+' (`StatisticsScene`: Primary or Back).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+join                     ' camped here: the place is ours
+wait 10
+press down               ' the keyboard
+press r                  ' INFO
+wait 3
+press left               ' maggots, by choice
+press right              ' automatic again
+press down
+press up
+press escape             ' closed
+wait 3
+press h                  ' the statistics
+wait 3
+press q                  ' nothing
+press space              ' closed
+wait 3
+quit

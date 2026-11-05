@@ -1,0 +1,10 @@
+' v1.2's daily hazard check (`preset classic ai amiga seed 41`, with and
+' without `give item_gas_mask`): the human starts in Death Town, gas 95. Not
+' fully protected and not on the road at the day's end, he dies; with the
+' mask (gas, 100) he lives on.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day
+wait 20
+day
+wait 20
+quit

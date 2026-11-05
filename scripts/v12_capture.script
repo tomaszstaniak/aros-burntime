@@ -1,0 +1,35 @@
+' STAY THERE on another player's ground (`preset classic ai amiga seed 16
+' players A,B party`: A starts with one companion handed over, a prepared
+' state; B camps a man at Stove Vent as in v12_doors). v1.2's
+' `OnMenuMakeCamp` (LocationScene.cs:1164-1180) opens the Capture
+' conversation there (`Dialog.GetCaptureConversation`, Dialog.cs:80-99):
+' `men_500` section 3 and one answer, "burn?490", which closes it. Nothing
+' else changes: the companion is still with A (the HUD still shows 1/2) and
+' B still holds the place.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 354,317         ' A sets out for Stove Vent: two days
+wait 20
+mapclick 354,317         ' B, at Stove Vent, walks in
+wait 60
+clickon 228              ' and hires a man
+hire
+wait 20
+join                     ' who holds the place for B
+wait 10
+day
+wait 30
+day
+wait 30
+mapclick 354,317         ' A, arrived, walks in
+wait 80
+save
+join                     ' STAY THERE: the Capture dialog
+wait 5
+snap capture
+talkline 0               ' "( continue... )": the rest of the text
+wait 5
+snap capture_answer
+talkline 2               ' its one answer: closed
+wait 5
+snap capture_closed
+quit

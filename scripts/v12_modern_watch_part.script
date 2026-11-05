@@ -1,0 +1,6 @@
+' v12_modern_watch_full cut at its first save.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 354,317         ' in
+wait 60
+wait 200
+save

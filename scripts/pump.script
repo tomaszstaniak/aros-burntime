@@ -1,0 +1,25 @@
+' A hand pump installed where it works, and what the spring makes of it.
+'
+' Run it with `give item_hand_pump`. Sana's spring yields 5 a turn, so
+' v0.9.1's `water / 4` adds one and INFO's water line reads 6 instead of 5.
+' Both `esc`s matter: the first leaves the room, the second the location,
+' and INFO has to be opened from the map to be worked out again.
+mapclick 150,318         ' set out for Sana
+wait 40
+wait 40
+mapclick 150,318         ' into Sana
+wait 10
+mapclick 303,115         ' the well - the room flagged as the water source
+wait 5
+uiclick 168,248          ' put the pump down in it
+wait 5
+esc
+wait 5
+esc
+wait 10
+menu 300,300
+menuline 0               ' INFO
+mapclick 150,318
+wait 3
+snap pump_after
+quit

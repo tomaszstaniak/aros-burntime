@@ -1,0 +1,18 @@
+' The start screen as it opens with nothing chosen: Extended and the Modern
+' opponent, v1.2's defaults. Player one's slot, START, four days, a save.
+' Run with `menu seed 7 savefile <f>`; v12_menu_part and v12_menu_resume
+' play the same game cut after the first day and resumed in a new process.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot
+menuclick 163,54         ' START
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+day
+wait 10
+day
+wait 10
+day
+wait 10
+day
+wait 10
+save

@@ -1,0 +1,20 @@
+' The world map by keys (`preset classic|extended ai none seed 3 start 30`,
+' Paradise Camp). The game starts at the mouse, where Space on the map does
+' nothing; an arrow makes it the keyboard. The arrows move the selection from
+' the player's place to the place that way among those he may select
+' (`SelectLocationInDirection`: where he is, cities, his camps, the places one
+' road away). Space on a place he is not at does nothing; Q travels to a
+' selected place one road away (Refinery). After the journey the new turn
+' puts the selection back on him (`OnActivateScene`), and Space goes in.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+press space              ' the mouse: nothing
+press up                 ' the keyboard, and a place up
+press right              ' and on to the right: Refinery
+press space              ' not where he stands: nothing
+press q                  ' travel there, two days
+wait 30
+wait 30
+press space              ' into Refinery
+wait 30
+quit

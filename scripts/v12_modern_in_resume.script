@@ -1,0 +1,40 @@
+' v12_modern_in_part's save taken up in a new process: `load` and nothing
+' between it and the next step, as `save` is followed in the straight run.
+load
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+save

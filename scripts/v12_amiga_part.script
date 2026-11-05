@@ -1,0 +1,47 @@
+' v12_amiga_full.script, cut after day 8.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 354,317         ' in
+wait 60
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+save

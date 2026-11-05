@@ -1,0 +1,14 @@
+' The Pause key in a v1.2 game (`preset classic ai none seed 3 start 30`):
+' nothing. v1.2 never calls `PauseScene` (no `SetScene("PauseScene")` under
+' `Scenes/`); the port's pause is the legacy game's only. With a pause the
+' next key would only end it and the second save would not be taken; here
+' both saves are taken (two `saved` lines) and no `paused` line is logged.
+' In a legacy game (`legacy`) the same steps pause: one `paused` line, one save.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 10
+save
+pause                    ' the Pause key
+wait 30
+save                     ' taken: nothing was paused
+quit

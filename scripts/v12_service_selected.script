@@ -1,0 +1,38 @@
+' v1.2's service leader is the selected character (`serviceLeader =
+' SelectedCharacter`, `ServiceScene.cs:137, 227, 232`; `preset classic ai
+' none seed 3 start 0 party`: New Sandez, the companion handed over). Two
+' days for thirst. In the pub together, the knife goes onto the table from
+' the leader's page and off it into the companion's (the page shown takes
+' it). Single mode: the leader goes into the restaurant alone and out again,
+' and stands there. The companion is selected at the pub's door and goes in:
+' his page is the first (`SetGroup(SelectedCharacter)`), the leader, ninety
+' off, has none. The knife from his page: he drinks, the leader does not.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 75,303          ' into New Sandez
+wait 60
+day
+day                      ' both thirsty
+mapclick 309,264         ' the pub, together
+wait 120
+esc                      ' the film
+wait 5
+sceneclick 52,156        ' the knife onto the table
+pack                     ' the companion's page
+sceneclick 176,181       ' the knife into his pack
+esc
+wait 5
+group                    ' single mode
+mapclick 375,197         ' the restaurant, the leader alone
+wait 120
+esc                      ' out again: the leader stands at its door
+wait 5
+clickfriend 1            ' the companion selected, at the pub's door
+wait 5
+mapclick 309,264         ' in reach: the pub opens at once
+esc                      ' the film, closed at once
+wait 5
+sceneclick 52,119        ' the knife from his page onto the table
+deal                     ' 11: he drinks; the leader, out of range, does not
+esc
+wait 5
+save

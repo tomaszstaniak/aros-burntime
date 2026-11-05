@@ -1,0 +1,3010 @@
+seed 0
+next 1559595546
+max 0 0
+range 0 4 3
+double 3fe1dc74dbe3b8ea
+single 3e52fa5b
+next 1200195957
+max 1 0
+range -1 2 0
+double 3fef48166b7e902d
+single 3e8c22fe
+next 626863973
+max 2 0
+range 0 2 1
+double 3fde0c7b8cbc18f7
+single 3f7b6e44
+next 65212616
+max 3 2
+range 14 21 20
+double 3fe5ab77cd2b56f0
+single 3ea1122d
+next 1754296375
+max 4 3
+range -20 21 20
+double 3fa0b44000216880
+single 3f332f66
+next 1130186590
+max 5 4
+range 3 6 5
+double 3fe17f8314e2ff06
+single 3da61cf9
+next 401846963
+max 9 4
+range 1 3 1
+double 3fefa226903f444d
+single 3f2487d2
+next 1638451829
+max 75 2
+range 2 6 3
+double 3fd5f609362bec12
+single 3f751bc8
+next 1084756724
+max 360 257
+range 7 7 7
+double 3fd1803aa6a30075
+single 3f683792
+next 1706746116
+max 1000 337
+range 0 5 2
+double 3fc2cb29b5259653
+single 3e62a055
+next 880625662
+max 16777216 12058235
+range -2147483648 2147483647 1331075397
+double 3fc8f2ec6a31e5d9
+single 3f60d128
+next 1772582790
+max 2147483647 1579254086
+range -2000000000 2000000000 -1716438417
+double 3fe3fee74427fdcf
+single 3e5fa607
+next 1922776196
+max 0 0
+range -2147483648 0 -980777383
+double 3fc5c73d8b2b8e7b
+single 3f24e4bd
+next 1775570415
+max 1 0
+range 0 2147483647 2147425016
+double 3fdeceb1dbbd9d64
+single 3f26f6ec
+next 1545599780
+max 2 1
+range 0 4 0
+double 3fe754bd0daea97a
+single 3f37ec62
+next 269567713
+max 3 2
+range -1 2 -1
+double 3fde840d8cbd081b
+single 3f0a718f
+next 699007419
+max 4 2
+range 0 2 0
+double 3feaac01b1b55803
+single 3f4f27fb
+next 1704308182
+max 5 3
+range 14 21 20
+double 3fd2e13a4425c275
+single 3f05d542
+next 1424625261
+max 9 2
+range -20 21 -9
+double 3fea42700e7484e0
+single 3e63dbbd
+next 401303705
+max 75 5
+range 3 6 4
+double 3fe62d6ccdac5ada
+single 3f216187
+next 1992086094
+max 360 79
+range 1 3 2
+double 3fb1078f30220f1e
+single 3f666d3c
+next 1457079406
+max 1000 93
+range 2 6 2
+double 3fbb628c9c36c519
+single 3f1c2075
+next 2046643866
+max 16777216 8231325
+range 7 7 7
+double 3fe5aefe662b5dfd
+single 3f11e276
+next 484049542
+max 2147483647 1327536041
+range 0 5 0
+double 3fd7199ffb2e3340
+single 3f59b962
+next 133806312
+max 0 0
+range -2147483648 2147483647 1513924207
+double 3fefa459e8bf48b4
+single 3ec636d1
+next 1122575926
+max 1 0
+range -2000000000 2000000000 1013152255
+double 3fad3034683a6069
+single 3e8fa4ba
+next 1065321020
+max 2 1
+range -2147483648 0 -1732115071
+double 3fe7c128d36f8252
+single 3ecdc2b6
+next 2004445348
+max 3 0
+range 0 2147483647 1502491877
+double 3fe3b16d472762db
+single 3f54a019
+next 1471298082
+max 4 2
+range 0 4 0
+double 3fc79ec5082f3d8a
+single 3f1beeb1
+next 538477936
+max 5 4
+range -1 2 0
+double 3fb03d626c207ac5
+single 3e87018e
+next 1809384024
+max 9 5
+range 0 2 1
+double 3fe086124ba10c25
+single 3f785a43
+next 166879221
+max 75 38
+range 14 21 15
+double 3fea09716c7412e3
+single 3f247c47
+next 1235647918
+max 360 199
+range -20 21 7
+double 3fefd35313bfa6a6
+single 3e9a70a9
+next 138413212
+max 1000 465
+range 3 6 4
+double 3fcbafea37375fd4
+single 3d92d1ff
+next 494438096
+max 16777216 2530551
+range 1 3 1
+double 3fdcde7beb39bcf8
+single 3ca29b14
+next 835022959
+max 2147483647 1752442816
+range 2 6 2
+double 3fed3c736fba78e7
+single 3cf24b74
+next 1094059886
+max 0 0
+range 7 7 7
+double 3f91465758228caf
+single 3f274d00
+next 597708106
+max 1 0
+range 0 5 2
+double 3fe8b5e073316bc1
+single 3ea5f936
+next 902856360
+max 2 1
+range -2147483648 2147483647 -1902669621
+double 3fd054c77920a98f
+single 3e077067
+next 1926836777
+max 3 0
+range -2000000000 2000000000 1765783979
+double 3fe91f1730b23e2e
+single 3f03982c
+next 756737720
+max 4 3
+range -2147483648 0 -1109651034
+double 3fbf060d503e0c1b
+single 3e4796b0
+next 1066261728
+max 5 2
+range 0 2147483647 561920052
+double 3fd3dcfd6fa7b9fb
+single 3e77f284
+next 1683789794
+max 9 1
+range 0 4 2
+double 3fe1e5b459e3cb69
+single 3f27d6ab
+next 732351595
+max 75 1
+range -1 2 -1
+double 3fec17d7eff82fb0
+single 3f35fbbb
+next 1915854009
+max 360 234
+range 0 2 0
+double 3fd0f3066221e60d
+single 3ef2b1c8
+next 420702436
+max 1000 887
+range 14 21 17
+double 3fe4690d0b68d21a
+single 3ea3b151
+next 792361443
+max 16777216 4102562
+range -20 21 20
+double 3fe389443de71288
+single 3aef2a68
+next 2111893047
+max 2147483647 2065430914
+range 3 6 3
+double 3fe8b65448f16ca9
+single 3dbaeec1
+next 409981115
+max 0 0
+range 1 3 1
+double 3fe773129d2ee625
+single 3dd0bd75
+next 1803515347
+max 1 0
+range 2 6 4
+double 3fceeddce83ddbba
+single 3f56524e
+next 1845935583
+max 2 0
+range 7 7 7
+double 3fe9b38e1f33671c
+single 3eeba528
+next 731181062
+max 3 2
+range 0 5 2
+double 3fe4b5a527696b4a
+single 3f7fbeda
+next 1307671913
+max 4 0
+range -2147483648 2147483647 -1339687944
+double 3febf0f5a577e1eb
+single 3f0a1f8e
+next 295578215
+max 5 0
+range -2000000000 2000000000 1114930820
+double 3fd8456974308ad3
+single 3f5dbd2d
+next 697994323
+max 9 7
+range -2147483648 0 -1632044633
+double 3fe151875ea2a30f
+single 3f05c343
+next 349844851
+max 75 47
+range 0 2147483647 1188061168
+double 3fd4229203a84524
+single 3e7ff30b
+next 1719340293
+max 360 165
+range 0 4 3
+double 3fd597ea04ab2fd4
+single 3e44ddc8
+next 322684665
+max 1000 661
+range -1 2 -1
+double 3fe11ddff9a23bc0
+single 3f028d64
+next 1660544006
+max 16777216 8092381
+range 0 2 0
+double 3fdc1308a1382611
+single 3df48dd4
+next 1846047710
+max 2147483647 1207701626
+range 14 21 18
+double 3fe48064fb2900ca
+single 3c7e1a51
+seed 1
+next 534011718
+max 0 0
+range 0 4 1
+double 3fe8b0fb20b161f6
+single 3f285329
+next 929393559
+max 1 0
+range -1 2 1
+double 3fb9ec992a33d932
+single 3f2477f8
+next 61497087
+max 2 0
+range 0 2 0
+double 3fefac2c273f5858
+single 3f2e9f9f
+next 1406361028
+max 3 0
+range 14 21 18
+double 3fe6893a842d1275
+single 3f33a8f2
+next 2039633683
+max 4 0
+range -20 21 -14
+double 3fd87236d1b0e46e
+single 3f4c464d
+next 363927940
+max 5 3
+range 3 6 3
+double 3fea563fb7f4ac7f
+single 3f62efab
+next 1194650126
+max 9 6
+range 1 3 2
+double 3f8be1de3037c3bc
+single 3f7deb98
+next 1731519511
+max 75 64
+range 2 6 2
+double 3fe075e9e3a0ebd4
+single 3f067753
+next 585887566
+max 360 357
+range 7 7 7
+double 3fd8be4edf317c9e
+single 3ede6104
+next 1450422331
+max 1000 677
+range 0 5 2
+double 3fcf4c63f03e98c8
+single 3eb4fbdf
+next 1130118952
+max 16777216 2842518
+range -2147483648 2147483647 744291658
+double 3fd94a0648b2940d
+single 3e1f01bf
+next 2039758977
+max 2147483647 182621155
+range -2000000000 2000000000 -1947312851
+double 3fe472adfc68e55c
+single 3d3feb93
+next 259488708
+max 0 0
+range -2147483648 0 -1166248161
+double 3fe18f392a631e72
+single 3e9ced02
+next 2142954714
+max 1 0
+range 0 2147483647 1709706839
+double 3fcc305cbd3860b9
+single 3dcec044
+next 384385166
+max 2 0
+range 0 4 3
+double 3fd9bf059cb37e0b
+single 3f4637fb
+next 2035035283
+max 3 0
+range -1 2 0
+double 3fd489c5a6a9138b
+single 3d806dd6
+next 1008338748
+max 4 1
+range 0 2 0
+double 3fd7b079aaaf60f3
+single 3bf910b3
+next 1328157009
+max 5 4
+range 14 21 19
+double 3fe8c22ee271845e
+single 3db5f55d
+next 56569042
+max 9 7
+range -20 21 -11
+double 3febef4f0fb7de9e
+single 3ef3de94
+next 645237757
+max 75 9
+range 3 6 3
+double 3fd7bc9866af7931
+single 3ef3310e
+next 791771284
+max 360 200
+range 1 3 1
+double 3fb1878db2230f1b
+single 3e2b9de6
+next 564194307
+max 1000 439
+range 2 6 5
+double 3fc67842f22cf086
+single 3e0cb33a
+next 1827753950
+max 16777216 16709541
+range 7 7 7
+double 3fef7e1fcffefc40
+single 3f26bae9
+next 1835196615
+max 2147483647 1501688522
+range 0 5 4
+double 3fe150f4fda2a1ea
+single 3f30225e
+next 346378500
+max 0 0
+range -2147483648 2147483647 -48190160
+double 3fb319aeda26335e
+single 3e95e13c
+next 435943218
+max 1 0
+range -2000000000 2000000000 -1851953078
+double 3fea681678b4d02d
+single 3f7ef155
+next 260274019
+max 2 1
+range -2147483648 0 -1818931812
+double 3fabbecf9c377d9f
+single 3ea30560
+next 434976408
+max 3 2
+range 0 2147483647 385065937
+double 3fb566ce4a2acd9d
+single 3f2e50c1
+next 1366447162
+max 4 0
+range 0 4 0
+double 3fe22e713b245ce2
+single 3e77a09c
+next 476039095
+max 5 3
+range -1 2 0
+double 3fc72057a82e40af
+single 3f15e5ef
+next 1466433944
+max 9 2
+range 0 2 0
+double 3fe11de59f623bcb
+single 3e32d6dc
+next 2134306667
+max 75 65
+range 14 21 14
+double 3fd6cb05572d960b
+single 3f53b78d
+next 1506922847
+max 360 112
+range -20 21 15
+double 3febfe16ca37fc2e
+single 3ef1bf93
+next 623057530
+max 1000 739
+range 3 6 5
+double 3fd8604d56b0c09b
+single 3f3d3c89
+next 1709944646
+max 16777216 8534806
+range 1 3 1
+double 3fd5a8f3912b51e7
+single 3ec5b3fa
+next 1919090937
+max 2147483647 94993703
+range 2 6 4
+double 3feec1f8ef7d83f2
+single 3f5c8136
+next 653369842
+max 0 0
+range 7 7 7
+double 3fda42d9833485b3
+single 3ee06dd7
+next 1142969686
+max 1 0
+range 0 5 1
+double 3fec253619f84a6c
+single 3ea629a3
+next 703711448
+max 2 1
+range -2147483648 2147483647 1767741729
+double 3fef55a3d0feab48
+single 3ea5f11b
+next 821387445
+max 3 0
+range -2000000000 2000000000 192008994
+double 3fdee2b8903dc571
+single 3f52432f
+next 473104005
+max 4 1
+range -2147483648 0 -226253782
+double 3fce35089a3c6a11
+single 3c32a4d6
+next 319461354
+max 5 1
+range 0 2147483647 2039312964
+double 3fc33ce3af2679c7
+single 3dc9d111
+next 1062563731
+max 9 4
+range 0 4 3
+double 3fe55d82cc6abb06
+single 3ee3cbc9
+next 937223518
+max 75 70
+range -1 2 1
+double 3fd7276791ae4ecf
+single 3f6bbca9
+next 120992252
+max 360 148
+range 0 2 0
+double 3fe5effc902bdff9
+single 3f523492
+next 771446750
+max 1000 62
+range 14 21 17
+double 3fec6f9f8278df3f
+single 3f20e954
+next 20376260
+max 16777216 6354515
+range -20 21 -1
+double 3fe4dff676a9bfed
+single 3e4fef78
+next 1333684913
+max 2147483647 567345045
+range 3 6 3
+double 3fd55c7525aab8ea
+single 3e6a077c
+next 1285357026
+max 0 0
+range 1 3 1
+double 3fe2c587b2e58b0f
+single 3ea820a6
+next 1575844887
+max 1 0
+range 2 6 4
+double 3fee009b9fbc0137
+single 3f381c33
+next 335171738
+max 2 0
+range 7 7 7
+double 3fecd0d0b979a1a1
+single 3e27e664
+next 64329631
+max 3 2
+range 0 5 2
+double 3fda8d5fb0351abf
+single 3f26d3e4
+next 186245157
+max 4 3
+range -2147483648 2147483647 -131003453
+double 3fb6cc4c9e2d9899
+single 3deda45a
+next 85596666
+max 5 0
+range -2000000000 2000000000 -929205939
+double 3fc60be5c92c17cc
+single 3f24c886
+next 1313602615
+max 9 1
+range -2147483648 0 -727667894
+double 3fcdf7966f3bef2d
+single 3f0644c1
+next 767019185
+max 75 6
+range 0 2147483647 449036698
+double 3fd9f53e1433ea7c
+single 3f12d664
+next 363881547
+max 360 170
+range 0 4 0
+double 3fd08243fea10488
+single 3f15198f
+next 1048776017
+max 1000 173
+range -1 2 1
+double 3fe8d19ee831a33e
+single 3f61a11b
+next 1464793213
+max 16777216 2379294
+range 0 2 1
+double 3fd4170118a82e02
+single 3f27d957
+next 1068497020
+max 2147483647 455992310
+range 14 21 18
+double 3fef261dc7be4c3c
+single 3e4470fb
+seed 7
+next 822959691
+max 0 0
+range 0 4 2
+double 3faac20bd8358418
+single 3ebb9d26
+next 1452062818
+max 1 0
+range -1 2 1
+double 3feafe7f7ff5fcff
+single 3f5adecd
+next 964263065
+max 2 1
+range 0 2 0
+double 3fbc7e136438fc27
+single 3f61c7c2
+next 863316912
+max 3 2
+range 14 21 16
+double 3febbbcace377796
+single 3ccd0343
+next 1604173884
+max 4 2
+range -20 21 -13
+double 3fde984fbbbd309f
+single 3ec59f6e
+next 61343334
+max 5 4
+range 3 6 3
+double 3fdebd5714bd7aae
+single 3f37f7f2
+next 1656501810
+max 9 2
+range 1 3 1
+double 3fc4ff33af29fe67
+single 3db211b5
+next 142441956
+max 75 62
+range 2 6 2
+double 3fe1574996e2ae93
+single 3f6e9c94
+next 1887639912
+max 360 237
+range 7 7 7
+double 3fb0cb20ca219642
+single 3f190621
+next 2059963268
+max 1000 718
+range 0 5 2
+double 3fea94f054b529e1
+single 3e16042f
+next 479595045
+max 16777216 14657079
+range -2147483648 2147483647 -1518556521
+double 3fe316b35f262d67
+single 3f515c1d
+next 1495332452
+max 2147483647 392758157
+range -2000000000 2000000000 1332559454
+double 3fe729564dee52ad
+single 3c8fc0b7
+next 1017182015
+max 0 0
+range -2147483648 0 -983984121
+double 3fea3fb3d7f47f68
+single 3e8fc22e
+next 52293214
+max 1 0
+range 0 2147483647 1230881424
+double 3fe4e88cb7e9d119
+single 3f4b1eb3
+next 2007032070
+max 2 0
+range 0 4 0
+double 3fdc404aa4b88095
+single 3ddfec7a
+next 1890422468
+max 3 1
+range -1 2 -1
+double 3fd8ac164231582d
+single 3e46db0e
+next 716843075
+max 4 1
+range 0 2 1
+double 3fe2e19fab25c33f
+single 3e4abc1b
+next 1218733618
+max 5 1
+range 14 21 16
+double 3fe4ab9964a95733
+single 3ef86e4c
+next 438166316
+max 9 1
+range -20 21 15
+double 3fc7f2245d2fe449
+single 3f7fc16b
+next 2108842069
+max 75 33
+range 3 6 3
+double 3fdc07112ab80e22
+single 3f0ae289
+next 32333365
+max 360 206
+range 1 3 2
+double 3fb48784be290f09
+single 3f45c4e9
+next 1649334654
+max 1000 510
+range 2 6 3
+double 3fe2c88bb2a59117
+single 3e9aedd3
+next 514414454
+max 16777216 469973
+range 7 7 7
+double 3fea58e84af4b1d1
+single 3e0f3678
+next 1352144465
+max 2147483647 399119761
+range 0 5 2
+double 3fe3e9d2fde7d3a6
+single 3f36984a
+next 1621811628
+max 0 0
+range -2147483648 2147483647 1991204092
+double 3fe2dc5d8a65b8bb
+single 3f39efe0
+next 611114264
+max 1 0
+range -2000000000 2000000000 -884757997
+double 3fdbcd134bb79a27
+single 3e93564f
+next 1872442954
+max 2 1
+range -2147483648 0 -881393219
+double 3fed9c85dfbb390c
+single 3f514ab0
+next 1755581003
+max 3 1
+range 0 2147483647 122961238
+double 3fec9164d5f922ca
+single 3f4874b1
+next 737341642
+max 4 0
+range 0 4 0
+double 3febd6f111b7ade2
+single 3d1c0eac
+next 101406049
+max 5 1
+range -1 2 1
+double 3fec4a8f9538951f
+single 3f0444e0
+next 1556217111
+max 9 7
+range 0 2 1
+double 3fe4acd995e959b3
+single 3ecdb4de
+next 1053969461
+max 75 3
+range 14 21 17
+double 3fe38dea26671bd4
+single 3f6f1b33
+next 987088774
+max 360 312
+range -20 21 19
+double 3fc3fab44427f569
+single 3efd9912
+next 1383439791
+max 1000 379
+range 3 6 5
+double 3fd7925eb92f24bd
+single 3f3e8a3f
+next 413049358
+max 16777216 11005903
+range 1 3 2
+double 3fe533e0ba6a67c1
+single 3f1578d8
+next 1981047864
+max 2147483647 887717260
+range 2 6 5
+double 3fcf8c67b83f18cf
+single 3f5a1a56
+next 156713225
+max 0 0
+range 7 7 7
+double 3fe8acc8eab15992
+single 3e16c9ca
+next 119571872
+max 1 0
+range 0 5 0
+double 3fe0c13802a18270
+single 3ea74c30
+next 1656325623
+max 2 1
+range -2147483648 2147483647 -958174398
+double 3fd4b24897296491
+single 3ef3468a
+next 631142394
+max 3 0
+range -2000000000 2000000000 -749359087
+double 3fe55efad4aabdf6
+single 3f2a4540
+next 918785362
+max 4 0
+range -2147483648 0 -1421993744
+double 3fed984511bb308a
+single 3f6827ff
+next 133626404
+max 5 2
+range 0 2147483647 166252201
+double 3fc84e588e309cb1
+single 3e72aca5
+next 1630174647
+max 9 7
+range 0 4 0
+double 3fd458b2f728b166
+single 3e390500
+next 18971409
+max 75 32
+range -1 2 -1
+double 3fd0f5b5bc21eb6b
+single 3e3908f6
+next 89239945
+max 360 350
+range 0 2 0
+double 3fcadb532b35b6a6
+single 3f675aa9
+next 728428987
+max 1000 108
+range 14 21 18
+double 3fd92e1c99b25c39
+single 3ef69ab0
+next 1830916103
+max 16777216 3089023
+range -20 21 -4
+double 3fece823cb39d048
+single 3ed22b26
+next 959403403
+max 2147483647 168764419
+range 3 6 3
+double 3fe67da04e2cfb41
+single 3d55a08e
+next 95161551
+max 0 0
+range 1 3 2
+double 3fe6b446352d688c
+single 3f2fe42e
+next 209822127
+max 1 0
+range 2 6 2
+double 3fbcfbb00e39f760
+single 3c35e4a4
+next 2008006903
+max 2 0
+range 7 7 7
+double 3fdf00c0ae3e0181
+single 3ec5c76f
+next 358188339
+max 3 0
+range 0 5 4
+double 3f959dff882b3bff
+single 3f11521c
+next 2047619209
+max 4 3
+range -2147483648 2147483647 1468831092
+double 3fd89a0253313405
+single 3f13327c
+next 973191019
+max 5 1
+range -2000000000 2000000000 1814856637
+double 3fedc495c37b892c
+single 3e9e1936
+next 712285073
+max 9 1
+range -2147483648 0 -1220184317
+double 3fd9103615b2206c
+single 3f094db7
+next 1122581542
+max 75 60
+range 0 2147483647 309857172
+double 3fee72a33bbce546
+single 3f03f028
+next 821063659
+max 360 196
+range 0 4 1
+double 3fe9002fed320060
+single 3f6c663f
+next 1110356835
+max 1000 243
+range -1 2 0
+double 3fcc2061fe3840c4
+single 3de0bb17
+next 290288455
+max 16777216 1655207
+range 0 2 0
+double 3fe21769f2a42ed4
+single 3f5f8702
+next 698160174
+max 2147483647 240703708
+range 14 21 18
+double 3fef0872933e10e5
+single 3e7fcd02
+seed 42
+next 1434747710
+max 0 0
+range 0 4 0
+double 3fe0ba7c25a174f8
+single 3e2c7a05
+next 563913476
+max 1 0
+range -1 2 0
+double 3fc63a33992c7467
+single 3f42e151
+next 503774878
+max 2 0
+range 0 2 1
+double 3fd47eb356a8fd67
+single 3ec30e73
+next 558871098
+max 3 1
+range 14 21 14
+double 3fea0d69d3741ad4
+single 3f13c32c
+next 853561429
+max 4 0
+range -20 21 -17
+double 3fe6909b332d2136
+single 3f50f14d
+next 1159577995
+max 5 0
+range 3 6 5
+double 3fc2e9d75725d3af
+single 3f67fd8f
+next 1487325104
+max 9 4
+range 1 3 1
+double 3fa540cb582a8197
+single 3e9dcc59
+next 1252327179
+max 75 61
+range 2 6 2
+double 3fe124a281e24945
+single 3f4e2092
+next 1607088558
+max 360 138
+range 7 7 7
+double 3f9af8bee035f17e
+single 3d50eed3
+next 1678565381
+max 1000 626
+range 0 5 0
+double 3fcffeb7673ffd6f
+single 3f45bddd
+next 621925607
+max 16777216 10874083
+range -2147483648 2147483647 -308478479
+double 3fe3588cb626b119
+single 3f0412e6
+next 109080762
+max 2147483647 902729453
+range -2000000000 2000000000 -1413164654
+double 3fcbf605fb37ec0c
+single 3c59265d
+next 784178404
+max 0 0
+range -2147483648 0 -1000017814
+double 3fb229510e2452a2
+single 3eed9dac
+next 25841797
+max 1 0
+range 0 2147483647 943130758
+double 3fe06e8faa20dd1f
+single 3effcb27
+next 19226226
+max 2 1
+range 0 4 0
+double 3f692ea9c0325d54
+single 3d829b78
+next 1404761655
+max 3 0
+range -1 2 1
+double 3fedba20e6bb7442
+single 3eec2197
+next 806021355
+max 4 2
+range 0 2 0
+double 3fd7db6b14afb6d6
+single 3e114904
+next 938344445
+max 5 3
+range 14 21 17
+double 3fd9a50d63334a1b
+single 3e984136
+next 1948322532
+max 9 5
+range -20 21 10
+double 3f93e0c87027c191
+single 3f61b5d3
+next 2056599301
+max 75 24
+range 3 6 5
+double 3fc4c84def29909c
+single 3dd33c8f
+next 970987955
+max 360 119
+range 1 3 2
+double 3fc303a842260751
+single 3e09ed1d
+next 463127247
+max 1000 591
+range 2 6 4
+double 3fef95ae4e3f2b5d
+single 3f442731
+next 1443201982
+max 16777216 11994861
+range 7 7 7
+double 3fe1aa79c2e354f4
+single 3f7d6568
+next 1397651786
+max 2147483647 52005655
+range 0 5 1
+double 3fedbae1ff7b75c4
+single 3cde5ac7
+next 471903620
+max 0 0
+range -2147483648 2147483647 82636223
+double 3fe2f46fb2a5e8df
+single 3ed82c6e
+next 201289601
+max 1 0
+range -2000000000 2000000000 242786694
+double 3fd49053052920a6
+single 3ea5ce3c
+next 1613085330
+max 2 1
+range -2147483648 0 -1083450878
+double 3feae5571d35caae
+single 3f65595b
+next 511259278
+max 3 2
+range 0 2147483647 1815242631
+double 3fd1e2754023c4ea
+single 3f0b9baa
+next 1362526736
+max 4 2
+range 0 4 0
+double 3fd3066040260cc0
+single 3e3b702f
+next 63530261
+max 5 1
+range -1 2 1
+double 3fef98fffbbf3200
+single 3f48195f
+next 290382546
+max 9 7
+range 0 2 0
+double 3fd2dd7c12a5baf8
+single 3f0f5b4a
+next 1194453367
+max 75 53
+range 14 21 14
+double 3fe32445c826488c
+single 3ec86b9d
+next 1891776701
+max 360 160
+range -20 21 -6
+double 3feed76f037daede
+single 3eed631f
+next 1166121745
+max 1000 947
+range 3 6 5
+double 3fc06cdd9a20d9bb
+single 3ddbd1db
+next 6105668
+max 16777216 3051015
+range 1 3 2
+double 3fe70b0e926e161d
+single 3eced9af
+next 1268721448
+max 2147483647 859056774
+range 2 6 2
+double 3fed245a65ba48b5
+single 3f76c238
+next 1912430861
+max 0 0
+range 7 7 7
+double 3fe159b7da62b370
+single 3f1dadb0
+next 2023857996
+max 1 0
+range 0 5 3
+double 3fd1f3db9fa3e7b7
+single 3eadeb10
+next 1128704644
+max 2 1
+range -2147483648 2147483647 -530665577
+double 3fe542e716aa85ce
+single 3e421c7b
+next 595121420
+max 3 0
+range -2000000000 2000000000 -1667234618
+double 3fb4f3684429e6d1
+single 3ed74d4d
+next 1729023572
+max 4 3
+range -2147483648 0 -1909965471
+double 3fee2dd6183c5bac
+single 3eeee740
+next 1912900725
+max 5 4
+range 0 2147483647 335396593
+double 3fe2cd0b3e259a16
+single 3e584f4e
+next 1362098912
+max 9 4
+range 0 4 2
+double 3fbc6c992038d932
+single 3f4e562b
+next 747037773
+max 75 39
+range -1 2 1
+double 3fc9a7a612334f4c
+single 3f07a2cb
+next 1693587860
+max 360 209
+range 0 2 0
+double 3fede96ccb7bd2da
+single 3d5637fa
+next 119578095
+max 1000 214
+range 14 21 16
+double 3fc5f452502be8a5
+single 3e952989
+next 581238462
+max 16777216 14798544
+range -20 21 -1
+double 3fd785031baf0a06
+single 3ee8570f
+next 1639406124
+max 2147483647 1422850179
+range 3 6 5
+double 3fd6c438d0ad8872
+single 3f5b46fd
+next 668547378
+max 0 0
+range 1 3 2
+double 3fe2fa482d25f490
+single 3f1ce2ab
+next 831290615
+max 1 0
+range 2 6 2
+double 3fde26dfd0bc4dc0
+single 3f6171e8
+next 670879856
+max 2 1
+range 7 7 7
+double 3fec807b6eb900f7
+single 3c872d30
+next 640708371
+max 3 1
+range 0 5 0
+double 3fec8166247902cc
+single 3ed264c8
+next 1452388395
+max 4 2
+range -2147483648 2147483647 2114546847
+double 3fee193abe3c3275
+single 3f409126
+next 66287745
+max 5 1
+range -2000000000 2000000000 -1314485719
+double 3fe5edfaf26bdbf6
+single 3f0599c3
+next 783738823
+max 9 3
+range -2147483648 0 -1308366387
+double 3fe498fd67e931fb
+single 3f1b01fe
+next 691297703
+max 75 49
+range 0 2147483647 213804486
+double 3fc165997522cb33
+single 3f57b125
+next 624647783
+max 360 352
+range 0 4 1
+double 3f455a0e002ab41c
+single 3f145040
+next 753750391
+max 1000 155
+range -1 2 -1
+double 3fe49b331d293666
+single 3dde4ae6
+next 2028945288
+max 16777216 3023772
+range 0 2 1
+double 3fc973987332e731
+single 3f245166
+next 1401173435
+max 2147483647 1848165059
+range 14 21 16
+double 3fe3b0b68ba7616d
+single 3ed7b2e9
+seed 1993
+next 1975458286
+max 0 0
+range 0 4 3
+double 3fee65c280fccb85
+single 3c8c2f87
+next 509412140
+max 1 0
+range -1 2 -1
+double 3fe17018c0e2e032
+single 3e47503f
+next 1279574850
+max 2 0
+range 0 2 1
+double 3fd5a61c00ab4c38
+single 3cd5a4f8
+next 1504340864
+max 3 1
+range 14 21 18
+double 3fe41c5a89a838b5
+single 3c641ae0
+next 1348384764
+max 4 3
+range -20 21 13
+double 3fd1da8659a3b50d
+single 3ccf7ea3
+next 837570157
+max 5 2
+range 3 6 4
+double 3fa4214998284293
+single 3e26ae4a
+next 2058070277
+max 9 3
+range 1 3 2
+double 3fee8998a93d1331
+single 3f0e41fa
+next 291264766
+max 75 69
+range 2 6 4
+double 3fe4be065ce97c0d
+single 3f16c81a
+next 1123453391
+max 360 150
+range 7 7 7
+double 3fe9e5d379f3cba7
+single 3f303b11
+next 1954550597
+max 1000 398
+range 0 5 3
+double 3feb365ff2b66cc0
+single 3f2286ed
+next 2052030175
+max 16777216 16185516
+range -2147483648 2147483647 102187538
+double 3fd02b1ecc20563e
+single 3ded2ae2
+next 1678779025
+max 2147483647 1228629115
+range -2000000000 2000000000 -1849185819
+double 3fe954f7b572a9ef
+single 3ea22bee
+next 558079933
+max 0 0
+range -2147483648 0 -820039821
+double 3fe66e5242ecdca5
+single 3f44b0d0
+next 1680554695
+max 1 0
+range 0 2147483647 1653458937
+double 3f9e908b283d2116
+single 3bbe5dad
+next 84761897
+max 2 0
+range 0 4 0
+double 3fd9648c0332c918
+single 3c1d017c
+next 1268220937
+max 3 0
+range -1 2 1
+double 3fe88527adb10a4f
+single 3f3744fd
+next 868539427
+max 4 0
+range 0 2 1
+double 3fd808d4393011a8
+single 3e5bae9d
+next 1506813196
+max 5 2
+range 14 21 16
+double 3fd6f09f85ade13f
+single 3f2efd83
+next 45328837
+max 9 7
+range -20 21 -12
+double 3fc45a438f28b487
+single 3cce2e80
+next 1230565119
+max 75 38
+range 3 6 3
+double 3fe4289b50e85137
+single 3f659296
+next 2061452522
+max 360 311
+range 1 3 2
+double 3feeaf7e293d5efc
+single 3c04f275
+next 53536815
+max 1000 43
+range 2 6 4
+double 3fe8b587e6b16b10
+single 3f7b47c1
+next 1738221619
+max 16777216 10659308
+range 7 7 7
+double 3fe33a1f46a6743f
+single 3f5afd87
+next 375672693
+max 2147483647 521079860
+range 0 5 3
+double 3fdf21baaebe4375
+single 3d88842f
+next 735898537
+max 0 0
+range -2147483648 2147483647 -883722480
+double 3fef82acf9ff055a
+single 3e77e978
+next 610672021
+max 1 0
+range -2000000000 2000000000 743186478
+double 3fb32ba83a265750
+single 3f67ee3a
+next 776932336
+max 2 1
+range -2147483648 0 -1885445304
+double 3fd2046e6e2408dd
+single 3d0e2b42
+next 789037960
+max 3 0
+range 0 2147483647 1413135396
+double 3fe7112e426e225d
+single 3f14ec2e
+next 809328281
+max 4 3
+range 0 4 1
+double 3fe8b43b82316877
+single 3f1b0623
+next 651919349
+max 5 4
+range -1 2 -1
+double 3fe6fddfe86dfbc0
+single 3f3906aa
+next 1209674330
+max 9 4
+range 0 2 0
+double 3fdd0492ad3a0925
+single 3f14543b
+next 2092123324
+max 75 57
+range 14 21 19
+double 3fefcbb5f1bf976c
+single 3eb1e4e0
+next 720702371
+max 360 326
+range -20 21 17
+double 3fd181f5452303eb
+single 3e1f9f62
+next 1814381483
+max 1000 315
+range 3 6 5
+double 3fca9db225353b64
+single 3edc09b3
+next 637438430
+max 16777216 6855437
+range 1 3 2
+double 3fee8dfb687d1bf7
+single 3d0de54b
+next 1013954231
+max 2147483647 1286209693
+range 2 6 3
+double 3fe5b8c3152b7186
+single 3f3f1622
+next 1119613817
+max 0 0
+range 7 7 7
+double 3fc773c82e2ee790
+single 3f4c69c3
+next 677311664
+max 1 0
+range 0 5 0
+double 3fe677afd56cef60
+single 3d77c2aa
+next 1291521439
+max 2 0
+range -2147483648 2147483647 -1426842719
+double 3fcf810b2e3f0216
+single 3ef0bd49
+next 2084539923
+max 3 0
+range -2000000000 2000000000 -1232239196
+double 3fef9afa8d7f35f5
+single 3f74f1f0
+next 262942886
+max 4 1
+range -2147483648 0 -1531078016
+double 3fedd50b23bbaa16
+single 3eefe54b
+next 899283717
+max 5 0
+range 0 2147483647 805913631
+double 3fd2f03a7825e075
+single 3d7cf7c9
+next 530826907
+max 9 7
+range 0 4 0
+double 3fe19bedf66337dc
+single 3f386086
+next 1020201204
+max 75 63
+range -1 2 0
+double 3fcd698d3f3ad31a
+single 3e43e59a
+next 316644563
+max 360 298
+range 0 2 1
+double 3fe7d06899afa0d1
+single 3e7e658d
+next 1521934963
+max 1000 564
+range 14 21 17
+double 3fdf269beebe4d38
+single 3f5a9e7e
+next 1971666623
+max 16777216 12729933
+range -20 21 3
+double 3fef7ac0217ef580
+single 3d8a941a
+next 1626275119
+max 2147483647 1382563327
+range 3 6 4
+double 3feba62988774c53
+single 3f2ad81b
+next 1277450374
+max 0 0
+range 1 3 1
+double 3fd8c93150319263
+single 3ed5a077
+next 1175338084
+max 1 0
+range 2 6 5
+double 3fd007a58ca00f4b
+single 3f231b80
+next 1665665592
+max 2 0
+range 7 7 7
+double 3fe87f112bf0fe22
+single 3f799928
+next 988656572
+max 3 1
+range 0 5 2
+double 3fe5e1deba6bc3bd
+single 3f4284e1
+next 1834623732
+max 4 2
+range -2147483648 2147483647 -1908149315
+double 3fc2627f8524c4ff
+single 3efa127f
+next 561662223
+max 5 1
+range -2000000000 2000000000 -965238153
+double 3fea99b2bd353365
+single 3eea28be
+next 1392157842
+max 9 5
+range -2147483648 0 -1714171231
+double 3fe0bb319ce17663
+single 3eebc819
+next 702121124
+max 75 52
+range 0 2147483647 1486074300
+double 3fe4a00f6969401f
+single 3e808376
+next 1824487441
+max 360 28
+range 0 4 2
+double 3f4cc9ff003993fe
+single 3f4c8d6e
+next 18771123
+max 1000 607
+range -1 2 -1
+double 3fcddd3cd03bba7a
+single 3f33069a
+next 223753664
+max 16777216 13640661
+range 0 2 1
+double 3fe97e313c32fc62
+single 3f5d12c6
+next 523232027
+max 2147483647 1994620444
+range 14 21 16
+double 3fe8ac15b171582b
+single 3edfe491
+seed -7
+next 822959691
+max 0 0
+range 0 4 2
+double 3faac20bd8358418
+single 3ebb9d26
+next 1452062818
+max 1 0
+range -1 2 1
+double 3feafe7f7ff5fcff
+single 3f5adecd
+next 964263065
+max 2 1
+range 0 2 0
+double 3fbc7e136438fc27
+single 3f61c7c2
+next 863316912
+max 3 2
+range 14 21 16
+double 3febbbcace377796
+single 3ccd0343
+next 1604173884
+max 4 2
+range -20 21 -13
+double 3fde984fbbbd309f
+single 3ec59f6e
+next 61343334
+max 5 4
+range 3 6 3
+double 3fdebd5714bd7aae
+single 3f37f7f2
+next 1656501810
+max 9 2
+range 1 3 1
+double 3fc4ff33af29fe67
+single 3db211b5
+next 142441956
+max 75 62
+range 2 6 2
+double 3fe1574996e2ae93
+single 3f6e9c94
+next 1887639912
+max 360 237
+range 7 7 7
+double 3fb0cb20ca219642
+single 3f190621
+next 2059963268
+max 1000 718
+range 0 5 2
+double 3fea94f054b529e1
+single 3e16042f
+next 479595045
+max 16777216 14657079
+range -2147483648 2147483647 -1518556521
+double 3fe316b35f262d67
+single 3f515c1d
+next 1495332452
+max 2147483647 392758157
+range -2000000000 2000000000 1332559454
+double 3fe729564dee52ad
+single 3c8fc0b7
+next 1017182015
+max 0 0
+range -2147483648 0 -983984121
+double 3fea3fb3d7f47f68
+single 3e8fc22e
+next 52293214
+max 1 0
+range 0 2147483647 1230881424
+double 3fe4e88cb7e9d119
+single 3f4b1eb3
+next 2007032070
+max 2 0
+range 0 4 0
+double 3fdc404aa4b88095
+single 3ddfec7a
+next 1890422468
+max 3 1
+range -1 2 -1
+double 3fd8ac164231582d
+single 3e46db0e
+next 716843075
+max 4 1
+range 0 2 1
+double 3fe2e19fab25c33f
+single 3e4abc1b
+next 1218733618
+max 5 1
+range 14 21 16
+double 3fe4ab9964a95733
+single 3ef86e4c
+next 438166316
+max 9 1
+range -20 21 15
+double 3fc7f2245d2fe449
+single 3f7fc16b
+next 2108842069
+max 75 33
+range 3 6 3
+double 3fdc07112ab80e22
+single 3f0ae289
+next 32333365
+max 360 206
+range 1 3 2
+double 3fb48784be290f09
+single 3f45c4e9
+next 1649334654
+max 1000 510
+range 2 6 3
+double 3fe2c88bb2a59117
+single 3e9aedd3
+next 514414454
+max 16777216 469973
+range 7 7 7
+double 3fea58e84af4b1d1
+single 3e0f3678
+next 1352144465
+max 2147483647 399119761
+range 0 5 2
+double 3fe3e9d2fde7d3a6
+single 3f36984a
+next 1621811628
+max 0 0
+range -2147483648 2147483647 1991204092
+double 3fe2dc5d8a65b8bb
+single 3f39efe0
+next 611114264
+max 1 0
+range -2000000000 2000000000 -884757997
+double 3fdbcd134bb79a27
+single 3e93564f
+next 1872442954
+max 2 1
+range -2147483648 0 -881393219
+double 3fed9c85dfbb390c
+single 3f514ab0
+next 1755581003
+max 3 1
+range 0 2147483647 122961238
+double 3fec9164d5f922ca
+single 3f4874b1
+next 737341642
+max 4 0
+range 0 4 0
+double 3febd6f111b7ade2
+single 3d1c0eac
+next 101406049
+max 5 1
+range -1 2 1
+double 3fec4a8f9538951f
+single 3f0444e0
+next 1556217111
+max 9 7
+range 0 2 1
+double 3fe4acd995e959b3
+single 3ecdb4de
+next 1053969461
+max 75 3
+range 14 21 17
+double 3fe38dea26671bd4
+single 3f6f1b33
+next 987088774
+max 360 312
+range -20 21 19
+double 3fc3fab44427f569
+single 3efd9912
+next 1383439791
+max 1000 379
+range 3 6 5
+double 3fd7925eb92f24bd
+single 3f3e8a3f
+next 413049358
+max 16777216 11005903
+range 1 3 2
+double 3fe533e0ba6a67c1
+single 3f1578d8
+next 1981047864
+max 2147483647 887717260
+range 2 6 5
+double 3fcf8c67b83f18cf
+single 3f5a1a56
+next 156713225
+max 0 0
+range 7 7 7
+double 3fe8acc8eab15992
+single 3e16c9ca
+next 119571872
+max 1 0
+range 0 5 0
+double 3fe0c13802a18270
+single 3ea74c30
+next 1656325623
+max 2 1
+range -2147483648 2147483647 -958174398
+double 3fd4b24897296491
+single 3ef3468a
+next 631142394
+max 3 0
+range -2000000000 2000000000 -749359087
+double 3fe55efad4aabdf6
+single 3f2a4540
+next 918785362
+max 4 0
+range -2147483648 0 -1421993744
+double 3fed984511bb308a
+single 3f6827ff
+next 133626404
+max 5 2
+range 0 2147483647 166252201
+double 3fc84e588e309cb1
+single 3e72aca5
+next 1630174647
+max 9 7
+range 0 4 0
+double 3fd458b2f728b166
+single 3e390500
+next 18971409
+max 75 32
+range -1 2 -1
+double 3fd0f5b5bc21eb6b
+single 3e3908f6
+next 89239945
+max 360 350
+range 0 2 0
+double 3fcadb532b35b6a6
+single 3f675aa9
+next 728428987
+max 1000 108
+range 14 21 18
+double 3fd92e1c99b25c39
+single 3ef69ab0
+next 1830916103
+max 16777216 3089023
+range -20 21 -4
+double 3fece823cb39d048
+single 3ed22b26
+next 959403403
+max 2147483647 168764419
+range 3 6 3
+double 3fe67da04e2cfb41
+single 3d55a08e
+next 95161551
+max 0 0
+range 1 3 2
+double 3fe6b446352d688c
+single 3f2fe42e
+next 209822127
+max 1 0
+range 2 6 2
+double 3fbcfbb00e39f760
+single 3c35e4a4
+next 2008006903
+max 2 0
+range 7 7 7
+double 3fdf00c0ae3e0181
+single 3ec5c76f
+next 358188339
+max 3 0
+range 0 5 4
+double 3f959dff882b3bff
+single 3f11521c
+next 2047619209
+max 4 3
+range -2147483648 2147483647 1468831092
+double 3fd89a0253313405
+single 3f13327c
+next 973191019
+max 5 1
+range -2000000000 2000000000 1814856637
+double 3fedc495c37b892c
+single 3e9e1936
+next 712285073
+max 9 1
+range -2147483648 0 -1220184317
+double 3fd9103615b2206c
+single 3f094db7
+next 1122581542
+max 75 60
+range 0 2147483647 309857172
+double 3fee72a33bbce546
+single 3f03f028
+next 821063659
+max 360 196
+range 0 4 1
+double 3fe9002fed320060
+single 3f6c663f
+next 1110356835
+max 1000 243
+range -1 2 0
+double 3fcc2061fe3840c4
+single 3de0bb17
+next 290288455
+max 16777216 1655207
+range 0 2 0
+double 3fe21769f2a42ed4
+single 3f5f8702
+next 698160174
+max 2147483647 240703708
+range 14 21 18
+double 3fef0872933e10e5
+single 3e7fcd02
+seed 123456789
+next 1091672793
+max 0 0
+range 0 4 2
+double 3fd9ca9740b3952f
+single 3f6ab11f
+next 1473299219
+max 1 0
+range -1 2 1
+double 3fe1cd9418e39b28
+single 3f3a9547
+next 1352562307
+max 2 1
+range 0 2 1
+double 3fde3f1246bc7e25
+single 3f6a25cc
+next 1181460116
+max 3 2
+range 14 21 14
+double 3fe4e2bb81e9c577
+single 3f47ffc1
+next 1757731197
+max 4 3
+range -20 21 16
+double 3fe16d979fe2db2f
+single 3ec746cd
+next 1583859300
+max 5 3
+range 3 6 5
+double 3fbcf4c4c239e98a
+single 3e0fa34d
+next 1588695364
+max 9 8
+range 1 3 2
+double 3fe54696bb6a8d2d
+single 3e97a400
+next 294994596
+max 75 40
+range 2 6 2
+double 3fc10422f9220846
+single 3f533e02
+next 1878366973
+max 360 221
+range 7 7 7
+double 3fdbc938a1379271
+single 3f3f1c0a
+next 1266618821
+max 1000 832
+range 0 5 2
+double 3fe96dce28f2db9c
+single 3ec1351a
+next 2071792715
+max 16777216 9897348
+range -2147483648 2147483647 1035539112
+double 3fdd1ffdfe3a3ffc
+single 3f41bbe7
+next 606622198
+max 2147483647 166042639
+range -2000000000 2000000000 27556246
+double 3f9ca4f1083949e2
+single 3e7f98ce
+next 1700765175
+max 0 0
+range -2147483648 0 -2135722243
+double 3f95a14b702b4297
+single 3e93b033
+next 378872948
+max 1 0
+range 0 2147483647 21179363
+double 3fe792ebf0af25d8
+single 3f76729f
+next 1777069268
+max 2 1
+range 0 4 0
+double 3fd8794caa30f299
+single 3eec1f43
+next 1713920387
+max 3 2
+range -1 2 1
+double 3fc02843a9205087
+single 3d135f66
+next 1580014539
+max 4 0
+range 0 2 0
+double 3fdb870a99b70e15
+single 3dc4d52a
+next 450518769
+max 5 2
+range 14 21 19
+double 3fdda16f513b42df
+single 3e0e1b1a
+next 2048088573
+max 9 7
+range -20 21 5
+double 3fea4f2330749e46
+single 3f73fe4f
+next 955866941
+max 75 2
+range 3 6 4
+double 3fe167c25862cf85
+single 3eb5faf3
+next 37328242
+max 360 132
+range 1 3 1
+double 3fe4125cb22824b9
+single 3f279a4c
+next 2085885053
+max 1000 250
+range 2 6 3
+double 3fea482046b49041
+single 3e8ef50a
+next 460380626
+max 16777216 4597809
+range 7 7 7
+double 3fcb581e7f36b03d
+single 3d665046
+next 516589913
+max 2147483647 1802126130
+range 0 5 1
+double 3fed99b5b2fb336b
+single 3da11adf
+next 1368004560
+max 0 0
+range -2147483648 2147483647 -1174424898
+double 3f825f5ac024beb6
+single 3cf86271
+next 604488734
+max 1 0
+range -2000000000 2000000000 -858608721
+double 3fe89c68cbb138d2
+single 3e6c3dc9
+next 775792326
+max 2 1
+range -2147483648 0 -1053773088
+double 3fee5180357ca300
+single 3f05cab8
+next 1665199966
+max 3 0
+range 0 2147483647 2059604408
+double 3fc51fb2822a3f65
+single 3d098df2
+next 394632215
+max 4 3
+range 0 4 2
+double 3feca78226794f04
+single 3ed2a98b
+next 1644825237
+max 5 3
+range -1 2 0
+double 3fe7bb5f386f76be
+single 3f24c823
+next 999119735
+max 9 6
+range 0 2 0
+double 3fea42735c7484e7
+single 3f215220
+next 1327725852
+max 75 46
+range 14 21 18
+double 3febcacacd779596
+single 3f71efd0
+next 1729236860
+max 360 183
+range -20 21 20
+double 3fed359c833a6b39
+single 3e06169d
+next 418822334
+max 1000 687
+range 3 6 3
+double 3fd4427394a884e7
+single 3f031094
+next 1718458535
+max 16777216 2006328
+range 1 3 1
+double 3fec7110bc38e221
+single 3eb9eac5
+next 1446363956
+max 2147483647 707179649
+range 2 6 2
+double 3febd7585477aeb1
+single 3f1dc42f
+next 1539232767
+max 0 0
+range 7 7 7
+double 3fe2c8e9e46591d4
+single 3f656097
+next 112517583
+max 1 0
+range 0 5 2
+double 3fd44e786fa89cf1
+single 3f6783be
+next 324358989
+max 2 0
+range -2147483648 2147483647 -194504325
+double 3fcd3a60163a74c0
+single 3f2c73f9
+next 2020173992
+max 3 2
+range -2000000000 2000000000 -1529004327
+double 3fb3f5130627ea26
+single 3ed6c056
+next 621425889
+max 4 0
+range -2147483648 0 -1979399283
+double 3fcf8a3fb63f147f
+single 3e532500
+next 982457416
+max 5 4
+range 0 2147483647 620546203
+double 3fdf540d743ea81b
+single 3f51ddde
+next 541660105
+max 9 2
+range 0 4 1
+double 3fdee3bc87bdc779
+single 3ecb15e5
+next 36054718
+max 75 5
+range -1 2 -1
+double 3fc1f64d6b23ec9b
+single 3f79cf2f
+next 885196860
+max 360 129
+range 0 2 0
+double 3f9db5ad703b6b5b
+single 3e810a6c
+next 1418322650
+max 1000 689
+range 14 21 19
+double 3fe1ff7958e3fef3
+single 3ebda131
+next 1403631427
+max 16777216 9031451
+range -20 21 -8
+double 3fbeea41643dd483
+single 3f4c3de7
+next 1596796589
+max 2147483647 1181846536
+range 3 6 5
+double 3fe6f4f8b56de9f1
+single 3db8a176
+next 774480925
+max 0 0
+range 1 3 2
+double 3fe3af7fada75eff
+single 3f569da5
+next 2129573433
+max 1 0
+range 2 6 2
+double 3fe168fbe162d1f8
+single 3f400551
+next 1473069856
+max 2 1
+range 7 7 7
+double 3fdc643eeb38c87e
+single 3f608e59
+next 1865563141
+max 3 1
+range 0 5 1
+double 3fefd1e9317fa3d2
+single 3f0bb57a
+next 1649305561
+max 4 0
+range -2147483648 2147483647 1560208182
+double 3fc54537ca2a8a70
+single 3f36c30c
+next 1999263134
+max 5 1
+range -2000000000 2000000000 1369660749
+double 3fddda4d5abbb49b
+single 3e8b8d3f
+next 1189761813
+max 9 0
+range -2147483648 0 -1734277572
+double 3fe6616f98acc2df
+single 3f400558
+next 409461492
+max 75 19
+range 0 2147483647 1776434349
+double 3fdfe71861bfce31
+single 3e414358
+next 1744518403
+max 360 246
+range 0 4 2
+double 3fe338d4746671a9
+single 3f5a8c81
+next 523105293
+max 1000 929
+range -1 2 -1
+double 3fcde982703bd305
+single 3f4fc5fb
+next 368649651
+max 16777216 5404511
+range 0 2 0
+double 3fec718cc678e31a
+single 3f0adad3
+next 964216556
+max 2147483647 267209946
+range 14 21 14
+double 3fe1e2833d63c506
+single 3f0193fc
+seed 2147483647
+next 1559595546
+max 0 0
+range 0 4 3
+double 3fe1dc74dbe3b8ea
+single 3e52fa5b
+next 1200195955
+max 1 0
+range -1 2 0
+double 3fef48166b7e902d
+single 3e8c22fd
+next 626863973
+max 2 0
+range 0 2 1
+double 3fde0c7b8cbc18f7
+single 3f7b6e44
+next 65212616
+max 3 2
+range 14 21 20
+double 3fe5ab77cd2b56f0
+single 3ea1122c
+next 1754296375
+max 4 3
+range -20 21 20
+double 3fa0b43fe0216880
+single 3f332f66
+next 1130186590
+max 5 4
+range 3 6 5
+double 3fe17f8314e2ff06
+single 3da61cf9
+next 401846963
+max 9 4
+range 1 3 1
+double 3fefa226933f444d
+single 3f2487d2
+next 1638451829
+max 75 2
+range 2 6 3
+double 3fd5f609362bec12
+single 3f751bc8
+next 1084756754
+max 360 257
+range 7 7 7
+double 3fd1803aaca30075
+single 3f683792
+next 1706746116
+max 1000 337
+range 0 5 2
+double 3fc2cb29b5259653
+single 3e62a055
+next 880625680
+max 16777216 12058235
+range -2147483648 2147483647 1331075397
+double 3fc8f2ec6c31e5d9
+single 3f60d128
+next 1772582790
+max 2147483647 1579254100
+range -2000000000 2000000000 -1716438417
+double 3fe3fee74827fdcf
+single 3e5fa607
+next 1922776196
+max 0 0
+range -2147483648 0 -980777389
+double 3fc5c73d8b2b8e7b
+single 3f24e4bd
+next 1775570415
+max 1 0
+range 0 2147483647 2147425022
+double 3fdeceb1d1bd9d64
+single 3f26f6ec
+next 1545599778
+max 2 1
+range 0 4 0
+double 3fe754bd0daea97a
+single 3f37ec62
+next 269567705
+max 3 2
+range -1 2 -1
+double 3fde840d79bd081b
+single 3f0a718f
+next 699007419
+max 4 2
+range 0 2 0
+double 3feaac01b1b55803
+single 3f4f27fb
+next 1704308192
+max 5 3
+range 14 21 20
+double 3fd2e13a3a25c274
+single 3f05d542
+next 1424625261
+max 9 2
+range -20 21 -9
+double 3fea42700e7484e0
+single 3e63dbbd
+next 401303729
+max 75 5
+range 3 6 4
+double 3fe62d6cd7ac5ada
+single 3f216187
+next 1992086094
+max 360 79
+range 1 3 2
+double 3fb1078f30220f1e
+single 3f666d3c
+next 1457079496
+max 1000 93
+range 2 6 2
+double 3fbb628cb436c519
+single 3f1c2075
+next 2046643866
+max 16777216 8231325
+range 7 7 7
+double 3fe5aefe662b5dfd
+single 3f11e276
+next 484049556
+max 2147483647 1327536029
+range 0 5 0
+double 3fd719a00a2e3340
+single 3f59b961
+next 133806312
+max 0 0
+range -2147483648 2147483647 1513924233
+double 3fefa459e8bf48b4
+single 3ec636d1
+next 1122575836
+max 1 0
+range -2000000000 2000000000 1013152254
+double 3fad3034483a6069
+single 3e8fa4ba
+next 1065320966
+max 2 1
+range -2147483648 0 -1732115071
+double 3fe7c128c5ef8252
+single 3ecdc2b6
+next 2004445346
+max 3 0
+range 0 2147483647 1502491885
+double 3fe3b16d472762db
+single 3f54a019
+next 1471298040
+max 4 2
+range 0 4 0
+double 3fc79ec4c42f3d8a
+single 3f1beeb1
+next 538477936
+max 5 4
+range -1 2 0
+double 3fb03d626c207ac5
+single 3e87018e
+next 1809384100
+max 9 5
+range 0 2 1
+double 3fe0861243a10c25
+single 3f785a43
+next 166879221
+max 75 38
+range 14 21 15
+double 3fea09716cf412e3
+single 3f247c47
+next 1235647966
+max 360 199
+range -20 21 7
+double 3fefd35324bfa6a6
+single 3e9a70ab
+next 138413212
+max 1000 465
+range 3 6 4
+double 3fcbafea2b375fd4
+single 3d92d1ff
+next 494438246
+max 16777216 2530551
+range 1 3 1
+double 3fdcde7bf139bcf8
+single 3ca29b25
+next 835022939
+max 2147483647 1752442830
+range 2 6 2
+double 3fed3c7351ba78e7
+single 3cf24b74
+next 1094059896
+max 0 0
+range 7 7 7
+double 3f91465848228cb1
+single 3f274cff
+next 597708028
+max 1 0
+range 0 5 2
+double 3fe8b5e057316bc1
+single 3ea5f936
+next 902856368
+max 2 1
+range -2147483648 2147483647 -1902669627
+double 3fd054c75b20a98f
+single 3e077064
+next 1926836777
+max 3 0
+range -2000000000 2000000000 1765783811
+double 3fe91f1732323e2e
+single 3f03982b
+next 756737768
+max 4 3
+range -2147483648 0 -1109650944
+double 3fbf060d783e0c1b
+single 3e4796b0
+next 1066261628
+max 5 2
+range 0 2147483647 561920038
+double 3fd3dcfd42a7b9fb
+single 3e77f28d
+next 1683789796
+max 9 1
+range 0 4 2
+double 3fe1e5b46363cb69
+single 3f27d6aa
+next 732351793
+max 75 1
+range -1 2 -1
+double 3fec17d7e4f82fb0
+single 3f35fbbc
+next 1915853997
+max 360 234
+range 0 2 0
+double 3fd0f3064921e60d
+single 3ef2b1c8
+next 420702508
+max 1000 887
+range 14 21 17
+double 3fe4690d2368d21a
+single 3ea3b155
+next 792361293
+max 16777216 4102562
+range -20 21 20
+double 3fe389441fe71288
+single 3aef2a50
+next 2111893257
+max 2147483647 2065430664
+range 3 6 3
+double 3fe8b6544bf16ca9
+single 3dbaeec9
+next 409980925
+max 0 0
+range 1 3 1
+double 3fe77312072ee624
+single 3dd0bd75
+next 1803515353
+max 1 0
+range 2 6 4
+double 3fceeddd063ddbba
+single 3f56524c
+next 1845935213
+max 2 0
+range 7 7 7
+double 3fe9b38dde33671c
+single 3eeba529
+next 731181066
+max 3 2
+range 0 5 2
+double 3fe4b5a52be96b4a
+single 3f7fbeda
+next 1307671673
+max 4 0
+range -2147483648 2147483647 -1339687834
+double 3febf0f615f7e1ec
+single 3f0a1f8e
+next 295578117
+max 5 0
+range -2000000000 2000000000 1114930861
+double 3fd8456a54308ad5
+single 3f5dbd2f
+next 697994311
+max 9 7
+range -2147483648 0 -1632044818
+double 3fe1518744a2a30f
+single 3f05c34b
+next 349844797
+max 75 47
+range 0 2147483647 1188061420
+double 3fd4229280a84525
+single 3e7ff309
+next 1719340669
+max 360 165
+range 0 4 3
+double 3fd597e9e8ab2fd4
+single 3e44ddd3
+next 322684485
+max 1000 661
+range -1 2 -1
+double 3fe11ddf90a23bbf
+single 3f028d63
+next 1660544102
+max 16777216 8092384
+range 0 2 0
+double 3fdc1308df382612
+single 3df48df0
+next 1846046660
+max 2147483647 1207701622
+range 14 21 18
+double 3fe48064922900c9
+single 3c7e1a04
+seed -2147483648
+next 1559595546
+max 0 0
+range 0 4 3
+double 3fe1dc74dbe3b8ea
+single 3e52fa5b
+next 1200195955
+max 1 0
+range -1 2 0
+double 3fef48166b7e902d
+single 3e8c22fd
+next 626863973
+max 2 0
+range 0 2 1
+double 3fde0c7b8cbc18f7
+single 3f7b6e44
+next 65212616
+max 3 2
+range 14 21 20
+double 3fe5ab77cd2b56f0
+single 3ea1122c
+next 1754296375
+max 4 3
+range -20 21 20
+double 3fa0b43fe0216880
+single 3f332f66
+next 1130186590
+max 5 4
+range 3 6 5
+double 3fe17f8314e2ff06
+single 3da61cf9
+next 401846963
+max 9 4
+range 1 3 1
+double 3fefa226933f444d
+single 3f2487d2
+next 1638451829
+max 75 2
+range 2 6 3
+double 3fd5f609362bec12
+single 3f751bc8
+next 1084756754
+max 360 257
+range 7 7 7
+double 3fd1803aaca30075
+single 3f683792
+next 1706746116
+max 1000 337
+range 0 5 2
+double 3fc2cb29b5259653
+single 3e62a055
+next 880625680
+max 16777216 12058235
+range -2147483648 2147483647 1331075397
+double 3fc8f2ec6c31e5d9
+single 3f60d128
+next 1772582790
+max 2147483647 1579254100
+range -2000000000 2000000000 -1716438417
+double 3fe3fee74827fdcf
+single 3e5fa607
+next 1922776196
+max 0 0
+range -2147483648 0 -980777389
+double 3fc5c73d8b2b8e7b
+single 3f24e4bd
+next 1775570415
+max 1 0
+range 0 2147483647 2147425022
+double 3fdeceb1d1bd9d64
+single 3f26f6ec
+next 1545599778
+max 2 1
+range 0 4 0
+double 3fe754bd0daea97a
+single 3f37ec62
+next 269567705
+max 3 2
+range -1 2 -1
+double 3fde840d79bd081b
+single 3f0a718f
+next 699007419
+max 4 2
+range 0 2 0
+double 3feaac01b1b55803
+single 3f4f27fb
+next 1704308192
+max 5 3
+range 14 21 20
+double 3fd2e13a3a25c274
+single 3f05d542
+next 1424625261
+max 9 2
+range -20 21 -9
+double 3fea42700e7484e0
+single 3e63dbbd
+next 401303729
+max 75 5
+range 3 6 4
+double 3fe62d6cd7ac5ada
+single 3f216187
+next 1992086094
+max 360 79
+range 1 3 2
+double 3fb1078f30220f1e
+single 3f666d3c
+next 1457079496
+max 1000 93
+range 2 6 2
+double 3fbb628cb436c519
+single 3f1c2075
+next 2046643866
+max 16777216 8231325
+range 7 7 7
+double 3fe5aefe662b5dfd
+single 3f11e276
+next 484049556
+max 2147483647 1327536029
+range 0 5 0
+double 3fd719a00a2e3340
+single 3f59b961
+next 133806312
+max 0 0
+range -2147483648 2147483647 1513924233
+double 3fefa459e8bf48b4
+single 3ec636d1
+next 1122575836
+max 1 0
+range -2000000000 2000000000 1013152254
+double 3fad3034483a6069
+single 3e8fa4ba
+next 1065320966
+max 2 1
+range -2147483648 0 -1732115071
+double 3fe7c128c5ef8252
+single 3ecdc2b6
+next 2004445346
+max 3 0
+range 0 2147483647 1502491885
+double 3fe3b16d472762db
+single 3f54a019
+next 1471298040
+max 4 2
+range 0 4 0
+double 3fc79ec4c42f3d8a
+single 3f1beeb1
+next 538477936
+max 5 4
+range -1 2 0
+double 3fb03d626c207ac5
+single 3e87018e
+next 1809384100
+max 9 5
+range 0 2 1
+double 3fe0861243a10c25
+single 3f785a43
+next 166879221
+max 75 38
+range 14 21 15
+double 3fea09716cf412e3
+single 3f247c47
+next 1235647966
+max 360 199
+range -20 21 7
+double 3fefd35324bfa6a6
+single 3e9a70ab
+next 138413212
+max 1000 465
+range 3 6 4
+double 3fcbafea2b375fd4
+single 3d92d1ff
+next 494438246
+max 16777216 2530551
+range 1 3 1
+double 3fdcde7bf139bcf8
+single 3ca29b25
+next 835022939
+max 2147483647 1752442830
+range 2 6 2
+double 3fed3c7351ba78e7
+single 3cf24b74
+next 1094059896
+max 0 0
+range 7 7 7
+double 3f91465848228cb1
+single 3f274cff
+next 597708028
+max 1 0
+range 0 5 2
+double 3fe8b5e057316bc1
+single 3ea5f936
+next 902856368
+max 2 1
+range -2147483648 2147483647 -1902669627
+double 3fd054c75b20a98f
+single 3e077064
+next 1926836777
+max 3 0
+range -2000000000 2000000000 1765783811
+double 3fe91f1732323e2e
+single 3f03982b
+next 756737768
+max 4 3
+range -2147483648 0 -1109650944
+double 3fbf060d783e0c1b
+single 3e4796b0
+next 1066261628
+max 5 2
+range 0 2147483647 561920038
+double 3fd3dcfd42a7b9fb
+single 3e77f28d
+next 1683789796
+max 9 1
+range 0 4 2
+double 3fe1e5b46363cb69
+single 3f27d6aa
+next 732351793
+max 75 1
+range -1 2 -1
+double 3fec17d7e4f82fb0
+single 3f35fbbc
+next 1915853997
+max 360 234
+range 0 2 0
+double 3fd0f3064921e60d
+single 3ef2b1c8
+next 420702508
+max 1000 887
+range 14 21 17
+double 3fe4690d2368d21a
+single 3ea3b155
+next 792361293
+max 16777216 4102562
+range -20 21 20
+double 3fe389441fe71288
+single 3aef2a50
+next 2111893257
+max 2147483647 2065430664
+range 3 6 3
+double 3fe8b6544bf16ca9
+single 3dbaeec9
+next 409980925
+max 0 0
+range 1 3 1
+double 3fe77312072ee624
+single 3dd0bd75
+next 1803515353
+max 1 0
+range 2 6 4
+double 3fceeddd063ddbba
+single 3f56524c
+next 1845935213
+max 2 0
+range 7 7 7
+double 3fe9b38dde33671c
+single 3eeba529
+next 731181066
+max 3 2
+range 0 5 2
+double 3fe4b5a52be96b4a
+single 3f7fbeda
+next 1307671673
+max 4 0
+range -2147483648 2147483647 -1339687834
+double 3febf0f615f7e1ec
+single 3f0a1f8e
+next 295578117
+max 5 0
+range -2000000000 2000000000 1114930861
+double 3fd8456a54308ad5
+single 3f5dbd2f
+next 697994311
+max 9 7
+range -2147483648 0 -1632044818
+double 3fe1518744a2a30f
+single 3f05c34b
+next 349844797
+max 75 47
+range 0 2147483647 1188061420
+double 3fd4229280a84525
+single 3e7ff309
+next 1719340669
+max 360 165
+range 0 4 3
+double 3fd597e9e8ab2fd4
+single 3e44ddd3
+next 322684485
+max 1000 661
+range -1 2 -1
+double 3fe11ddf90a23bbf
+single 3f028d63
+next 1660544102
+max 16777216 8092384
+range 0 2 0
+double 3fdc1308df382612
+single 3df48df0
+next 1846046660
+max 2147483647 1207701622
+range 14 21 18
+double 3fe48064922900c9
+single 3c7e1a04
+seed -1
+next 534011718
+max 0 0
+range 0 4 1
+double 3fe8b0fb20b161f6
+single 3f285329
+next 929393559
+max 1 0
+range -1 2 1
+double 3fb9ec992a33d932
+single 3f2477f8
+next 61497087
+max 2 0
+range 0 2 0
+double 3fefac2c273f5858
+single 3f2e9f9f
+next 1406361028
+max 3 0
+range 14 21 18
+double 3fe6893a842d1275
+single 3f33a8f2
+next 2039633683
+max 4 0
+range -20 21 -14
+double 3fd87236d1b0e46e
+single 3f4c464d
+next 363927940
+max 5 3
+range 3 6 3
+double 3fea563fb7f4ac7f
+single 3f62efab
+next 1194650126
+max 9 6
+range 1 3 2
+double 3f8be1de3037c3bc
+single 3f7deb98
+next 1731519511
+max 75 64
+range 2 6 2
+double 3fe075e9e3a0ebd4
+single 3f067753
+next 585887566
+max 360 357
+range 7 7 7
+double 3fd8be4edf317c9e
+single 3ede6104
+next 1450422331
+max 1000 677
+range 0 5 2
+double 3fcf4c63f03e98c8
+single 3eb4fbdf
+next 1130118952
+max 16777216 2842518
+range -2147483648 2147483647 744291658
+double 3fd94a0648b2940d
+single 3e1f01bf
+next 2039758977
+max 2147483647 182621155
+range -2000000000 2000000000 -1947312851
+double 3fe472adfc68e55c
+single 3d3feb93
+next 259488708
+max 0 0
+range -2147483648 0 -1166248161
+double 3fe18f392a631e72
+single 3e9ced02
+next 2142954714
+max 1 0
+range 0 2147483647 1709706839
+double 3fcc305cbd3860b9
+single 3dcec044
+next 384385166
+max 2 0
+range 0 4 3
+double 3fd9bf059cb37e0b
+single 3f4637fb
+next 2035035283
+max 3 0
+range -1 2 0
+double 3fd489c5a6a9138b
+single 3d806dd6
+next 1008338748
+max 4 1
+range 0 2 0
+double 3fd7b079aaaf60f3
+single 3bf910b3
+next 1328157009
+max 5 4
+range 14 21 19
+double 3fe8c22ee271845e
+single 3db5f55d
+next 56569042
+max 9 7
+range -20 21 -11
+double 3febef4f0fb7de9e
+single 3ef3de94
+next 645237757
+max 75 9
+range 3 6 3
+double 3fd7bc9866af7931
+single 3ef3310e
+next 791771284
+max 360 200
+range 1 3 1
+double 3fb1878db2230f1b
+single 3e2b9de6
+next 564194307
+max 1000 439
+range 2 6 5
+double 3fc67842f22cf086
+single 3e0cb33a
+next 1827753950
+max 16777216 16709541
+range 7 7 7
+double 3fef7e1fcffefc40
+single 3f26bae9
+next 1835196615
+max 2147483647 1501688522
+range 0 5 4
+double 3fe150f4fda2a1ea
+single 3f30225e
+next 346378500
+max 0 0
+range -2147483648 2147483647 -48190160
+double 3fb319aeda26335e
+single 3e95e13c
+next 435943218
+max 1 0
+range -2000000000 2000000000 -1851953078
+double 3fea681678b4d02d
+single 3f7ef155
+next 260274019
+max 2 1
+range -2147483648 0 -1818931812
+double 3fabbecf9c377d9f
+single 3ea30560
+next 434976408
+max 3 2
+range 0 2147483647 385065937
+double 3fb566ce4a2acd9d
+single 3f2e50c1
+next 1366447162
+max 4 0
+range 0 4 0
+double 3fe22e713b245ce2
+single 3e77a09c
+next 476039095
+max 5 3
+range -1 2 0
+double 3fc72057a82e40af
+single 3f15e5ef
+next 1466433944
+max 9 2
+range 0 2 0
+double 3fe11de59f623bcb
+single 3e32d6dc
+next 2134306667
+max 75 65
+range 14 21 14
+double 3fd6cb05572d960b
+single 3f53b78d
+next 1506922847
+max 360 112
+range -20 21 15
+double 3febfe16ca37fc2e
+single 3ef1bf93
+next 623057530
+max 1000 739
+range 3 6 5
+double 3fd8604d56b0c09b
+single 3f3d3c89
+next 1709944646
+max 16777216 8534806
+range 1 3 1
+double 3fd5a8f3912b51e7
+single 3ec5b3fa
+next 1919090937
+max 2147483647 94993703
+range 2 6 4
+double 3feec1f8ef7d83f2
+single 3f5c8136
+next 653369842
+max 0 0
+range 7 7 7
+double 3fda42d9833485b3
+single 3ee06dd7
+next 1142969686
+max 1 0
+range 0 5 1
+double 3fec253619f84a6c
+single 3ea629a3
+next 703711448
+max 2 1
+range -2147483648 2147483647 1767741729
+double 3fef55a3d0feab48
+single 3ea5f11b
+next 821387445
+max 3 0
+range -2000000000 2000000000 192008994
+double 3fdee2b8903dc571
+single 3f52432f
+next 473104005
+max 4 1
+range -2147483648 0 -226253782
+double 3fce35089a3c6a11
+single 3c32a4d6
+next 319461354
+max 5 1
+range 0 2147483647 2039312964
+double 3fc33ce3af2679c7
+single 3dc9d111
+next 1062563731
+max 9 4
+range 0 4 3
+double 3fe55d82cc6abb06
+single 3ee3cbc9
+next 937223518
+max 75 70
+range -1 2 1
+double 3fd7276791ae4ecf
+single 3f6bbca9
+next 120992252
+max 360 148
+range 0 2 0
+double 3fe5effc902bdff9
+single 3f523492
+next 771446750
+max 1000 62
+range 14 21 17
+double 3fec6f9f8278df3f
+single 3f20e954
+next 20376260
+max 16777216 6354515
+range -20 21 -1
+double 3fe4dff676a9bfed
+single 3e4fef78
+next 1333684913
+max 2147483647 567345045
+range 3 6 3
+double 3fd55c7525aab8ea
+single 3e6a077c
+next 1285357026
+max 0 0
+range 1 3 1
+double 3fe2c587b2e58b0f
+single 3ea820a6
+next 1575844887
+max 1 0
+range 2 6 4
+double 3fee009b9fbc0137
+single 3f381c33
+next 335171738
+max 2 0
+range 7 7 7
+double 3fecd0d0b979a1a1
+single 3e27e664
+next 64329631
+max 3 2
+range 0 5 2
+double 3fda8d5fb0351abf
+single 3f26d3e4
+next 186245157
+max 4 3
+range -2147483648 2147483647 -131003453
+double 3fb6cc4c9e2d9899
+single 3deda45a
+next 85596666
+max 5 0
+range -2000000000 2000000000 -929205939
+double 3fc60be5c92c17cc
+single 3f24c886
+next 1313602615
+max 9 1
+range -2147483648 0 -727667894
+double 3fcdf7966f3bef2d
+single 3f0644c1
+next 767019185
+max 75 6
+range 0 2147483647 449036698
+double 3fd9f53e1433ea7c
+single 3f12d664
+next 363881547
+max 360 170
+range 0 4 0
+double 3fd08243fea10488
+single 3f15198f
+next 1048776017
+max 1000 173
+range -1 2 1
+double 3fe8d19ee831a33e
+single 3f61a11b
+next 1464793213
+max 16777216 2379294
+range 0 2 1
+double 3fd4170118a82e02
+single 3f27d957
+next 1068497020
+max 2147483647 455992310
+range 14 21 18
+double 3fef261dc7be4c3c
+single 3e4470fb

@@ -1,0 +1,28 @@
+--- a/src/video/aros/SDL_arosopengl.c
++++ b/src/video/aros/SDL_arosopengl.c
+@@ -43,6 +43,25 @@
+ extern struct ExecBase *SysBase;
+ extern struct Library *GfxBase;
+ #define GLBase (_this->gl_data->gldd_GLBase)
++/* Call gl.library through the base opened above, not through libGL's
++   link stubs: the stubs bring libGL's auto-open, which opens gl.library
++   when the program starts even if it never asks SDL for OpenGL. */
++#define __INLINE_GL_STACKCALL__
++#include <proto/gl.h>
++/* inline/gl.h has no inlines for the two functions taking a tag list;
++   call their vectors (LVOs 5 and 11 in gl.conf) the way it calls the rest. */
++static inline GLAContext __sdl_glACreateContext(APTR base, struct TagItem *tagList)
++{
++    GLAContext (*fn)(struct TagItem *) = ((APTR *)base)[-5];
++    return fn(tagList);
++}
++static inline void __sdl_glASetRast(APTR base, GLAContext ctx, struct TagItem *tagList)
++{
++    void (*fn)(GLAContext, struct TagItem *) = ((APTR *)base)[-11];
++    fn(ctx, tagList);
++}
++#define glACreateContext(tagList) __sdl_glACreateContext(GLBase, (tagList))
++#define glASetRast(ctx, tagList) __sdl_glASetRast(GLBase, (ctx), (tagList))
+ 
+ int
+ AROS_GL_LoadLibrary(_THIS, const char *path)

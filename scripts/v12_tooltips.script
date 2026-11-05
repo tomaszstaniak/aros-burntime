@@ -1,0 +1,25 @@
+' v1.2's item tooltips (`ItemGridTooltip`; `preset extended ai none seed 3
+' start 30 give item_two_way_radio,item_loaded_rifle`, Paradise Camp's
+' tent). The keys light the pack's slots and each shows its tooltip beside
+' the grid, away from the middle: the radio "Passive while carried /
+' Reports remote camps and hazards" (`radio`), the rifle its damage at the
+' leader's experience and "Reach: Ranged" (`rifle`), the canteen its water
+' (`canteen`). The same lines show at the mouse over a filled slot.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent
+wait 200
+press left               ' the pack
+press down
+press right              ' the radio
+wait 2
+snap radio
+press right              ' the rifle
+wait 2
+snap rifle
+press left
+press left               ' the canteen
+wait 2
+snap canteen
+quit

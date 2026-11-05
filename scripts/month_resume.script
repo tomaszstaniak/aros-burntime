@@ -1,0 +1,85 @@
+'  The second half of month.script, taken up from the start screen.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 163,27         ' LOAD
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+standing
+save

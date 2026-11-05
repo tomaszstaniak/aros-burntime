@@ -1,0 +1,9 @@
+' v1.2 Extended's bones and skulls (`preset extended ai amiga seed 5`, with
+' and without `give item_skull`): into Sherwood and among its dogs, and a
+' long wait. Without the skull they bite; with it none comes for him.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 13,124          ' into Sherwood
+wait 60
+mapclick 230,230         ' among the dogs
+wait 3000
+quit

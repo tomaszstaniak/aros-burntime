@@ -1,0 +1,12 @@
+' A room entered by rope (`preset classic|extended ai none seed 3 start 6`, Caves;
+' room 3 is the rope room "Cave"). Without a rope in the selected character's
+' pack the door stays shut: the log says so, and a v1.2 game has him say
+' "I need rope" (`newburn?49`, `Condition.Process`), with "Okay". With `give
+' item_rope` the same click goes in (`-> Cave`) and the rope is kept.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 173,258         ' into Caves
+wait 60
+mapclick 209,16          ' the rope room, thrown for from 75 away
+wait 200
+snap rope
+quit

@@ -1,0 +1,183 @@
+Burntime Remastered 1.3 for AROS
+================================
+
+Port release 1.
+
+Burntime is Max Design's 1993 strategy game of survival after the bomb. This
+is a port of Jakob Harder's Burntime Remastered, version 1.3, rewritten in
+Rust for AROS. It plays the remaster's rules, Classic and Extended, for one
+or two players against the Modern, Amiga or no machine opponents, in the
+original graphics or the remaster's.
+
+It contains none of the game's data. You need your own copy of Burntime.
+
+
+1. What you need
+----------------
+
+- The archive for your system:
+    aros-x86_64-abiv11-pc      AROS One and other x86_64 ABIv11 systems
+    aros-x86_64-abiv1-pc       AROS mainline (ABIv1) on an x86_64 PC
+    aros-aarch64-abiv1-raspi   AROS on the Raspberry Pi
+  The three do not run on each other's systems.
+- burntime.pack, made from your own copy of Burntime and the remaster's
+  files with the packer (see 2.). The packer runs on another computer
+  (macOS, Linux or Windows).
+- Optionally the remaster's music (music/dos, music/amiga) and sounds.
+
+
+2. Making burntime.pack
+-----------------------
+
+The packer is in the source archive of this release,
+Burntime-1.3-aros1-source.zip. Its README.md says how to build it.
+Lay your files out as burngfx/testdata/README.md in the source describes:
+the remaster's 1.2 files, and in a v1.3 directory beside them the files
+version 1.3 changed. Then:
+
+    packer --from DIR --out burntime.pack --newgfx full
+
+--newgfx full adds the remaster's graphics; the pack is then about 115 MB.
+Without it the pack is about 21 MB and the game shows the original
+graphics. A pack made from the 1.2 files alone is refused.
+
+
+3. Installing
+-------------
+
+On x86_64, unpack the .zip archive where you want the game, or install the
+.apkg.zip with apkg or PkgManager (arospkg, version 0.7.4 or later
+recommended).
+
+On the Raspberry Pi, AROS has no UnZip. Unpack the archive on another
+computer and copy the Burntime drawer and Burntime.info onto the Pi's SD
+card (its AROS partition). There is no package for the Pi (see 8.).
+
+Put your data in a drawer of its own, outside the program's drawer, for
+example Work:Burntime-Data, and tell the game where it is:
+
+    MakeDir ENV:Burntime ENVARC:Burntime
+    SetEnv SAVE Burntime/Data Work:Burntime-Data
+
+The data drawer holds:
+
+    burntime.pack
+    music/dos/, music/amiga/     (optional)
+    sounds/                      (optional)
+    Saves/                       (made on the first save)
+
+Without the variable the game looks in PROGDIR:Data. If it cannot read a
+pack, it says which file it tried and why.
+
+
+4. Running
+----------
+
+Start it from a Shell, with a large stack as it was tested:
+
+    Stack 2000000
+    Work:Burntime/Burntime
+
+The window opens at half the screen, or larger where half the screen would
+cut off the game. "Burntime window 800x600" opens it at that size. The
+window can be resized; F11 or Alt+Enter switches to full screen.
+
+How to play is in Manual, beside the program. The remaster's own manual
+is in the game: MANUAL in the menus.
+
+
+5. Controls and settings
+------------------------
+
+The mouse plays as in the original: left click to walk, enter, take and
+choose; right click for the menu. The keyboard plays as the remaster does:
+
+    arrows              walk the selected character, or move the selection
+    W A S D             pan the view
+    Tab, Shift+Tab      pick the next or previous target
+    Space               act on the target
+    Q                   attack, or travel on the map
+    Shift+Left/Right    change the selected character
+    Escape              open the menu, or close what is open
+    T (held)            end the turn
+    O H I R C           options, statistics, inventory, information,
+                        fight or speak
+    V or M              the world map
+    F8                  the remaster's graphics or the original's
+    F11, Alt+Enter      window or full screen
+
+OPTIONS, then Settings, chooses the graphics, full screen, the input
+prompts, the language, the music and the map music. The settings are kept
+in ENV:Burntime/user.txt and ENVARC:Burntime/user.txt.
+
+
+6. Saves, updating and removing
+-------------------------------
+
+Your data, saves and settings are not in the program's drawer. An update
+replaces the program and its documents; removing it leaves your data. A
+save loads again as long as the pack was made from the same game data.
+Saves from builds before this release cannot be loaded; the game says so.
+The remaster's saves cannot be loaded either.
+
+
+7. Differences from Burntime Remastered 1.3
+-------------------------------------------
+
+- Saves are in this program's own format.
+- The picture is drawn without the remaster's shaders (its no-shader look)
+  and scaled to the window.
+- The game advances in fixed steps of 1/18 second.
+- The window opens larger than half the screen where half the screen would
+  cut off the game.
+- Where the remaster would stop with an error (building on the world map
+  with a part missing, among others), this program goes on.
+- On AROS mainline and the Raspberry Pi the game runs at a task priority
+  one below normal (-1), because at the normal priority its sound stopped
+  for seconds at a time. It sets the previous priority back when it ends.
+- Touch controls and the remaster's experimental character pictures are
+  not included.
+
+
+8. Known limitations
+--------------------
+
+- On the Raspberry Pi, Avail FLUSH, or a program that asks for more memory
+  than is free, makes AROS stop with a Software Failure (Illegal
+  instruction, PC 0x8). This is an AROS defect in its USB controller
+  driver (https://github.com/aros-development-team/AROS/issues/2068); a
+  fix is proposed in
+  https://github.com/aros-development-team/AROS/pull/2104. Do not use
+  Avail FLUSH on the Pi. If it happens, restart AROS.
+
+- On the Raspberry Pi, a Software Failure (Illegal instruction) has also
+  appeared twice while the game was running, both times in QEMU's
+  Raspberry Pi emulation after many games in one session. Its cause is not
+  known. It shows the same signature as the defect above, but that does
+  not show that it has the same cause, and the proposed fix for that
+  defect is not known to prevent it. If it happens, restart AROS. Save
+  your game often when you play on the Pi. About 137 MB of memory stay in
+  use after the first game until the next restart.
+
+- There is no package for the Raspberry Pi: a drawer that apkg installs on
+  the Pi's system partition makes AROS ask for a volume "Burntime" when the
+  game starts (an AROS FAT defect). Install by copying the drawer (see 3.).
+
+- The game has not been tried on a physical Raspberry Pi, with sound on a
+  Pi, or with a game controller.
+
+- There is no AROS version of the packer.
+
+
+9. Licence and credits
+----------------------
+
+This program: MIT, Tomasz Staniak (LICENSE). The parts translated from
+Burntime Remastered are under its MIT licence, Jakob Harder
+(LICENSE.upstream-burntime). The program contains SDL2, SDL2_mixer and GNU
+libiconv (LICENSE.third-party, LICENSE.libiconv). NOTICE lists the
+libraries and the credits.
+
+These licences cover program code only. Burntime (1993) is by Max Design;
+its graphics, music, sounds and texts belong to Max Design and are not
+included.

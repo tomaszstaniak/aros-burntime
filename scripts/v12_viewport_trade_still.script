@@ -1,0 +1,72 @@
+' The control of v12_viewport_trade: the same steps with every resize and
+' switch a `resize 640x480`, which at that size changes nothing.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map
+mapclick 75,303          ' into New Sandez
+wait 60
+day
+day                      ' thirsty
+mapclick 309,264         ' the pub
+wait 120
+esc                      ' the pub's film
+wait 5
+snap pub_640
+resize 640x480
+wait 3
+snap pub_1280
+sceneclick 88,119        ' the bottle onto the table, after the resize
+wait 3
+snap pub_1280_table
+resize 640x480
+wait 3
+snap pub_full
+deal                     ' served in fullscreen
+wait 3
+resize 640x480
+wait 3
+resize 640x480
+wait 3
+snap pub_600
+esc                      ' out
+mapmove 5,5              ' the pointer off the place's people: one under it stops
+wait 10                  ' (Location.HoverCharacter), and a resize moves what it is over
+mapclick 224,305         ' the trader: film_05
+wait 120
+press space              ' the film closed: the trader
+wait 10
+snap trader_640           ' 341 wide: the narrow trader, one side at a time
+resize 640x480
+wait 3
+snap trader_1920
+resize 640x480
+scenemove 60,120         ' the pointer put on the player's side again: it
+wait 3                   ' stays on its window pixel through a resize, which
+snap trader_1280         ' is another scene point now (the narrow side follows it)
+rsceneclick 88,119       ' the first thing set aside, in the wide layout's coordinates
+wait 3
+snap trader_1280_aside
+sceneclick 172,16        ' and back to the pack
+wait 3
+resize 640x480
+scenemove 60,120
+wait 3
+snap trader_600
+rsceneclick 88,119       ' aside again at the smallest size
+wait 3
+snap trader_600_aside
+resize 640x480
+scenemove 60,120
+wait 3
+snap trader_full
+sceneclick 172,16        ' back, in fullscreen
+wait 3
+snap trader_full_back
+resize 640x480
+scenemove 60,120
+wait 3
+snap trader_back
+esc                      ' leave
+wait 10
+resize 640x480
+wait 3
+save
+quit

@@ -1,0 +1,15 @@
+# Cross-build this crate for AROS x86_64. Run cargo from THIS directory.
+#
+# `include` resolves against .cargo/, while `build.target` and `runner` resolve
+# against the current working directory — different numbers of `../`.
+include = ["../../../rust-aros/aros-env.toml"]
+
+[build]
+target = "../../rust-aros/x86_64-aros.json"
+
+[target.x86_64-aros]
+runner = "../../rust-aros/tools/aros-qemu-run.py"
+
+[unstable]
+build-std = ["core", "alloc"]
+json-target-spec = true

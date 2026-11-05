@@ -1,0 +1,28 @@
+' `VictoryCondition` in v1.2 (`preset classic ai none seed 36 players A,B`): B
+' dies; the next time A plays he is offered the last rival's victory, once,
+' and declines; nothing offers it again. B falls in Nob Hill in his own turn
+' — the radiation (ApplyContinuousHazard) or a mutant's bite at the end of his health (one bite a second in the game,
+' `ClassicGame.TryBeginCreatureAttack`) — so his death is settled when his
+' day ends and the offer comes at the start of A's next turn. The cut is
+' while B still stands there among the mutants, so the resume carries how
+' they move and bite (save version 23).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day                      ' A's first day
+wait 30
+mapclick 19,292          ' B walks into Nob Hill: radiation and mutants
+wait 60
+wait 300
+mapmove -116,0           ' the pointer off the place: a load does not know where it was, and v1.2 stops whoever is under it (Character.cs:1007-1009)
+save                     ' the cut, B alive among the mutants
+wait 2700                ' B is killed where he stands
+day                      ' his day ends: his death settled, its film, and A's turn with the offer
+wait 30
+clock 300000             ' the turn's time runs out while it asks: nothing happens
+wait 30
+talkline 1               ' "Finish what I started": declined, play on
+wait 20
+day
+wait 30
+day
+wait 30
+save

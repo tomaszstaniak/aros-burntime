@@ -1,0 +1,12 @@
+[package]
+name = "viewer"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+burngfx = { path = "../burngfx" }
+sdlmini = { path = "../sdlmini" }
+
+[target.'cfg(target_os = "aros")'.dependencies]
+aros = { path = "../../rust-aros/aros" }

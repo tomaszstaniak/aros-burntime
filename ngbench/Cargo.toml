@@ -1,0 +1,16 @@
+[package]
+name = "ngbench"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+# The NewGfx frame-time, memory and load-time bench (design step A0): the
+# drawing the game would do in v1.2's NewGfx look, timed on the machine it
+# would run on. Not part of the game or its package.
+
+[dependencies]
+burngfx = { path = "../burngfx" }
+sdlmini = { path = "../sdlmini" }
+
+[target.'cfg(target_os = "aros")'.dependencies]
+aros = { path = "../../rust-aros/aros" }

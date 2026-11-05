@@ -1,0 +1,18 @@
+' The next-turn key held through a handover, two humans in a v1.2 game from
+' the start screen (`menu seed 3 start 30 start2 1`). T held for 1.5 s: Anna's
+' turn ends after 0.6 s; Bob's scene starts the hold again from nought
+' (`OnActivateScene`), so his turn ends 0.6 s later too, while the key is
+' still down. A tap after that does nothing.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot
+type Anna
+menuclick 250,104        ' player two's slot
+type Bob
+menuclick 163,54         ' START
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+holdkey t 1500
+wait 150
+holdkey t 100
+wait 30
+quit

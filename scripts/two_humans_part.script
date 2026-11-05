@@ -1,0 +1,22 @@
+' Two humans from the start screen, cut in the second human's turn.
+' Run with `menu seed 7 start 0 start2 1 savefile <f>`: player 0 in New
+' Sandez, player 1 in Sana (fixed starts are a test tool; a game from
+' the screen draws them). Seats 2 and 3 are Classic's computer players.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 161,165        ' MODE: Extended -> Original
+menuclick 60,104         ' player one's slot
+type Anna
+menuclick 250,104        ' player two's slot
+type Bob
+menuclick 163,54         ' START
+wait 3
+' Day 1, player 0 (Anna), New Sandez: acts in the location.
+clock 60000              ' 60 of the day's 240 seconds
+mapclick 75,303          ' into New Sandez
+clickon 248              ' a mercenary
+hire                     ' the offer closes on taking it: she stays inside
+wait 20
+day                      ' NEXT: player 1 plays, on the same clock
+' Day 1, player 1 (Bob), Sana.
+clock 30000              ' 30 more of the same day: 150 left
+save                     ' the cut: in the second human's turn

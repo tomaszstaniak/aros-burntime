@@ -1,0 +1,9 @@
+' A room is InventoryScene: the day's clock runs there, nobody walks.
+' `clock 60000` hands the turn a minute of its own time, which only a scene
+' that runs the clock will take.
+mapclick 75,303          ' into New Sandez
+wait 10
+mapclick 309,168         ' room 0
+wait 5
+save                     ' 1
+save                     ' the same cut, without the minute

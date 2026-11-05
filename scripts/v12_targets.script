@@ -1,0 +1,14 @@
+' The nearby target at the keyboard (`preset classic ai none seed 3 start 30`,
+' Paradise Camp). Beside the tent, in fight mode: Tab targets the door; Space
+' goes back to speak mode and enters it (`OnMenuSpeak`, `OnClickEntrance`).
+' A click is the mouse again: the target goes until the next key.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 177,165         ' beside the tent
+wait 80
+fight
+press tab                ' target: door Tent
+press space              ' speak mode, and into the tent
+wait 120
+quit

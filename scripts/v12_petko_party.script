@@ -1,0 +1,24 @@
+' `/petko`'s Travel moves the leader alone (MapScene.cs:1195-1207:
+' `TravelToLocation` with `_debugNoTravel` sets `player.Location` and
+' `player.Character.Position` only): run with `preset classic ai none seed 3
+' start 30 party savefile <f>` (the leader and one companion handed over,
+' a prepared state). In Paradise Camp the companion alone walks to
+' 148,148; on the map /petko, Travel, New Sandez: the leader stands at its
+' entry, the companion at 148,148 still — the old place's coordinates —
+' and the save says so.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+press shift+right        ' the companion, alone
+mapclick 150,150         ' only he walks
+wait 60
+press shift+left         ' the leader again
+esc                      ' the world map
+wait 10
+type /petko
+talkline 0               ' Travel
+mapclick 75,303          ' New Sandez, at once
+wait 30
+snap petko_party_arrived
+save
+quit

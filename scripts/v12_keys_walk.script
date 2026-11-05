@@ -1,0 +1,18 @@
+' Held keys (`preset classic|extended ai none seed 3 start 30`). On the world
+' map S held half a second pans the camera 34 pixels down (`UpdateCameraPan`,
+' seventy a second, the release on the 31st frame; the log says where it ends).
+' In Paradise Camp the right arrow held 480 ms walks the leader 60 pixels
+' (`ManualPath`, the port's two
+' pixels a frame for thirty frames): the two saves have him at 64,160 and
+' then 124,160.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+holdkey s 500            ' the map pans down
+wait 40
+mapclick 110,122         ' into Paradise Camp
+wait 60
+save                     ' where he stands
+holdkey right 480        ' he walks right
+wait 40
+save                     ' sixty pixels on
+quit

@@ -1,0 +1,89 @@
+' A6's memory check: ten cycles of v1.2's map music in List mode (`preset
+' classic ai none seed 3 start 30 music remaster map_music 2`). Each cycle:
+' into Paradise Camp (a map scene: the playlist plays on), into its tent
+' (the room's song; the playlist's place remembered), out again (the
+' playlist resumed where it was), back to the world map, and 600 frames of
+' the playlist. The AROS batch samples Avail from outside while it runs.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 60
+mapclick 110,122         ' cycle 1: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+mapclick 110,122         ' cycle 2: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+mapclick 110,122         ' cycle 3: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+mapclick 110,122         ' cycle 4: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+mapclick 110,122         ' cycle 5: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+mapclick 110,122         ' cycle 6: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+mapclick 110,122         ' cycle 7: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+mapclick 110,122         ' cycle 8: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+mapclick 110,122         ' cycle 9: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+mapclick 110,122         ' cycle 10: into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent: its song
+wait 300
+esc                      ' out: the playlist resumed
+wait 120
+esc                      ' the world map
+wait 600
+quit

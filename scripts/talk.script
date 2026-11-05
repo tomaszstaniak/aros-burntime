@@ -1,0 +1,8 @@
+' Walk into New Sandez, let everybody wander for a while, then talk to whoever is nearest and hire them.
+' The person asked stops as the player sets off (RequestToTalk), so a wanderer can still be reached.
+mapclick 75,303
+wait 200
+talk
+talk
+hire
+save

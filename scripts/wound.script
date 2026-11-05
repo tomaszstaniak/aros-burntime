@@ -1,0 +1,7 @@
+' One blow, and then walk away: the wound is the dog's, and it is written down.
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355
+fight
+mapclick 243,75       ' walking in bites once; that is the dog's own move
+esc
+save

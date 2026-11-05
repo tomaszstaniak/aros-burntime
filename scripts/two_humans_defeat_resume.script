@@ -1,0 +1,18 @@
+' Takes up two_humans_defeat_part.script's save and plays the rest.
+load
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+save

@@ -1,0 +1,14 @@
+' The trader's temporary space. After hiring (the meat is spent) the pack is
+' bottle, knife, canteen. Set the knife aside, take it back, set it aside
+' again and leave: nothing lost, nothing doubled.
+mapclick 75,303          ' into New Sandez
+clickon 248
+hire                     ' paid with the meat
+trade
+trade                    ' at the trader's
+rsceneclick 88,119       ' the knife aside: the canteen shifts down
+save                     ' refused: something is set aside
+sceneclick 172,16        ' the knife back, to the end of the pack
+rsceneclick 88,119       ' the canteen aside this time
+esc                      ' leave: the canteen comes back
+save

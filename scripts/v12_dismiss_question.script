@@ -1,0 +1,41 @@
+' v1.2 asks before a dismissal (`OnMenuDismiss`, `GetDismissConversation`;
+' `preset classic ai none seed 3 start 30`, Paradise Camp, the mercenary
+' hired as in v12_keys_dialog). With him selected (Shift+Right), DISMISS on
+' the menu asks "Do you really want to / dismiss me?" (`newburn?117-118`);
+' "All right, you're staying with me" (`?119`, he is with the boss) keeps
+' him; DISMISS again and "Yes" (`burn?496`) lets him go with what he
+' carries. v0.9.1 let him go at once.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 72,152          ' the snake lying here
+wait 150
+uiclick 266,118
+wait 10
+esc
+wait 10
+clickon 106              ' the mercenary: the talk opens
+wait 30
+press down
+press down               ' "Would you like to work for me?"
+press space
+wait 3
+press space              ' the first answer lit
+press down               ' "OK, you'll get snake"
+press space              ' hired
+wait 20
+wait 20
+press shift+right        ' Bret, alone
+wait 5
+menu 150,200
+menuline 5               ' DISMISS
+wait 10
+snap dismiss_question
+talkline 1               ' he stays
+wait 10
+menu 150,200
+menuline 5               ' DISMISS
+wait 10
+talkline 2               ' Yes
+wait 10
+quit

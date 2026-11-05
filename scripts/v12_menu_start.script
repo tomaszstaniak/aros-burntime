@@ -1,0 +1,12 @@
+' The start screen as a player meets it: player one's slot, START, a day,
+' a save. The screen starts a v1.2 game: Extended and the first opponent
+' offered, Modern, as v1.2's screen does.
+' Run with `menu seed 7 savefile <f>`.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot
+menuclick 163,54         ' START
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+day
+wait 10
+save

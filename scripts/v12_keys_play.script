@@ -1,0 +1,30 @@
+' v1.2's keys at play (`preset classic|extended ai none seed 3 start 30`, Paradise
+' Camp). On the world map: T tapped does nothing; T held 0.7 s ends the turn
+' (`NEXT_TURN_HOLD_TIME`, 0.6 s); C switches to the info cursor and back. In
+' the place: C is fight mode and C again speak mode; R opens INFO and the map
+' button closes it; H the statistics; V the world map; there, O the options.
+' Each key that runs a menu command logs `key: <action> -> <command>`.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+holdkey t 100            ' a tap: nothing
+wait 30
+holdkey t 700            ' held: the turn ends
+wait 60
+press c                  ' info mode
+press c                  ' travel mode
+mapclick 110,122         ' into Paradise Camp
+wait 60
+press c                  ' fight mode
+press c                  ' speak mode
+press r                  ' INFO
+wait 5
+sceneclick 20,185        ' back
+wait 5
+press h                  ' statistics
+wait 5
+sceneclick 100,100
+wait 5
+press v                  ' the world map
+wait 10
+press o                  ' options, from the world map
+wait 5
+quit

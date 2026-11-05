@@ -1,0 +1,44 @@
+' v1.2's service table (`ServiceScene`; `preset classic ai none seed 3
+' start 0 party give item_gold`: New Sandez, the companion handed over, gold
+' worth 0.75 — nothing — in the pack). Two days for thirst. In single mode
+' the leader goes into the pub alone: the companion, left at the entry, has
+' no page and drinks nothing (the range is measured from the selected
+' character, `serviceLeader`). Placing a thing takes it out of the pack. The
+' gold is served for nothing and is gone ("This isn't the Salvation Army!",
+' `burn?556`). Out, group mode, and in again at once, the film closed at
+' once: the door is in reach, so nobody waits, and the companion is still
+' far behind — but `IgnoreRangeFilter` is set, so he has a page and drinks
+' from the knife. Then the canteen goes onto the table from the leader's
+' page, off it into the companion's page (the page shown takes it), onto
+' the table from there, and EXIT hands it to the group, the leader's pack
+' first.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 75,303          ' into New Sandez
+wait 60
+day
+day                      ' both thirsty
+group                    ' single mode: the companion stays at the entry
+mapclick 309,264         ' the pub, the leader alone
+wait 120
+esc                      ' the pub's film (`ImageScene`)
+wait 5
+sceneclick 88,119        ' the bottle onto the table: out of the pack
+deal                     ' 4: the leader drinks, the companion has no page
+sceneclick 52,156        ' the gold (the pack closed up: fourth slot)
+deal                     ' worth nothing: served, and gone
+wait 3
+snap salvation_army
+esc                      ' out; the leader stands at the door
+group                    ' group mode, the companion far behind
+mapclick 309,264         ' the door is in reach: it opens at once
+esc                      ' the film, closed at once
+wait 5
+sceneclick 124,119       ' the knife onto the table
+deal                     ' 11: both drink, however far off he is
+sceneclick 88,119        ' the canteen onto the table
+pack                     ' the companion's page
+sceneclick 176,181       ' the canteen off the table: into his pack
+sceneclick 52,119        ' and from his page onto the table again
+esc                      ' EXIT: to the group, the leader's pack first
+wait 5
+save

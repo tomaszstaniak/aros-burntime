@@ -1,0 +1,70 @@
+' Takes up v12_amiga_part.script's save and plays on.
+load
+wait 20
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+save

@@ -1,0 +1,15 @@
+' the term falls, fetch the stashed meat, take the SAME person on again
+load
+day
+75,303
+75,303
+75,303
+mapclick 309,168
+mapclick 309,168
+uiclick 292,128
+esc
+' the returned man stands at the location's entry point
+mapclick 150,160
+mapclick 150,160
+hire
+save

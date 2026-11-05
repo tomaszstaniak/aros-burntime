@@ -1,0 +1,9 @@
+' A service is RestaurantScene: neither the clock nor anybody walks.
+' `clock 60000` is handed to it and refused.
+mapclick 75,303          ' into New Sandez
+wait 10
+mapclick 375,196         ' the restaurant
+wait 5
+save                     ' 1
+clock 60000
+save                     ' 2: the same file as 1 — the minute was not taken

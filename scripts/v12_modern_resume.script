@@ -1,0 +1,43 @@
+' v12_modern_part's save taken up in a new process, told nothing but where
+' the file is; the last six days of v12_modern_full, then saved.
+load
+wait 10
+mapclick 354,317         ' in
+wait 60
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+save

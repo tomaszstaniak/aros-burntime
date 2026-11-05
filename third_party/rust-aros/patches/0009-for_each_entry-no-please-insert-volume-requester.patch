@@ -1,0 +1,100 @@
+From a114f7b7c03ea2610a5d30ab7a18ecd158fac2f6 Mon Sep 17 00:00:00 2001
+From: tomaszstaniak <68373859+tomaszstaniak@users.noreply.github.com>
+Date: Sun, 20 Sep 2026 00:35:45 +0200
+Subject: [PATCH 09/11] for_each_entry: no 'please insert volume' requester
+
+Lock on a path whose volume is not mounted asks the user to insert it and
+waits; a directory read wants the error instead. pr_WindowPtr is set to -1
+for the duration, from the C glue, where the SDK headers decide the offsets
+inside struct Process.
+---
+ aros/csrc/execglue.c | 20 ++++++++++++++++++++
+ aros/src/fs.rs       | 20 ++++++++++++++++++++
+ aros/src/sys.rs      |  4 ++++
+ 3 files changed, 44 insertions(+)
+
+diff --git a/aros/csrc/execglue.c b/aros/csrc/execglue.c
+index f57ab00..0a42212 100644
+--- a/aros/csrc/execglue.c
++++ b/aros/csrc/execglue.c
+@@ -22,3 +22,23 @@ void aros_glue_FreeMem(void *mem, unsigned long size)
+ {
+     FreeMem(mem, size);
+ }
++
++/* `pr_WindowPtr`, which is why a missing volume is not a hang.
++ *
++ * `Lock` on a path whose volume is not mounted asks the user to insert it:
++ * dos.library puts up "Please insert volume X in any drive" and waits. A
++ * program that only wants to know whether the path is there must set the
++ * process's `pr_WindowPtr` to -1 first, which turns the requester into an
++ * error return. The field lives inside `struct Process`, so it is set here,
++ * where the SDK's own headers decide the offsets, rather than from Rust
++ * against a layout written out by hand. Returns the old value, to put back.
++ */
++#include <dos/dosextens.h>
++
++void *aros_glue_set_window_ptr(void *ptr)
++{
++    struct Process *me = (struct Process *)FindTask(NULL);
++    void *old = me->pr_WindowPtr;
++    me->pr_WindowPtr = ptr;
++    return old;
++}
+diff --git a/aros/src/fs.rs b/aros/src/fs.rs
+index 5bf4ad4..55eda66 100644
+--- a/aros/src/fs.rs
++++ b/aros/src/fs.rs
+@@ -252,6 +252,21 @@ pub fn create_dir_all(path: &str) -> Result<(), Error> {
+     Ok(())
+ }
+ 
++/// dos.library's requesters, off while this is alive.
++struct Quiet(*mut core::ffi::c_void);
++
++impl Quiet {
++    fn new() -> Quiet {
++        Quiet(unsafe { sys::SetWindowPtr(usize::MAX as *mut core::ffi::c_void) })
++    }
++}
++
++impl Drop for Quiet {
++    fn drop(&mut self) {
++        unsafe { sys::SetWindowPtr(self.0) };
++    }
++}
++
+ /// Every entry of the directory at `path`: its name, and whether it is a
+ /// directory itself — in the order the filesystem hands them out, which is
+ /// no order at all. `dos.library`'s own walk: `Lock`, `Examine`, then
+@@ -262,10 +277,15 @@ pub fn create_dir_all(path: &str) -> Result<(), Error> {
+ /// skipped rather than handed over mangled.
+ pub fn for_each_entry(path: &str, mut f: impl FnMut(&str, bool)) -> Result<(), Error> {
+     let cpath = CPath::new(path)?;
++    // A volume that is not mounted otherwise puts up "Please insert volume
++    // X in any drive" and waits for somebody to answer it — a program
++    // reading a directory wants the error instead.
++    let quiet = Quiet::new();
+     let lock = unsafe { sys::Lock(cpath.as_ptr(), sys::SHARED_LOCK) };
+     if lock == 0 {
+         return Err(err(What::ReadDir));
+     }
++    drop(quiet);
+     // Allocated by dos.library so that its size and alignment are the ones
+     // this build of it expects (`FileInfoBlock32` or `64`). Both begin with
+     // `IPTR fib_DiskKey; LONG fib_DirEntryType; UBYTE fib_FileName[108];`
+diff --git a/aros/src/sys.rs b/aros/src/sys.rs
+index 940f431..ebf48f2 100644
+--- a/aros/src/sys.rs
++++ b/aros/src/sys.rs
+@@ -47,6 +47,10 @@ extern "C" {
+     pub fn AllocMem(size: u64, requirements: u64) -> *mut u8;
+     #[link_name = "aros_glue_FreeMem"]
+     pub fn FreeMem(mem: *mut u8, size: u64);
++    /// Set this process's `pr_WindowPtr` and return what it was. `-1`
++    /// turns dos.library's "please insert volume" requester into an error.
++    #[link_name = "aros_glue_set_window_ptr"]
++    pub fn SetWindowPtr(ptr: *mut c_void) -> *mut c_void;
+ }
+ 
+ /// `DOS_FIB`: `AllocDosObject` makes a `FileInfoBlock`.

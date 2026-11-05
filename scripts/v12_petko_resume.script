@@ -1,0 +1,9 @@
+' The save `v12_petko` made, loaded in a new process (`savefile <f>` and
+' nothing else): the statistics still say "- Cheats active -", as v1.2's
+' `CheatsEnabled` comes back with its save.
+load
+wait 20
+press h
+snap petko_resume_stats
+press escape
+quit

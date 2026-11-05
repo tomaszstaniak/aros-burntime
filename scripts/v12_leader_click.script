@@ -1,0 +1,31 @@
+' Clicks on the leader (`preset classic ai none seed 3 start 30 party`: the
+' leader and one companion handed over, a prepared state; in Paradise Camp
+' the leader stands at 64,160, the companion at 63,147). v1.2's
+' `GetObjectAt` counts the leader (`Party[0]`, MapViewOverlayCharacters.cs:
+' 160-195) and `ClickCharacter` (LocationScene.cs:247-255) on one's own
+' character calls `SelectCharacter`, false when he is already the selected
+' one, and then `OnMenuInventory` (Player.cs:200-231). So: in group mode a
+' click on the leader opens his inventory; with the companion selected it
+' selects the leader alone; clicked again, his inventory. In fight mode
+' nothing happens. Before, a click on him was a walk to his own feet.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 64,156          ' the leader, in group mode: his inventory
+wait 5
+snap leader_inventory
+esc
+wait 5
+clickfriend 1            ' the companion, alone
+wait 5
+mapclick 64,156          ' the leader: selected alone
+wait 5
+mapclick 64,156          ' again: his inventory
+wait 5
+esc
+wait 5
+fight                    ' fight mode
+mapclick 64,156          ' nothing
+wait 5
+save                     ' he has not moved: 64,160
+quit

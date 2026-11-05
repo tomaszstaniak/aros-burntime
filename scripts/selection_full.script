@@ -1,0 +1,49 @@
+' Selecting one of your own, and what the location menu does with him:
+' STAY THERE, REJOIN (with the Abandon question, answered no and then yes),
+' DISMISS of a companion, and DISMISS of the last camper (the Dismiss
+' question). The start is group_part.script's: two men hired in New Sandez,
+' the walk to Bearwoods.
+mapclick 75,303          ' walk into New Sandez
+clickon 248              ' walk up to a mercenary, wherever he has wandered, and ask
+hire                     ' he takes the meat
+trade                    ' walk over to the trader, who waits for you
+trade
+uiclick 204,211           ' the canteen out of the pack, keeping the knife
+uiclick 318,128          ' for a meat off the trader's table
+deal                     ' a deal closes the table by itself
+esc                      ' the trader's scene stays after a deal (OnButtonAccept); leave it
+clickon 63               ' and a second mercenary, paid with that meat
+hire
+esc                      ' back out onto the world map, the group with you
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355          ' in, all of you at the entry
+mapclick 300,120         ' walk in among the dogs
+wait 150                 ' and let the group settle round you
+clickfriend 1             ' select him: single mode, he is the one who walks
+wait 5
+mapclick 330,160          ' he walks there, the leader stays
+wait 60
+menu 320,150
+menuline 4                ' STAY THERE: Bearwoods is ours, and he is still selected
+wait 10
+menu 320,150
+menuline 4                ' REJOIN: the last one out, so the Abandon question
+wait 5
+talkline 1                ' "No, stay where you are."
+wait 10
+clickfriend 2             ' the other man
+wait 5
+menu 320,150
+menuline 3                ' DISMISS: out of the group, where he stands
+wait 10
+clickon 248               ' the camper, standing in the place: selected
+wait 5
+save                      ' the cut, here too
+menu 320,150
+menuline 2                ' DISMISS the last camper (no ALL now: the group is the leader alone)
+wait 5
+talkline 0                ' "If you fire me you'll regret it…": the page turns
+wait 3
+talkline 2                ' yes: he goes, and Bearwoods is nobody's
+wait 10
+save

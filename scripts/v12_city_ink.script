@@ -1,0 +1,17 @@
+' A city's name in its controller's colour (`DrawWorldLocationText`,
+' Maps/MapViewOverlayHoverText.cs:162-172; `Location.ControllingPlayer`,
+' Logic/Location.cs:93-110). Run on a prepared save: a v1.2 game's save
+' (`preset classic ai none seed 3 start 30`, `save` at once) with its `camp`
+' lines edited so that one player holds Stove Vent (10), its neighbour 9 and
+' 15, every road out of the city at 395,292 (location 8). `savefile` names
+' it. With all three held by seat 0 the city's name is the player's green;
+' split between two seats, or a city nobody controls, light grey.
+load
+wait 10
+mapmove 395,292          ' the city
+wait 2
+snap city
+mapmove 354,317          ' Stove Vent, no city: grey whoever holds it
+wait 2
+snap place
+quit

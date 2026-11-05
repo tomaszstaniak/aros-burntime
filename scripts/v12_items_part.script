@@ -1,0 +1,61 @@
+' v12_items_full.script, cut on day 30.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+save

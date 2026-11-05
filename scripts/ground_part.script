@@ -1,0 +1,19 @@
+' Both parts on the ground; the result goes down where he stands.
+mapclick 75,303
+wait 10
+menu 150,160
+menuline 1
+wait 3
+uiclick 204,248          ' the ammunition down
+wait 3
+uiclick 168,248          ' the rifle down
+wait 3
+uiclick r300,118         ' right-click the rifle on the ground (its second slot)
+wait 3
+uiclick 169,206          ' "OK, make me loaded rifle."
+wait 3
+snap h1_on_ground
+esc
+wait 3
+save
+quit

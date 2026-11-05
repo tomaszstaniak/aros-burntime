@@ -1,0 +1,41 @@
+' Building from the ground, New Sandez. Run with
+' `give item_unloaded_rifle,item_ammunition`: pack slots 4 and 5.
+mapclick 75,303          ' into New Sandez
+wait 10
+menu 150,160             ' the location's menu, where the player stands
+menuline 1               ' INVENTORY: the ground in reach as the right grid
+wait 3
+uiclick 204,248          ' put the ammunition down at his feet
+wait 3
+snap g1_down
+esc
+wait 3
+mapclick 150,200         ' walk forty pixels away from it
+wait 40
+menu 150,200
+menuline 1               ' INVENTORY again: the ammunition is out of reach now
+wait 3
+snap g2_far
+uiclick r168,248         ' right-click the rifle: the refusal, no Yes line
+wait 3
+snap g3_refused
+uiclick 169,217          ' "Thanks for telling me."
+wait 3
+esc
+wait 3
+mapclick 150,162         ' back beside it
+wait 40
+menu 150,162
+menuline 1
+wait 3
+snap g4_near
+uiclick r168,248         ' the rifle again: now with the Yes line
+wait 3
+snap g5_offer
+uiclick 169,206          ' "OK, make me loaded rifle."
+wait 3
+snap g6_built
+esc
+wait 3
+save
+quit

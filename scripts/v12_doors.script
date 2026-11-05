@@ -1,0 +1,21 @@
+' `TryEnterRoom` in v1.2 (`preset classic ai amiga seed 16 players A,B`): B camps
+' a man at Stove Vent; A walks there and finds its doors shut.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 354,317         ' A sets out for Stove Vent: two days
+wait 20
+mapclick 354,317         ' B, at Stove Vent, walks in
+wait 60
+clickon 228              ' and hires a man
+hire
+wait 20
+join                     ' who holds the place for B
+wait 10
+day
+wait 30
+day
+wait 30
+mapclick 354,317         ' A, arrived, walks in
+wait 80
+mapclick 252,137         ' and tries a door
+wait 200
+quit

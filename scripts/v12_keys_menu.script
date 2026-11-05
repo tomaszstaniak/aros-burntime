@@ -1,0 +1,31 @@
+' Escape and the menu by keys (`preset classic|extended ai none seed 3 start 30`).
+' On the world map in mouse mode Escape opens the mouse's menu at the middle
+' and Escape closes it. An arrow is the keyboard: now Escape opens the shorter
+' menu (`ShowContextMenu`), Down lights STATISTICS and Space runs it. In
+' Paradise Camp: Escape, the place's key menu; Down, Down lights INFO; Space
+' runs it. Into the tent, and Escape closes the room.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+press escape             ' the mouse's menu
+press escape             ' closed
+press down               ' the keyboard
+press escape             ' the key menu
+press down               ' STATISTICS
+press space              ' run
+wait 5
+sceneclick 100,100       ' close the statistics
+wait 5
+mapclick 110,122         ' into Paradise Camp
+wait 60
+press down               ' the keyboard again (the click was the mouse)
+press escape             ' the place's key menu
+press down
+press down               ' INFO
+press space
+wait 5
+sceneclick 20,185        ' back
+wait 5
+mapclick 177,150         ' the tent
+wait 200
+press escape            ' out of the room
+wait 10
+quit

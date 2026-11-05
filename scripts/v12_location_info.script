@@ -1,0 +1,33 @@
+' v1.2's location info on the world map (`MapScene.TryShowLocationInfo`;
+' `preset classic|extended ai none seed 3 start 30`, at Paradise Camp). R
+' shows INFO on the place he stands at. At the keyboard F shows the selected
+' place's: Acid Town, a city, gives the city's report (`ShowCityReport`,
+' `cityinfo.txt`: the camps around it he still lacks, the cities to hold).
+' With the mouse a right click on a place tries the same before the menu
+' (`View_OnContextMenu`): Acid Town's report again; on open ground the menu.
+' In info mode a click on Acid Town gives the report as well.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+press r                  ' INFO on Paradise Camp
+wait 5
+press escape
+wait 5
+press left               ' the keyboard: Acid Town selected
+wait 2
+press f                  ' its report
+wait 5
+talkline 2               ' Okay
+wait 5
+menu 31,157              ' a right click on Acid Town: its report
+wait 5
+talkline 2
+wait 5
+menu 150,200             ' on open ground: the menu
+wait 5
+menuline 0               ' its INFO: info mode
+wait 5
+mapclick 31,157          ' Acid Town in info mode: its report
+wait 5
+talkline 2
+wait 5
+quit

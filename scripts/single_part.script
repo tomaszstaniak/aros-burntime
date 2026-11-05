@@ -1,0 +1,19 @@
+mapclick 75,303          ' walk into New Sandez
+clickon 248              ' walk up to a mercenary and hire him with the meat
+hire
+trade                    ' the canteen for a meat
+trade
+uiclick 204,211
+uiclick 318,128
+deal
+esc                      ' the trader's scene stays after a deal (OnButtonAccept); leave it
+clickon 63               ' and a second mercenary, paid with that meat
+hire
+esc                      ' out onto the world map, the group with you
+mapclick 19,292          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 19,292          ' in, the group on the entry point with you
+wait 60
+group                    ' alone: the group stays where it stands
+mapclick 277,105         ' to the spring room, alone: nobody comes, and the wait runs out
+esc                      ' out of the room again
+save                     ' the cut: saved in single mode, the group standing apart

@@ -1,0 +1,15 @@
+' Building through the reference interface: reloading a rifle.
+'
+' The one recipe every class may do, so it needs nobody hired. Run it with
+' `give item_unloaded_rifle,item_ammunition`, which puts the two parts in the
+' pack's last two slots.
+mapclick 75,303          ' into New Sandez
+wait 10
+mapclick 309,168         ' the first room
+wait 5
+uiclick r168,248         ' right-click the unloaded rifle, pack slot 4
+wait 5
+snap build_asked         ' 512 section 3, with the Yes line
+uiclick 169,206          ' "OK, make me loaded rifle."
+wait 5
+snap build_done          ' the loaded rifle in slot 4, slot 5 emptied

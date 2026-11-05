@@ -1,0 +1,20 @@
+' The mouse wheel (`ManualWindow.OnMouseWheel`, ManualWindow.cs:840-844):
+' run with `preset classic ai none seed 3 start 30`. The manual a new game
+' opens scrolls a line a turn while the pointer is over it, and not when
+' it is beside it; Down at the keys does the same, for comparison. The
+' Saves list's wheel (OptionsSavesPage.cs:225) is the unit test
+' `the_wheel_scrolls_the_saves_list`.
+wait 5
+press right              ' SURVIVE: longer than the window
+snap wheel_manual_top
+wheel -1 160,100         ' over the window: a line down
+wheel -1 160,100
+snap wheel_manual_two
+wheel 1 160,100          ' back up one
+snap wheel_manual_one
+wheel -1 4,100           ' beside the window (it is 300 wide, centred): nothing
+snap wheel_manual_beside
+press down               ' the key, as the wheel
+snap wheel_manual_key
+press escape
+quit

@@ -1,0 +1,122 @@
+From 55d1c34c74f507ec82ff5e59317c254d236a6732 Mon Sep 17 00:00:00 2001
+From: tomaszstaniak <68373859+tomaszstaniak@users.noreply.github.com>
+Date: Sat, 19 Sep 2026 23:08:17 +0200
+Subject: [PATCH 08/11] fs::for_each_entry: a directory's entries, over
+ Lock/Examine/ExNext
+
+The FileInfoBlock comes from AllocDosObject(DOS_FIB), so its size is the
+one this dos.library expects; only fib_DirEntryType and fib_FileName are
+read, and both the 32- and 64-bit layouts put them after one IPTR. A
+callback, so the module still needs no allocator.
+---
+ aros/src/fs.rs  | 58 +++++++++++++++++++++++++++++++++++++++++++++++++
+ aros/src/sys.rs | 13 +++++++++++
+ 2 files changed, 71 insertions(+)
+
+diff --git a/aros/src/fs.rs b/aros/src/fs.rs
+index 0e5fdca..5bf4ad4 100644
+--- a/aros/src/fs.rs
++++ b/aros/src/fs.rs
+@@ -34,6 +34,8 @@ pub enum What {
+     Rename,
+     Delete,
+     CreateDir,
++    /// `Lock`, `Examine` or `ExNext` on a directory.
++    ReadDir,
+     /// The path is longer than [`MAX_PATH`], or holds a zero byte.
+     BadPath,
+     /// The file is larger than the caller allowed for.
+@@ -250,6 +252,62 @@ pub fn create_dir_all(path: &str) -> Result<(), Error> {
+     Ok(())
+ }
+ 
++/// Every entry of the directory at `path`: its name, and whether it is a
++/// directory itself — in the order the filesystem hands them out, which is
++/// no order at all. `dos.library`'s own walk: `Lock`, `Examine`, then
++/// `ExNext` until `ERROR_NO_MORE_ENTRIES`.
++///
++/// A callback rather than a list so that this module still needs no
++/// allocator. A name longer than the block holds, or that is not UTF-8, is
++/// skipped rather than handed over mangled.
++pub fn for_each_entry(path: &str, mut f: impl FnMut(&str, bool)) -> Result<(), Error> {
++    let cpath = CPath::new(path)?;
++    let lock = unsafe { sys::Lock(cpath.as_ptr(), sys::SHARED_LOCK) };
++    if lock == 0 {
++        return Err(err(What::ReadDir));
++    }
++    // Allocated by dos.library so that its size and alignment are the ones
++    // this build of it expects (`FileInfoBlock32` or `64`). Both begin with
++    // `IPTR fib_DiskKey; LONG fib_DirEntryType; UBYTE fib_FileName[108];`
++    // and those are the only fields read.
++    let fib = unsafe { sys::AllocDosObject(sys::DOS_FIB, core::ptr::null()) };
++    if fib.is_null() {
++        unsafe { sys::UnLock(lock) };
++        return Err(err(What::ReadDir));
++    }
++    const KEY: usize = core::mem::size_of::<usize>();
++    const NAME: usize = KEY + 4;
++    const NAME_MAX: usize = 108;
++    let mut result = Ok(());
++    if unsafe { sys::Examine(lock, fib) } == 0 {
++        result = Err(err(What::ReadDir));
++    } else {
++        loop {
++            if unsafe { sys::ExNext(lock, fib) } == 0 {
++                let code = unsafe { sys::IoErr() };
++                if code != sys::ERROR_NO_MORE_ENTRIES {
++                    result = Err(Error { what: What::ReadDir, code });
++                }
++                break;
++            }
++            let (kind, name) = unsafe {
++                let kind = core::ptr::read_unaligned(fib.add(KEY) as *const i32);
++                (kind, core::slice::from_raw_parts(fib.add(NAME), NAME_MAX))
++            };
++            let len = name.iter().position(|&b| b == 0).unwrap_or(NAME_MAX);
++            if let Ok(name) = core::str::from_utf8(&name[..len]) {
++                // `fib_DirEntryType`: above zero a directory, below a file.
++                f(name, kind > 0);
++            }
++        }
++    }
++    unsafe {
++        sys::FreeDosObject(sys::DOS_FIB, fib);
++        sys::UnLock(lock);
++    }
++    result
++}
++
+ fn exists_dir(path: &str) -> bool {
+     let Ok(cpath) = CPath::new(path) else { return false };
+     let lock = unsafe { sys::Lock(cpath.as_ptr(), sys::SHARED_LOCK) };
+diff --git a/aros/src/sys.rs b/aros/src/sys.rs
+index 1bd09b3..940f431 100644
+--- a/aros/src/sys.rs
++++ b/aros/src/sys.rs
+@@ -29,6 +29,14 @@ extern "C" {
+     pub fn CreateDir(name: *const u8) -> i64;
+     pub fn Lock(name: *const u8, access_mode: i32) -> i64;
+     pub fn UnLock(lock: i64);
++    /// Fill `fib` with what `lock` is; for a directory, the start of a walk
++    /// that [`ExNext`] continues. Zero is failure.
++    pub fn Examine(lock: i64, fib: *mut u8) -> i32;
++    /// The next entry of the directory `Examine` began with; zero at the
++    /// end, when `IoErr()` is `ERROR_NO_MORE_ENTRIES`, or on failure.
++    pub fn ExNext(lock: i64, fib: *mut u8) -> i32;
++    pub fn AllocDosObject(kind: u32, tags: *const c_void) -> *mut u8;
++    pub fn FreeDosObject(kind: u32, ptr: *mut u8);
+     pub fn IoErr() -> i64;
+ 
+     // --- exec.library -------------------------------------------------------
+@@ -41,6 +49,11 @@ extern "C" {
+     pub fn FreeMem(mem: *mut u8, size: u64);
+ }
+ 
++/// `DOS_FIB`: `AllocDosObject` makes a `FileInfoBlock`.
++pub const DOS_FIB: u32 = 2;
++/// `ERROR_NO_MORE_ENTRIES`: `ExNext` has walked the whole directory.
++pub const ERROR_NO_MORE_ENTRIES: i64 = 232;
++
+ /// `SHARED_LOCK`: look, do not change.
+ pub const SHARED_LOCK: i32 = -2;
+ 

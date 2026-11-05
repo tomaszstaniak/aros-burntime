@@ -1,0 +1,73 @@
+' UI-42: the window resized and switched to fullscreen and back in the
+' middle of a game — the world map, a place, a talk dialog, a room, Options —
+' each scene laid out again at the new size and the game going on as if
+' nothing had happened. Run with `preset classic ai none seed 3 start 30
+' party give item_rat_trap window 640x480`, once as it is (NewGfx) and once
+' with `newgfx off`. v12_viewport_still is the same script with every
+' resize and switch a `resize 640x480`, which at that size changes nothing:
+' the two give the same game lines and the same save (no reset, no time
+' passing), and only this one says `window:`. `snap` pictures are written
+' at the backbuffer's size.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map
+wait 3
+snap map_640
+resize 1280x720          ' the world map, wider: 455 x 213
+wait 3
+snap map_1280
+f11                      ' fullscreen at the desktop's size
+wait 3
+snap map_full
+f11                      ' back: the window as it opened (resetWindowSize)
+wait 3
+snap map_back
+resize 200x150           ' smaller than the frame: 1x, a 107 x 67 game, a 75 x 27 view
+wait 3
+snap map_200
+resize 640x480
+wait 3
+mapclick 110,122         ' into Paradise Camp
+wait 60
+resize 1920x1080         ' a place at 2x: 512 x 240
+wait 3
+snap place_1920
+resize 640x480
+wait 3
+clickon 106              ' the mercenary: his talk
+wait 30
+snap talk_640
+resize 1280x720          ' the dialog centred on the wider view again
+wait 3
+snap talk_1280
+resize 640x480
+wait 3
+esc                      ' the talk closed
+wait 5
+join                     ' camped here: the place is ours
+wait 10
+mapclick 177,150         ' the tent
+wait 200
+snap room_640
+resize 1920x1080         ' the room's scene centred in a wider game
+wait 3
+snap room_1920
+resize 640x480
+wait 3
+uiclick 168,248          ' the rat trap put down, at the size the script was written for
+wait 5
+esc
+wait 10
+press o                  ' Options
+wait 5
+snap options_640
+resize 1280x720
+wait 3
+snap options_1280
+f11
+wait 3
+snap options_full
+f11
+wait 3
+press escape             ' Back: the scene closes
+wait 5
+save
+quit

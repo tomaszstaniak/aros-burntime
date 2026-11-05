@@ -1,0 +1,10 @@
+[package]
+name = "packer"
+version = "0.1.0"
+edition = "2021"
+
+# Host-only. Decodes the artwork once so the AROS build needs no PNG decoder
+# and no file system.
+[dependencies]
+burngfx = { path = "../burngfx" }
+png = "0.17"

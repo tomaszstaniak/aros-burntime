@@ -1,0 +1,14 @@
+' A key held through a load (`preset classic|extended ai none seed 3 start 30`).
+' Saved at 64,160 in Paradise Camp; the right arrow held 960 ms (60 frames);
+' five frames in, the save is loaded (back to 64,160); the arrow is still
+' down and he walks on from there: the last save has him at 174,160.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+save                     ' 64,160
+holdkey right 960
+wait 5
+load                     ' back to 64,160, the key still down
+wait 70
+save                     ' 174,160
+quit

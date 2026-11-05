@@ -1,0 +1,23 @@
+mapclick 75,303          ' walk into New Sandez
+clickon 248              ' walk up to a mercenary, wherever he has wandered, and ask
+hire                     ' he takes the meat
+trade                    ' walk over to the trader, who waits for you
+trade
+uiclick 204,211           ' the canteen out of the pack, keeping the knife
+uiclick 318,128          ' for a meat off the trader's table
+deal                     ' a deal closes the table by itself
+esc                      ' the trader's scene stays after a deal (OnButtonAccept); leave it
+clickon 63               ' and a second mercenary, paid with that meat
+hire
+esc                      ' back out onto the world map, the group with you
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355          ' in, all of you at the entry
+mapclick 300,120         ' walk in among the dogs
+wait 150                 ' and let the group settle round you
+fight
+clickon 142              ' the dog: the group is still trailing, and stays out of it
+save
+wait 20
+clickon 142              ' again, with the group close enough to join
+join                     ' leave one in a camp, where they stand
+save

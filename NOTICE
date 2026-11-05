@@ -1,0 +1,86 @@
+Burntime Remastered 1.3 for AROS: origin, licences and credits
+================================================================
+
+Origin
+------
+
+This program is a port of Burntime Remastered by Jakob Harder
+(https://github.com/jakobharder/burntime), rewritten in Rust for AROS by
+Tomasz Staniak. It follows the remaster's version 1.3 (commit 550a1194). The
+remaster is written in C# for .NET and MonoGame; its game rules, its readers
+for the 1993 file formats and much of its interface were translated from that
+source, and the translated modules name the C# files they come from.
+
+This project is not affiliated with Max Design, with the original creators of
+Burntime, or with the Burntime Remastered project.
+
+
+Licences
+--------
+
+- This program: MIT, Copyright (c) 2026 Tomasz Staniak (LICENSE).
+- Burntime Remastered: MIT, Copyright (c) 2009-2026 Jakob Harder. Its
+  LICENSE.txt at version 1.3 is reproduced in LICENSE.upstream-burntime, and
+  its terms apply to the parts translated from it. As that file says, the
+  remaster's licence covers its source code only.
+- The sdlmini part began in rust-aros (https://github.com/tomaszstaniak/rust-aros),
+  MIT, by the same author as this program.
+
+
+Game data
+---------
+
+The licences above cover program code only. They give no rights to the
+game's data. Burntime's graphics, music, sounds and texts belong to Max
+Design. They are not part of this program, its source or its archives.
+You make burntime.pack from your own copy of the game and the remaster's
+files (ReadMe, section 2).
+
+A program built from the source with a pack embedded (a developer build)
+contains that data. Such a build is for your own use; do not pass it on.
+
+
+Libraries in the program
+------------------------
+
+The AROS program is statically linked with the libraries below. Their
+licence texts are in LICENSE.third-party, libiconv's in LICENSE.libiconv.
+
+- SDL2 2.32.10 (zlib licence), with yuv2rgb (BSD 3-clause),
+  https://www.libsdl.org/
+  ABIv1 builds (x86_64 mainline, Raspberry Pi): built from the SDL2 2.32.10
+  release with the AROS contrib patch SDL2-2.32.10-aros.diff (contrib
+  45327d2c) and this program's patch
+  third_party/sdl2/patches/0001-aros-call-gl.library-through-SDL-own-base.diff,
+  which changes how SDL2 calls gl.library; scripts/deps.py applies both.
+  The patches and the scripts are in the source archive. ABIv11 build: the
+  static SDL2 2.32.10 of the AROS ABIv11 SDK, unchanged; the program
+  supplies stand-ins for the six gl.library functions it names
+  (sdlmini/src/gl_standins.rs) instead of linking libGL.
+- SDL2_mixer (zlib licence) with stb_vorbis (MIT or public domain), for Ogg
+  Vorbis and WAV: 2.8.2 with the AROS contrib patch in the ABIv1 builds,
+  2.8.1 from the AROS ABIv11 SDK in the ABIv11 build.
+- GNU libiconv, LGPL (LICENSE.libiconv), which SDL2 uses.
+  The ABIv1 builds (x86_64 mainline and Raspberry Pi) contain libiconv 1.19
+  with the AROS contrib patch libiconv-1.19-aros.diff. The ABIv11 build
+  contains libiconv 1.14 from the AROS ABIv11 SDK, built from the GNU
+  release without patches. The source archive of this release holds both
+  versions, the patch and the ABIv11 build recipe.
+  The complete source of this program and its build scripts are in the
+  source archive, so the program can be relinked with a changed libiconv.
+- The Rust core and alloc libraries (MIT or Apache 2.0).
+
+
+Credits
+-------
+
+Burntime (1993) by Max Design: idea and concept Wilfried Reiter, Albert
+Lasser, Martin Lasser; programming Albert Lasser, Wilfried Reiter; graphics
+Martin Lasser, Wilfried Reiter; music and sound effects Hannes Seifert.
+
+Burntime Remastered: development and remaster Jakob Harder, with
+contributions from the community (see the remaster's resources/README.md).
+The remaster thanks Martin Lasser, Wilfried Reiter and Hannes Seifert for
+allowing it to use the original graphics and music.
+
+This port: Tomasz Staniak.

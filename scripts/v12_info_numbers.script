@@ -1,0 +1,34 @@
+' INFO's numbers in a v1.2 game (`preset classic|extended ai amiga seed 3 start 30
+' party give item_rat_trap,item_hand_pump`: a prepared state, not the game's).
+' The companion is camped at Paradise Camp, the hand pump put down in the well
+' and the rat trap in the tent; INFO is opened and maggots, then rats, chosen.
+' Each opening logs `info (v1.2): food F a day, water W` — the numbers the
+' screen shows, from `v12_day::food_rate` and `water_output`, which the day
+' itself adds. Paradise Camp's spring gives 7: Classic (DOS rule) shows water
+' 8, Extended (fixed +2) 9; maggots 2 and 1 a day, rats 3 and 3. The legacy
+' formula showed 8 in both.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+join                     ' camped here: the place is ours
+wait 10
+mapclick 271,147         ' the well
+wait 60
+uiclick 204,248          ' the hand pump put down
+wait 5
+esc
+wait 10
+mapclick 177,150         ' the tent
+wait 200
+uiclick 168,248          ' the rat trap put down
+wait 5
+esc
+wait 10
+menu 300,150
+menuline 1               ' INFO (v1.2's menu: FIGHT first)
+wait 3
+sceneclick 246,121       ' maggots
+wait 3
+sceneclick 246,121       ' rats
+wait 3
+quit

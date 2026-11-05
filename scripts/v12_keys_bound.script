@@ -1,0 +1,15 @@
+' Real keys in a v1.2 game go to v1.2's bindings (`preset classic ai none seed 3
+' start 30`), not to the script's own steps. `press t` is the key T from the
+' keyboard: a tap of NextTurn, which ends nothing (the turn ends when it is
+' held, v12_keys_play), and not the script's `take`. Tab is NextTarget, which
+' the world map has no use for; C is ToggleInteractionMode, which on the map
+' switches to the info cursor (`info mode` in the log); N is bound to nothing.
+' With `keys` on the command line the window's keys are the port's test keys
+' again: T takes, C shows the pack, N ends the day.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+press t
+press tab
+press c
+press n
+wait 2
+quit

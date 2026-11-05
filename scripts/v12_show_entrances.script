@@ -1,0 +1,27 @@
+' ShowEntrances held (Alt, the left trigger; `preset classic ai none seed 3
+' start 30 party`: a companion handed over and camped at Paradise Camp, a
+' prepared state). v1.2 sets `ShowAllEntrances` while the action is down
+' (MapScene.cs:435, LocationScene.cs:520; `MapViewOverlayHoverText.cs:
+' 92-134`): in a place every door's title (or "Blocked" in another's
+' place) but the hovered one's, at 0.7, without marks; on the world map
+' every place the player holds but the labelled one, at 0.7, on its
+' half-black with its marks. Snapshots while held and after.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+join                     ' camped here: the place is ours
+wait 10
+holdkey alt 300          ' every door's title
+wait 2
+snap entrances_place
+wait 30
+snap entrances_place_let_go
+esc                      ' the world map
+wait 10
+mapmove 300,40           ' the pointer on no place
+holdkey alt 300          ' the camp's name and marks
+wait 2
+snap entrances_map
+wait 30
+snap entrances_map_let_go
+quit

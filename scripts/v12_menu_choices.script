@@ -1,0 +1,14 @@
+' The start screen's choices changed: the rules to Classic, the opponent
+' one step on (the next one offered). Run with `menu seed 1 savefile <f>`:
+' seed 7's draw started the human in the Factory, where he died at the
+' first day's end, and a dead man's save is not the choice's game.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 161,165        ' MODE: Extended -> Classic
+menuclick 205,165        ' AI: one step on
+menuclick 60,104         ' player one's slot
+menuclick 163,54         ' START
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+day
+wait 10
+save

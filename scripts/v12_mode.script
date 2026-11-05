@@ -1,0 +1,29 @@
+' v1.2's interaction mode is the location scene's (`preset classic|extended ai
+' none seed 3 start 30`, Paradise Camp). In fight mode a door is not entered
+' (`OnClickEntrance`): the click walks there and nothing opens. Back in speak
+' mode the same door opens. Fight mode, then INFO opened and closed: speak
+' mode again (`OnActivateScene`). Fight mode, a save and a load: speak mode.
+' The legacy game keeps v0.9.1's `Player.FightMode` through all of these.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+fight
+mapclick 177,150         ' the tent: not entered in fight mode
+wait 200
+fight                    ' speak
+mapclick 177,150         ' the tent: entered
+wait 200
+esc
+wait 10
+fight
+menu 300,150
+menuline 1               ' INFO (v1.2's menu: FIGHT first)
+wait 3
+sceneclick 20,185        ' back: speak mode again
+wait 5
+fight
+save
+wait 5
+load                     ' speak mode again
+wait 10
+quit

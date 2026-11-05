@@ -1,0 +1,22 @@
+' v1.2 Extended's two-way radio (`preset extended ai amiga seed 12 give
+' item_two_way_radio`). In info mode a click on Outback, which an opponent
+' holds, gives the radio's report; "Okay" closes it. A click on the place he
+' stands at gives no report but INFO; a click on a city its own report
+' (`ShowCityReport`), not the radio's.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day
+wait 30
+menu 250,160             ' the map's menu, near him
+menuline 0               ' INFO
+wait 10
+mapclick 307,65          ' Outback: the report
+wait 30
+talkline 2               ' Okay
+wait 10
+mapclick 224,118         ' Hard Mans Death, where he stands: INFO
+wait 30
+press escape             ' INFO closed
+wait 10
+mapclick 31,157          ' Acid Town, a city: the city's report
+wait 30
+quit

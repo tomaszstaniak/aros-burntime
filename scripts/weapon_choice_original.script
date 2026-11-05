@@ -1,0 +1,18 @@
+' Choosing a weapon by hand, original rules. Take the axe at Nob Hill, then choose
+' the knife with a right click in the room. The mutant: v0.9.1's
+' UseBestEquipment keeps the choice unless the pack holds a better weapon
+' that uses no ammunition — the axe — so the blow is the axe's, and the axe is
+' what is chosen after it. Back in the room the frame is on the axe. Saved.
+mapclick 19,292          ' sets out
+mapclick 19,292          ' walk in
+mapclick 253,201         ' the door of room 2
+mapclick 253,201
+uiclick 256,128          ' take the axe
+rsceneclick 124,119      ' choose the knife: the red frame goes on it
+esc
+fight
+mapclick 355,171         ' the mutant
+hit
+mapclick 253,201         ' back into room 2
+mapclick 253,201
+save

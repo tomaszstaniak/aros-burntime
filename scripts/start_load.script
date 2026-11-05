@@ -1,0 +1,7 @@
+' The start screen again, in a new process: take up the save. The rules and
+' the difficulty come out of the file, not from the screen — nothing here says
+' "extended" and the game is extended all the same.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 163,27         ' LOAD
+day                      ' a day in the game that was taken up
+save

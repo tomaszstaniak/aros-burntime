@@ -1,0 +1,19 @@
+' v1.2's door title in a place another player holds (`AreEntrancesBlockedFor`,
+' `newburn?103`; `preset classic ai modern seed 7 start 27`,
+' v12_targets_attack's start: Paradise Camp is player 3's). The pointer over
+' the tent shows "Blocked" over its middle (`blocked`), not the room's name;
+' its door stays shut as before.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' set out for Paradise Camp, two days
+wait 30
+wait 30
+mapclick 110,122         ' in
+wait 60
+clickon 61               ' up to him, in speak mode
+wait 1
+esc
+wait 5
+mapmove 177,150          ' the pointer on the tent
+wait 3
+snap blocked
+quit

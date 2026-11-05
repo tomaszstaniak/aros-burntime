@@ -1,0 +1,20 @@
+' A production's tool put into a room refreshes the place's production at
+' once (`preset classic ai none seed 3 start 30 party give
+' item_rat_trap,item_rat_trap`, as `v12_trap_select`): v1.2's
+' `OnLeftClickItemInventory` calls `RefreshFoodProductionSelection` when the
+' item has a production (`InventoryScene.cs:638`), and the automatic choice
+' takes the trap's rats if they make more. The save's camp line says which,
+' before any day has passed.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+join                     ' camped here: the place is ours
+wait 10
+mapclick 177,150         ' the tent
+wait 200
+uiclick 168,248          ' a rat trap put down
+wait 5
+esc
+wait 10
+save
+quit

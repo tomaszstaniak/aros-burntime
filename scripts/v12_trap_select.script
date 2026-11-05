@@ -1,0 +1,31 @@
+' A production's tool on a right click (`preset classic ai none seed 3 start
+' 30 party give item_rat_trap,item_rat_trap`: a prepared state, the
+' companion camped at Paradise Camp and two rat traps given). v1.2's
+' `OnRightClickItemRoom` (InventoryScene.cs:778-795): a trap on the room's
+' floor selects its production for the place, when the place has it
+' (`SelectProduction`: the player's choice; its dialog only with the hints
+' hidden): "now making: rats", and the save's camp line says `manual`.
+' `OnRightClickItemInventory` (:727-730): the same trap in the pack does
+' nothing. Neither asks the builder. Before, both opened the construction
+' conversation.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+join                     ' camped here: the place is ours
+wait 10
+mapclick 177,150         ' the tent
+wait 200
+uiclick 168,248          ' a rat trap put down
+wait 5
+uiclick r168,248         ' the other, in the pack: nothing
+wait 5
+snap trap_in_pack
+press right              ' the floor's first item lit: the maggots
+press right              ' the next: the trap
+press f                  ' its right click: rats, by choice
+wait 5
+snap trap_selected
+esc
+wait 10
+save
+quit

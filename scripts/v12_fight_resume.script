@@ -1,0 +1,15 @@
+' Takes up v12_fight_part.script's save, between two attacks: two more
+' encounters with the same dog until it falls, the other dogs biting on, a
+' day (`day`), then the save. A load leaves v1.2's location scene in speak
+' mode (`OnActivateScene`), so fight mode is chosen again first, as a player
+' would.
+load
+fight
+clickon 142
+wait 90
+clickon 142
+wait 90
+wait 200
+day
+wait 30
+save

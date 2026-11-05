@@ -1,0 +1,105 @@
+' v1.2's respawn (`preset classic ai amiga seed 11`): two men are hired and camped at Refinery —
+' radiation 87, no water, nothing made — and die on their first night there. Under
+' `amiga_location_cycle` one of them comes back on Refinery's day ((day + 27)
+' % 8 = 0), by taking the other's name; the other stays dead.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' Paradise Camp, where the draw starts him
+wait 60
+mapclick 72,152          ' the snake lying here
+wait 150
+uiclick 266,118
+wait 10
+esc
+wait 10
+clickon 106              ' a mercenary, paid with the snake
+hire
+wait 20
+clickon 61              ' a technician, paid with the meat
+hire
+wait 20
+mapclick 177,150         ' the tent: maggots for himself
+wait 200
+uiclick 256,128
+wait 10
+esc
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+esc
+wait 20
+mapclick 153,101         ' Refinery: no spring, nothing it can make
+mapclick 153,101         ' and in, two days on
+wait 120
+join                     ' camped there
+wait 10
+join                     ' and the other
+wait 10
+esc
+wait 20
+mapclick 110,122         ' back to his start, two days on the road
+wait 60
+day                      ' back, day 11, on the map
+wait 20
+save                     ' the cut, day 12, before the return
+wait 20
+mapclick 110,122         ' and in
+wait 120
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+save

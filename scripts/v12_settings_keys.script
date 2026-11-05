@@ -1,0 +1,27 @@
+' v1.2's Settings page by keys (`OptionsSettingsPage`; `preset classic ai
+' none seed 3 start 30 music remaster`). O, Tab, Down to Settings (past
+' the Jukebox), Left into the page — on its first enabled line, the
+' graphics (OptionsSettingsPage.cs:106-115; enabled since the look can be
+' switched, UI-19) — Down past Fullscreen (it can be switched under SDL's
+' dummy driver), then Down twice to
+' "Map Music NONE", Space: "Map Music KEEP" and its hint (`settings`); the
+' choice is written to `user.txt` (a scripted run writes it where it runs,
+' and no run reads it back).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122
+wait 60
+press o
+wait 5
+press tab
+press down               ' Jukebox
+press down               ' Settings
+press left               ' into the page: the graphics
+press down               ' Fullscreen
+press down               ' Music
+press down               ' Map Music
+press space              ' None -> Keep
+wait 5
+snap settings
+press escape
+wait 5
+quit

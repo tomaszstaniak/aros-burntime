@@ -1,0 +1,80 @@
+' UI-42 at a service and the trader (`preset classic ai none seed 3 start 0
+' window 640x480`, New Sandez; as it is and with `newgfx off`): the pub's
+' table and the trader's exchange resized, switched to fullscreen and back,
+' and clicked after each change. `sceneclick` is in the scene's own
+' coordinates — the trader's 470 wide when the game is 450 or wider,
+' else 320 — made a window pixel when the step is taken.
+' v12_viewport_trade_still (every resize and switch a `resize 640x480`)
+' must give the same game lines and save. The narrow trader (game under 450
+' wide) shows one side and takes the side from the pointer, so the pointer
+' is put on the player's side (`scenemove`) after each change.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map
+mapclick 75,303          ' into New Sandez
+wait 60
+day
+day                      ' thirsty
+mapclick 309,264         ' the pub
+wait 120
+esc                      ' the pub's film
+wait 5
+snap pub_640
+resize 1280x720
+wait 3
+snap pub_1280
+sceneclick 88,119        ' the bottle onto the table, after the resize
+wait 3
+snap pub_1280_table
+f11
+wait 3
+snap pub_full
+deal                     ' served in fullscreen
+wait 3
+f11
+wait 3
+resize 600x449           ' the computed minimum: 320 x 200
+wait 3
+snap pub_600
+esc                      ' out
+mapmove 5,5              ' the pointer off the place's people: one under it stops
+wait 10                  ' (Location.HoverCharacter), and a resize moves what it is over
+mapclick 224,305         ' the trader: film_05
+wait 120
+press space              ' the film closed: the trader
+wait 10
+snap trader_640           ' 341 wide: the narrow trader, one side at a time
+resize 1920x1080         ' 512 wide: the wide layout (470), both sides
+wait 3
+snap trader_1920
+resize 1280x720          ' 455: still wide (TraderScene's 450)
+scenemove 60,120         ' the pointer put on the player's side again: it
+wait 3                   ' stays on its window pixel through a resize, which
+snap trader_1280         ' is another scene point now (the narrow side follows it)
+rsceneclick 88,119       ' the first thing set aside, in the wide layout's coordinates
+wait 3
+snap trader_1280_aside
+sceneclick 172,16        ' and back to the pack
+wait 3
+resize 600x449           ' the computed minimum: 320 x 200, narrow
+scenemove 60,120
+wait 3
+snap trader_600
+rsceneclick 88,119       ' aside again at the smallest size
+wait 3
+snap trader_600_aside
+f11
+scenemove 60,120
+wait 3
+snap trader_full
+sceneclick 172,16        ' back, in fullscreen
+wait 3
+snap trader_full_back
+f11
+scenemove 60,120
+wait 3
+snap trader_back
+esc                      ' leave
+wait 10
+resize 640x480
+wait 3
+save
+quit

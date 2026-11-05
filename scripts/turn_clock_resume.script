@@ -1,0 +1,10 @@
+' The saved turn, taken up in a new process: exactly what was left of it is
+' left, so 139.999 seconds do not end it and one more millisecond does —
+' once. The day after has a full clock again.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 163,27         ' LOAD
+clock 139999
+clock 1                  ' the turn ends here, and only here
+wait 5
+clock 1000               ' a second of the new day's turn, not a second ending
+save

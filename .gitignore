@@ -1,0 +1,24 @@
+/target
+Cargo.lock
+
+# Burntime's own data files. They are not ours to redistribute: the game is
+# abandonware, not freeware, and the remaster's reference renders are derived
+# from assets licensed to that project alone. Put your own copies here — see
+# burngfx/testdata/README.md.
+/burngfx/testdata/*
+!/burngfx/testdata/README.md
+
+# Finder droppings, and the default save a run writes beside the binary.
+# Both were tracked, and both made every build look dirty — which is how a
+# binary stops being traceable to a commit.
+.DS_Store
+/*.sav
+/*.sav.bak
+
+# Raw evidence of runs — logs, saves, screendumps. Screendumps show the
+# game's own pictures, which are not ours to publish.
+/evidence/
+
+# Static SDL2/SDL2_mixer/libiconv built by scripts/deps.py, and their
+# downloaded sources.
+/deps/

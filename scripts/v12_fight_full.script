@@ -1,0 +1,27 @@
+' A v1.2 game, played by a preset with no opponent (`ai none`, an internal
+' stage: the seats are empty, not played). Run with `preset classic ai none
+' start 3` or `preset extended ai none start 3` — `start 3` is the test tool
+' that puts the player at Bearwoods. In among the dogs, fight mode, and blows
+' at one dog until it falls: table blows (`TableCombat`), and each click an
+' encounter (`LocalCombatEncounter`) — the longer-reaching dog strikes first
+' as the player closes, and that is its one answer. Its bites between times
+' are `AttackWithoutRetaliation`. Then the cut.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 61,355          ' into Bearwoods
+wait 60
+mapclick 300,120         ' walk in among the dogs
+wait 100
+fight
+clickon 142              ' the dog: an encounter
+wait 90                  ' long enough for its flight to end: a fight in progress is not saved, upstream neither
+mapmove -116,0           ' the pointer off the place: a load does not know where it was, and v1.2 stops whoever is under it (Character.cs:1007-1009)
+save                     ' the cut, here too
+wait 2                   ' the time the resume's `fight` after its load takes: v1.2's load leaves speak mode
+clickon 142
+wait 90
+clickon 142
+wait 90
+wait 200
+day
+wait 30
+save

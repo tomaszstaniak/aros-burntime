@@ -1,0 +1,16 @@
+' A service by keys (`preset classic|extended ai none seed 3 start 0`: New
+' Sandez). In the pub (`ServiceScene`, the inventory's navigation with the
+' table as its second grid): Left lights the pack's first item, Space puts it
+' on the table, Q is the service's own action — the drink paid for with it.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 75,303          ' into New Sandez
+wait 60
+mapclick 309,264         ' the pub
+wait 120
+press escape             ' its film (`ImageScene`) first
+press left               ' the pack's first
+press space              ' onto the table
+wait 3
+press q                  ' drink
+wait 5
+quit

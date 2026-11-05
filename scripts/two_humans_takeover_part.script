@@ -1,0 +1,65 @@
+' Two humans, no machine players, both from New Sandez. Anna camps a man
+' at Bearwoods; Bob comes after her, fights her man until he falls — the
+' place is nobody's, its rooms emptied and restocked — and leaves his own.
+' Run with `menu seed 7 start 0 start2 0 savefile <f>`.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 161,165        ' MODE: Original
+menuclick 206,165        ' AI: none
+menuclick 60,104
+type Anna
+menuclick 250,104
+type Bob
+menuclick 163,54         ' START
+wait 3
+' Day 1. Anna hires and sets out for Bearwoods.
+mapclick 75,303
+clickon 248
+hire
+wait 20
+esc
+mapclick 61,355
+' Bob hires another and sets out after her.
+mapclick 75,303
+clickon 63
+hire
+wait 20
+esc
+mapclick 61,355
+' Day 3. Anna: in, water for both, her man stays; she waits in the place.
+mapclick 61,355
+wait 120
+mapclick 500,233
+wait 20
+esc
+wait 30
+join
+day
+' Bob: in, and at her man.
+mapclick 61,355
+wait 60
+fight
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+clickon 248
+save                     ' the cut: Bob's turn, the place just taken

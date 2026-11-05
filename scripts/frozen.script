@@ -1,0 +1,50 @@
+' Only LocationScene moves anybody (burngfx::scenes). In New Sandez: a save,
+' sixty frames, a save — in the place and in a conversation the two differ,
+' in a room, the restaurant, the pub, the doctor's and the trader's and while
+' paused they are the same file.
+mapclick 75,303          ' into New Sandez
+wait 10
+save                     ' 1  the place
+wait 60
+save                     ' 2  the place, sixty steps on: moved
+clickon 248              ' walk to him and talk: LocationScene's dialog
+save                     ' 3
+wait 60
+save                     ' 4  the conversation does not stop the place
+esc
+mapclick 309,168         ' room 0 (InventoryScene)
+save                     ' 5
+wait 60
+save                     ' 6  = 5
+esc
+mapclick 375,196         ' the restaurant
+save                     ' 7
+wait 60
+save                     ' 8  = 7
+esc
+mapclick 309,264         ' the pub
+esc                      ' its film (`ImageScene`) first
+save                     ' 9
+wait 60
+save                     ' 10 = 9
+esc
+mapclick 245,231         ' the doctor
+save                     ' 11
+wait 60
+save                     ' 12 = 11
+esc
+wait 60
+save                     ' 13 out again: the place moves
+clickon 248
+hire
+trade
+trade                    ' at the trader's
+save                     ' 14
+wait 60
+save                     ' 15 = 14
+esc
+save                     ' 16
+pause
+wait 60
+pause                    ' any key ends PauseScene
+save                     ' 17 = 16 and one step: see frozen_control.script

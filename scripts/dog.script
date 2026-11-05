@@ -1,0 +1,12 @@
+' New Sandez to Bearwoods, and a dog hunted there.
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355        ' walk in
+fight                  ' speak mode to fight mode
+mapclick 243,75        ' the dog: walk to it, strike on arrival
+hit
+hit
+hit
+mapclick 243,75        ' what it left lies where it fell
+uiclick 256,128        ' take the meat
+esc
+save

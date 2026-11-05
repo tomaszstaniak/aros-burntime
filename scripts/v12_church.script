@@ -1,0 +1,13 @@
+' The church (`ChurchScene`, v1.2 `scenes/church.txt`; `preset
+' classic|extended ai none seed 3 start 12`): film_08's picture, its
+' animation, the church's song and nine `burn` lines from 590, one every
+' four seconds; no frame. A key goes back to the place.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 119,238         ' into the place
+wait 60
+mapclick 258,215         ' the church
+wait 200
+snap church
+esc
+wait 10
+quit

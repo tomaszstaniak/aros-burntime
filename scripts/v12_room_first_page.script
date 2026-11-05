@@ -1,0 +1,18 @@
+' A room opens on its first page (`InventoryWindow.SetGroup`:
+' `activePageIndex = 0`, the group's members in range in order,
+' GUI/InventoryWindow.cs:145-201), whoever went in: run with `preset
+' classic ai none seed 3 start 30 party` (the leader and one companion
+' handed over, a prepared state). In Paradise Camp the group walks up to
+' the tent; the companion is selected alone and sent in; the leader
+' stands within range, so the room shows the leader's page in front
+' (page 1), not the companion's.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 170,175         ' the group, up to the tent
+wait 90
+press shift+right        ' the companion, alone
+mapclick 177,150         ' the tent: he walks there and goes in
+wait 120
+snap room_first_page
+quit

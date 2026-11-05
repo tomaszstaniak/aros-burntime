@@ -1,0 +1,30 @@
+' A conversation by keys (`preset classic ai none seed 3 start 30`: Classic's
+' Paradise Camp, as in v12_respawn_classic_full: the snake picked up, then the
+' mercenary, record 106). Down lights the first answer, Down again the second
+' ("Would you like to work for me?"), Space takes it; in the next, Space
+' lights the first answer, Down the second ("OK, you'll get snake"), Space
+' takes it: he is hired. A second talk is left with Escape.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 72,152          ' the snake lying here
+wait 150
+uiclick 266,118
+wait 10
+esc
+wait 10
+clickon 106              ' the mercenary: the talk opens
+wait 30
+press down
+press down               ' "Would you like to work for me?"
+press space
+wait 3
+press space              ' the first answer lit
+press down               ' "OK, you'll get snake"
+press space              ' hired
+wait 20
+clickon 61               ' somebody else
+wait 30
+press escape             ' the talk left
+wait 5
+quit

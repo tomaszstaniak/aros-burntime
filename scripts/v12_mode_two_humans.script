@@ -1,0 +1,23 @@
+' The interaction mode across a handover, two humans in a v1.2 game from the
+' start screen (`menu seed 3 start 30 start2 4`: Anna at Paradise Camp, Bob
+' at Nob Hill). Anna goes in and takes fight mode, and ends her day there.
+' Bob plays his turn and ends it. Anna's next turn starts in speak mode
+' (`WaitScene`, then `OnActivateScene`): the log says so.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot
+type Anna
+menuclick 250,104        ' player two's slot
+type Bob
+menuclick 163,54         ' START
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+mapclick 110,122         ' Anna into Paradise Camp
+wait 60
+fight
+day                      ' Anna ends day 1 in fight mode: Bob's turn
+wait 20
+mapclick 19,292          ' Bob into Nob Hill
+wait 60
+day                      ' Bob ends day 1: Anna again, day 2
+wait 30
+quit

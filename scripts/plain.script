@@ -1,0 +1,20 @@
+' An ordinary new game from the start screen: Original, easiest, and an
+' opponent because that is what the screen opens on. Nothing here names the
+' opponent or a shortened goal - there is no scenario, only the game.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot opens: face 0, and Max for a name
+menuclick 161,165        ' the rules toggle opens on extended; like the original
+menuclick 163,54         ' START
+standing                 ' what winning would take, before anything is done
+mapclick 75,303          ' into New Sandez
+clickon 248
+hire
+esc
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355          ' walk in
+wait 60
+join                     ' one place held
+esc
+standing                 ' and what that is worth against the condition
+day
+save

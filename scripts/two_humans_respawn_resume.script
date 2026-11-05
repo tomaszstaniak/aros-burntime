@@ -1,0 +1,34 @@
+' Takes up two_humans_defeat_part.script's save and plays on past Anna's respawn.
+load
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+day
+mapclick 303,115
+wait 5
+esc
+day
+save
+
+' Anna's leader comes back at Bearwoods ten days after her death — unseen,
+' and she stays out. Saved on day 23, Bob still alive.
+mapclick 303,115
+wait 5
+esc
+day
+mapclick 303,115
+wait 5
+esc
+day
+mapclick 303,115
+wait 5
+esc
+day
+save

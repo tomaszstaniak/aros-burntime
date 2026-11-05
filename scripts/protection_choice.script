@@ -1,0 +1,16 @@
+' Choosing protection by hand, extended rules, with a prepared scenario: run
+' with `mode extended give item_leather_jacket` — the jacket is slot 4.
+' Choose it with a right click in room 2 at Nob Hill ("Def." goes from 3 to
+' 4), fight the mutant, come back to the room: still chosen. Saved.
+mapclick 19,292          ' sets out
+mapclick 19,292          ' walk in
+mapclick 253,201         ' the door of room 2
+mapclick 253,201
+rsceneclick 88,156       ' choose the jacket
+esc
+fight
+mapclick 355,171         ' the mutant
+hit
+mapclick 253,201         ' back into room 2
+mapclick 253,201
+save

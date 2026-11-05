@@ -1,0 +1,6 @@
+load
+group                    ' as a group: they follow again
+mapclick 255,95          ' a step away from the door, on the far side from the group
+mapclick 277,105         ' back to the door: wait there for the group to arrive, then in
+esc
+save

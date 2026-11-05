@@ -1,0 +1,26 @@
+' Scene doors and the other trader's film (`ImageScene`; `preset
+' classic|extended ai none seed 3 start 8`). Behind room 10 film_02 (the
+' ruin's song), behind room 12 film_04 (the building's); nothing opens
+' after either. The trader's door (room 13) shows film_10 first.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 395,292         ' into the place
+wait 60
+mapclick 169,164         ' room 10: film_02
+wait 150
+snap film02
+esc
+wait 10
+mapclick 425,291         ' room 12: film_04
+wait 200
+snap film04
+esc
+wait 10
+mapclick 297,227         ' room 13, the trader: film_10
+wait 200
+snap film10
+esc
+wait 10
+snap trader_after_film10
+esc
+wait 10
+quit

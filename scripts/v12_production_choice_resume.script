@@ -1,0 +1,10 @@
+' v12_production_choice_part's save taken up in a new process, told nothing
+' but where the file is: two more days, and the player's choice still holds
+' (the save says `production 0 … manual`).
+load
+wait 10
+day
+wait 30
+day
+wait 30
+save

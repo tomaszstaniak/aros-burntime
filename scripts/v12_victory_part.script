@@ -1,0 +1,9 @@
+' v12_victory_full.script, cut while B still stands among the mutants.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day                      ' A's first day
+wait 30
+mapclick 19,292          ' B walks into Nob Hill: radiation and mutants
+wait 60
+wait 300
+mapmove -116,0           ' the pointer off the place: a load does not know where it was, and v1.2 stops whoever is under it (Character.cs:1007-1009)
+save                     ' the cut, B alive among the mutants

@@ -1,0 +1,20 @@
+' A room's grids by keys (`preset classic|extended ai none seed 3 start 30`,
+' Paradise Camp's tent). Right lights the floor's first item; Space clicks it,
+' which takes it into the pack; Left crosses into the pack at its nearest
+' edge (`FocusEdge`) and Left again moves along it; F right-clicks the lit
+' slot (`ActivateFocusedItem`); Escape leaves the room.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent
+wait 200
+press right              ' the floor's first item
+press space              ' taken
+wait 5
+press left               ' into the pack
+press left
+press f                  ' right-clicked
+wait 5
+press escape             ' out
+wait 5
+quit

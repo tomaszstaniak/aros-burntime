@@ -1,0 +1,11 @@
+' The start screen, with no arguments but the ones that drive it: open player
+' one's slot, leave the rules on extended as the screen opens, choose the
+' hardest difficulty, begin, walk into New Sandez, and save.
+' `start_load.script` takes the same save up again in a new process.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot opens: face 0, and Max for a name
+menuclick 115,165        ' difficulty: normal
+menuclick 115,165        ' difficulty: hard
+menuclick 163,54         ' START
+mapclick 75,303          ' into New Sandez, so the save is of somewhere
+save

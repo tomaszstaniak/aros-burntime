@@ -1,0 +1,28 @@
+' The rooms' films (`ImageScene`; `preset classic|extended ai none seed 3
+' start 0`, New Sandez). The pub's door shows film_06 first; a key closes it
+' and the pub opens (`SetScene(…, introScene)`). The trader's door (room 17)
+' shows film_05, the trader's sound once, then the trader. v1.2 draws the
+' black frame round the view; Escape (Back) and Space (Primary) close it,
+' another key does not.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 75,303          ' into New Sandez
+wait 60
+mapclick 309,264         ' the pub: film_06
+wait 90
+snap film06
+press left               ' not Primary or Back: the film stays
+wait 3
+press escape             ' closes it: the pub
+wait 10
+snap pub_after_film
+esc
+wait 10
+mapclick 224,305         ' the trader: film_05
+wait 120
+snap film05
+press space
+wait 10
+snap trader_after_film
+esc
+wait 10
+quit

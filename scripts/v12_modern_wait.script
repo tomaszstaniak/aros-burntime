@@ -1,0 +1,78 @@
+' A v1.2 game with Modern opponents (`preset classic ai modern seed 15`),
+' watched from Stove Vent as in v12_amiga_full. The same twelve days, but the sixth ends with a save asked for while the opponents' turns are due. It is refused, and the game must end as v12_modern_wait_full does.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 354,317         ' in
+wait 60
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+daysave                  ' the turn ended and a save asked for with the machines' turns due: refused
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 179,235         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+save

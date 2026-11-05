@@ -1,0 +1,32 @@
+' v1.2's mode cursor (`ShouldShowMouseInteractionCursor`), in a v1.2 game
+' (`preset classic ai none seed 3 start 30`, Paradise Camp). Speak mode: the
+' talk sidekick over a person (record 106, the mercenary), none over open
+' ground or a door. Fight mode: the fight sidekick over open ground and the
+' same person, none over a door or an item lying there. The legacy game draws the sidekick wherever
+' the pointer is.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+pointon 106
+wait 1
+snap talk_person
+mapmove 220,220
+wait 3
+snap talk_ground
+mapmove 177,150          ' the tent
+wait 3
+snap talk_door
+fight
+mapmove 220,220
+wait 3
+snap fight_ground
+mapmove 177,150
+wait 3
+snap fight_door
+pointon 106
+wait 1
+snap fight_person
+mapmove 172,224          ' an item lying by a tree
+wait 3
+snap fight_item
+quit

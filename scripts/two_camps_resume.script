@@ -1,0 +1,49 @@
+'  The same stretch taken up from the start screen at the ten-day cut.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 163,27         ' LOAD
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+save

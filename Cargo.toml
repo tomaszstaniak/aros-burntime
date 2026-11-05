@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["aros-game", "burngfx", "mapview", "ngbench", "packer", "sdlmini", "viewer"]
+
+[profile.release]
+panic = "abort"
+opt-level = 3

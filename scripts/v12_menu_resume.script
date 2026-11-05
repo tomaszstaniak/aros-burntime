@@ -1,0 +1,10 @@
+' v12_menu_part's save taken up in a new process, told nothing but where the
+' file is; the last three days of v12_menu_full, then saved.
+load
+day
+wait 10
+day
+wait 10
+day
+wait 10
+save

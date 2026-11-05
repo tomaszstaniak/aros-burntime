@@ -1,0 +1,23 @@
+' The pack window's lines in a v1.2 game (`preset extended ai amiga seed 3
+' start 30 give item_leather_jacket,item_gas_mask`: a prepared state). In the
+' tent at Paradise Camp the knife is taken in hand and the jacket worn, then
+' the mask: `Dmg: 9-16  Def: 20%` (the knife's first row: the boss's 37
+' experience counts half), then `Damage: 9-16` with `Gas: 100%` below — the
+' mask has no defence. Classic (`preset classic …`, the knife is the fourth
+' slot there, `rsceneclick 52,156`) shows `Damage: 9-16` and no defence:
+' `dos_unarmoured`. The snaps are the evidence; the numbers are
+' `modern_attack::the_inventory_shows_the_blow_in_hand_and_the_armour_worn`.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 177,150         ' the tent
+wait 200
+rsceneclick 124,120      ' the knife in hand
+wait 3
+rsceneclick 88,156       ' the jacket worn
+wait 3
+snap inventory_jacket
+rsceneclick 124,156      ' the mask worn instead
+wait 3
+snap inventory_mask
+quit

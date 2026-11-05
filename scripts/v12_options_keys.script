@@ -1,0 +1,35 @@
+' v1.2's Options by keys (`OptionsScene`, `OptionsSavesPage`,
+' `OptionsGiveUpPage`; `preset classic|extended ai none seed 3 start 30`, in
+' Paradise Camp). O opens it on the Saves page with `[NEW SAVE]` focused;
+' Space saves a new game under the next `<player>-saveNNN` and marks it
+' (`OnSave`, `RefreshSaveGames(changed)`); Down past the last row goes to
+' LOAD/SAVE/DELETE, Right and Left move along them, Up goes back to the
+' rows; Space on SAVE with the new save marked writes over it. Tab goes to
+' the tabs, Down moves along them and shows each page (Jukebox too: v1.2
+' enables it whenever a music set is on disk, music off or not,
+' `OptionsScene.cs:97`), Left enters Give up, Up and Down move between
+' its two lines; Back closes the scene. A scripted run writes no time, so
+' the rows show none (`clock` asks for one).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+press o                  ' Options, the Saves page
+wait 5
+press space              ' [NEW SAVE]: gregory-save001, marked
+wait 10
+press down               ' the save's row
+press down               ' past the last: the actions, on LOAD
+press right              ' SAVE
+press space              ' over the marked save
+wait 10
+press up                 ' back to the rows
+press tab                ' the tabs, on Saves
+press down               ' Jukebox (music off, but on disk)
+press down               ' Settings
+press down               ' Give up
+press left               ' its page: Start new game
+press down               ' Exit
+press up                 ' Start new game
+press escape             ' Back: the scene closes
+wait 5
+quit

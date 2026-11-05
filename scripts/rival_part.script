@@ -1,0 +1,28 @@
+' A game with somebody on the other side, and a scenario that asks for the
+' two places the victory condition wants first: Sana and Bearwoods.
+'
+' The machine player starts in Sana with nobody to hire, so it walks the two
+' days to New Sandez, takes a man on there out of its own pack, walks the two
+' days back, and leaves him holding Sana - with its own knife, because a camp
+' with no tool in it stores nothing anybody could come and fetch.
+'
+' The player hires one man, waters both at the Bearwoods spring, leaves him
+' holding Bearwoods, and walks on to Sana to arrive after their man has
+' settled in.
+mapclick 75,303          ' into New Sandez
+clickon 248              ' a mercenary, hired with the meat
+hire
+wait 20
+esc
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355          ' walk in
+wait 120                 ' let him close in, so he drinks too
+mapclick 500,233         ' the shack with water: everybody within fifty drinks
+wait 20
+esc
+wait 30
+join                     ' he stays: Bearwoods is ours
+esc
+mapclick 150,318         ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+day                      ' one more after the three on the road: their man settles into Sana on this turn
+save                     ' the cut: their camp stands, ours holds Bearwoods

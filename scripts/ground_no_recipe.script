@@ -1,0 +1,12 @@
+' Right-click a knife on the ground: no recipe, so MEN_503 section 3 and no Yes line.
+mapclick 75,303
+wait 10
+menu 150,160
+menuline 1
+wait 3
+uiclick 204,211          ' the knife down (pack slot 2)
+wait 3
+uiclick r266,118         ' right-click it on the ground: no recipe
+wait 3
+snap k1_no_idea
+quit

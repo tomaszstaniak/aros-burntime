@@ -1,0 +1,149 @@
+' An ordinary new game, from the start screen, with the opponent the screen
+' opens on. Nothing here names it, shortens a goal, or adds anything to
+' anybody's pack.
+'
+' The player hires one man, waters the group at the Bearwoods spring and
+' leaves him holding the place - which is what lets the opponent hold two,
+' because it will not get more than one camp ahead of a human.
+'
+' What the opponent then does for itself: camps, hands its knife to the man
+' it leaves so the place makes something, fills its own empty bottle at a
+' spring - a bottle of water is one of the three things a mercenary takes -
+' hires a second man with it, walks on, and camps a second place.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot opens: face 0, and Max for a name
+menuclick 161,165        ' the rules toggle opens on extended; like the original
+menuclick 163,54         ' START
+mapclick 75,303          ' into New Sandez
+clickon 248
+hire
+wait 20
+esc
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355          ' walk in
+wait 60
+join                     ' one place held, which is what frees the opponent's second
+esc
+day
+day
+mapclick 61,355          ' back to the spring so the group keeps drinking
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+day                      ' their second camp goes up on this turn
+' Twenty more days, to see whether the opponent keeps what it took.
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+save                     ' the cut, ten days in
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+day
+day
+mapclick 61,355
+wait 20
+mapclick 500,233
+wait 20
+esc
+wait 10
+esc
+save

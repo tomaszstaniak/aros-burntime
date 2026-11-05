@@ -1,0 +1,5 @@
+load
+wait 20
+clickon 142              ' again, with the group close enough to join
+join                     ' leave one in a camp, where they stand
+save

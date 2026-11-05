@@ -1,0 +1,57 @@
+From afcc9fa0f295ff6c9b4eb4bf44e95d9a4425e4b9 Mon Sep 17 00:00:00 2001
+From: tomaszstaniak <68373859+tomaszstaniak@users.noreply.github.com>
+Date: Thu, 10 Sep 2026 21:11:27 +0200
+Subject: [PATCH 06/11] CreateDir makes one level only
+
+Handing it AROS:Burntime/saves when AROS:Burntime does not exist fails
+with dos error 205, ERROR_OBJECT_NOT_FOUND - which reads like a missing
+file and is really a missing parent. create_dir_all walks the path
+below the volume and makes each level.
+---
+ aros/src/fs.rs | 33 +++++++++++++++++++++++++++++++++
+ 1 file changed, 33 insertions(+)
+
+diff --git a/aros/src/fs.rs b/aros/src/fs.rs
+index 1b94ac4..08b69fa 100644
+--- a/aros/src/fs.rs
++++ b/aros/src/fs.rs
+@@ -217,6 +217,39 @@ pub fn create_dir(path: &str) -> Result<(), Error> {
+     Ok(())
+ }
+ 
++/// Make a directory and every directory above it.
++///
++/// **`CreateDir` makes one level only.** Handing it `AROS:Burntime/saves`
++/// when `AROS:Burntime` does not exist fails with dos error 205,
++/// `ERROR_OBJECT_NOT_FOUND` — which reads like a missing file and is
++/// really a missing parent.
++pub fn create_dir_all(path: &str) -> Result<(), Error> {
++    if path.is_empty() || path.len() >= MAX_PATH {
++        return Err(Error { what: What::BadPath, code: 0 });
++    }
++    // Everything up to and including the colon is the volume, and volumes
++    // are not made here.
++    let after_volume = path.find(':').map_or(0, |i| i + 1);
++    let bytes = path.as_bytes();
++
++    let mut at = after_volume;
++    while at < bytes.len() {
++        let Some(offset) = bytes[at..].iter().position(|&b| b == b'/') else { break };
++        let cut = at + offset;
++        // `AROS:/x` and `a//b` have empty components; there is nothing to
++        // make for those.
++        if cut > after_volume {
++            create_dir(&path[..cut])?;
++        }
++        at = cut + 1;
++    }
++    // A path ending in a separator has already been made by the loop.
++    if at < bytes.len() {
++        create_dir(path)?;
++    }
++    Ok(())
++}
++
+ fn exists_dir(path: &str) -> bool {
+     let Ok(cpath) = CPath::new(path) else { return false };
+     let lock = unsafe { sys::Lock(cpath.as_ptr(), sys::SHARED_LOCK) };

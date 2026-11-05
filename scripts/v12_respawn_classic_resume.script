@@ -1,0 +1,30 @@
+' Takes up v12_respawn_classic_part.script's save: in again, the return, and on.
+load
+wait 20
+mapclick 110,122         ' and in
+wait 120
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 271,147         ' the well
+wait 60
+esc
+wait 10
+day
+wait 10
+save

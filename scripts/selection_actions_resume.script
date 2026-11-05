@@ -1,0 +1,12 @@
+' Takes up selection_actions_part.script's save: the camper is still
+' selected. His inventory again, the sweater put down, and a walk.
+load
+clickon 248              ' already selected: OnMenuInventory on him
+wait 5
+uiclick 132,211          ' the sweater down where he stands
+wait 5
+esc
+wait 5
+mapclick 260,250         ' and he walks off; the leader stays
+wait 100
+save

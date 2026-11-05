@@ -1,0 +1,28 @@
+' hire, buy a meat, stash it in room 0, camp the hire, wait for the death
+75,303
+75,303
+75,303
+talk
+talk
+hire
+trade
+trade
+uiclick 168,211
+uiclick 318,128
+deal
+esc                      ' the trader's scene stays after a deal (OnButtonAccept); leave it
+mapclick 309,168
+mapclick 309,168
+uiclick 204,211
+esc
+esc
+join
+day
+day
+day
+day
+day
+day
+day
+day
+save

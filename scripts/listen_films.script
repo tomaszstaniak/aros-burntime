@@ -1,0 +1,22 @@
+' For listening (A6): the rooms' films and effects over the music
+' (`preset classic ai none seed 3 start 0 music remaster map_music 2`, New
+' Sandez). The pub's film (the pub's song) 10 s, the pub 6 s; the trader's
+' film (`sounds/trader.ogg` once, over silence) 10 s, the trader (his song)
+' 8 s; the town 8 s.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 300
+mapclick 75,303          ' into New Sandez
+wait 300
+mapclick 309,264         ' the pub's film
+wait 600
+press escape             ' the pub
+wait 360
+esc
+wait 120
+mapclick 224,305         ' the trader's film
+wait 600
+press space              ' the trader
+wait 480
+esc                      ' the town
+wait 480
+quit

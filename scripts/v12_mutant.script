@@ -1,0 +1,28 @@
+' v1.2's mutant loot (`preset extended ai amiga seed 35`: the 0.20 falls and
+' it leaves iron bars; `seed 33`: it does not). Fight mode in Muarab, blows at
+' the mutant until it falls.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 285,284         ' into Muarab
+wait 60
+fight
+clickon 223
+wait 90
+clickon 223
+wait 90
+clickon 223
+wait 90
+clickon 223
+wait 90
+clickon 223
+wait 90
+clickon 223
+wait 90
+clickon 223
+wait 90
+clickon 223
+wait 90
+clickon 223
+wait 90
+clickon 223
+wait 90
+quit

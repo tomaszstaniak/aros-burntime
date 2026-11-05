@@ -1,0 +1,14 @@
+' New Sandez: walk in, talk to somebody. Then Bearwoods: fight a dog to death.
+mapclick 75,303
+mapclick 220,200
+mapclick 75,303
+talk
+esc
+esc
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355
+fight
+mapclick 243,75
+hit
+hit
+hit

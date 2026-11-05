@@ -1,0 +1,7 @@
+' Takes up two_humans_takeover_part.script's save and plays the rest.
+load
+wait 20
+join                     ' Bob's man stays: Bearwoods is his
+day                      ' Bob's NEXT
+day                      ' Anna's NEXT, day 4
+save                     ' Bob's turn, day 4

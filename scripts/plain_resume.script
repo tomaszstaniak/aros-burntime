@@ -1,0 +1,7 @@
+' The same ordinary game taken up again, in a new process told nothing but
+' where the file is.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 163,27         ' LOAD
+day
+standing
+save

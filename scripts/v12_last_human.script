@@ -1,0 +1,11 @@
+' v1.2's end of the game when every human is out (`WaitScene.OnUpdate`
+' counts the human clients only). Run with `preset classic ai amiga seed 41`:
+' the one human starts in Death Town, gas 95, unprotected, and dies at the
+' first day's end (as in `v12_hazard`). After his death film the start
+' screen comes, with no machine player's day after it.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day
+wait 20
+esc                      ' the death film, closed
+wait 30
+quit

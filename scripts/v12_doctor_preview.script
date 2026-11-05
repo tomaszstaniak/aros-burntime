@@ -1,0 +1,22 @@
+' v1.2's doctor says before payment what an offer would do
+' (`ServiceScene.UpdateDoctorOfferText`, `newburn?64`–`78`; `preset classic
+' ai none seed 3 start 0 health 40`: New Sandez, the leader prepared at 40).
+' With nothing on the table: "Bring me food, and I'll treat your wounds."
+' (`doc_empty`); the meat on it: "For that I can get you back on your feet.
+' (+36 HP)" (`doc_offer`); HEAL: 40 -> 76, the gain shown, and v0.9.1's
+' line on how it went (`doc_after`). At the cap (95, unprepared) the first
+' line is "There's nothing more I can do for you."
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 75,303          ' into New Sandez
+wait 60
+mapclick 245,231         ' the doctor
+wait 150
+snap doc_empty
+press left               ' the meat
+press space              ' onto the table
+wait 3
+snap doc_offer
+press q                  ' HEAL
+wait 5
+snap doc_after
+quit

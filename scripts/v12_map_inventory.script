@@ -1,0 +1,36 @@
+' The inventory from the world map (`preset classic ai none seed 3 start
+' 30 party`: a companion handed over, a prepared state). v1.2's
+' `MapScene.OnMenuInventory` (MapScene.cs:1141-1150) opens `InventoryScene`
+' on `SelectedCharacter ?? Character` with no room and no pile: `hint2`,
+' music `room`, the group's pages, nothing on the right
+' (InventoryScene.cs:390-483). A right click eats or drinks for the group
+' as anywhere; a left click on an item does nothing (nowhere to put it).
+' Reached by the menu line INVENTORY and the Inventory action (E, I).
+' Before: "the inventory is not in this port yet". (The group is first
+' walked into Paradise Camp and out, so that both stand together as v1.2's
+' range filter wants them.)
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+esc                      ' the world map
+wait 10
+day                      ' a day on: hungry
+wait 30
+menu 300,200             ' the map's menu
+menuline 1               ' INVENTORY
+wait 5
+snap map_inventory
+press right              ' the first item lit: the meat
+press space              ' Primary, its left click: nothing
+wait 2
+press f                  ' Secondary, its right click: the group eats
+wait 2
+snap map_inventory_eaten
+esc                      ' back to the map
+wait 5
+press e                  ' the Inventory key
+wait 5
+snap map_inventory_key
+press escape
+wait 5
+quit

@@ -1,0 +1,9 @@
+[package]
+name = "sdlmini"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+# Raw SDL2 FFI, no_std, no dependencies. The `sdl2` crate can't cross-compile to
+# AROS (build scripts, bindgen, std); SDL2's C ABI is the same everywhere, so
+# declaring the dozen functions we need is both simpler and portable.

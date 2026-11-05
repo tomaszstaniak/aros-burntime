@@ -1,0 +1,31 @@
+' `camp.ogg` on every garrison (`preset classic ai none seed 3 start 30
+' party`: the leader and one companion handed over, a prepared state; the
+' mercenary hired as in v12_dismiss_question). v1.2's
+' `GarrisonSelectedCharacter` (LocationScene.cs:1182-1187) plays it whenever
+' a member stays, on free ground and on the player's own camp
+' (`OnMenuMakeCamp`, :1164-1180): two `sound camp.ogg` lines, one for each
+' `join`. v0.9.1 played it on free ground only (the legacy game keeps that).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 72,152          ' the snake lying here
+wait 150
+uiclick 266,118
+wait 10
+esc
+wait 10
+clickon 106              ' the mercenary: the talk opens
+wait 30
+press down
+press down               ' "Would you like to work for me?"
+press space
+wait 3
+press space              ' the first answer lit
+press down               ' "OK, you'll get snake"
+press space              ' hired
+wait 20
+join                     ' one stays: free ground, the place is ours
+wait 10
+join                     ' another stays: our own camp
+wait 10
+quit

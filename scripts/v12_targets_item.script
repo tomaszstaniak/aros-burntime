@@ -1,0 +1,17 @@
+' Space on an item (`MapViewOverlayNearbyAction`, `preset classic ai none
+' seed 3 start 30`, Paradise Camp; Extended lays its items out otherwise and
+' has none there): the leader walks to beside the
+' bottle lying by the tree south-west of the well; Tab targets it (an item
+' is a candidate within 20) and Space is the click on it, which opens the
+' pile with the bottle in it (`item_pile`).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 180,235         ' beside the bottle
+wait 120
+press tab                ' target: bottle
+wait 2
+press space              ' the pile
+wait 60
+snap item_pile
+quit

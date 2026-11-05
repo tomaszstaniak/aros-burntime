@@ -1,0 +1,225 @@
+Burntime - the player's manual
+==============================
+
+This describes the game as this program plays it: the remaster 1.3's rules,
+in its Classic and Extended presets. The numbers are the program's own.
+Where the two presets differ, both are given.
+
+
+1. Starting a game
+------------------
+
+The start screen asks who plays. Click a name field to take part, click the
+face to change it (right click goes back); START needs at least one face.
+Two people can play, one after the other, each with a turn of their own.
+
+The three toggles choose:
+
+- the difficulty;
+- the rules: Classic (the 1993 game's numbers) or Extended (the remaster's
+  additions: armour, a shared supply pool, random traders);
+- the machine opponents: Modern (the remaster's own), Amiga (the Amiga
+  version's opponent) or None (empty seats).
+
+The first time, the screen opens on Extended with the Modern opponent, as
+the remaster's does; after that, like the remaster 1.3, it opens with the
+difficulty, rules and opponent of the last game you started. Each player's
+flag chooses his colour (green, red, blue or gray); his people wear it.
+
+LOAD opens the saved games.
+
+
+2. Turns and days
+-----------------
+
+Each player has a turn of 240 seconds, shown by the bar at the top. The turn
+ends when the time runs out or when you set out on a journey. A day ends
+when no player is left to act; then everybody eats and drinks, camps
+produce, and the wounded heal.
+
+On the world map, click a neighbouring place to travel there. A road takes
+the days the map gives it; the days pass by themselves. Click the place you
+stand at to go in. Before every journey the game saves itself
+(autosave-1 and autosave-2, the older of the two is replaced).
+
+
+3. Daily needs
+--------------
+
+Everybody eats 1 food and drinks 1 water a day. Each need that cannot be met
+costs 25 health that day. A group refills from what it carries: in Classic
+each person from their own pack (water from the camp's reserve or the
+smallest container, food from the smallest item); in Extended the group
+shares one supply pool.
+
+Health comes back by itself only at 70 or more: +2 a day. A doctor in the
+group or in the camp heals +4 a day at 50 or more. In Extended a doctor also gives +1 a
+day below 50 to anybody who has eaten and drunk. Nobody goes above 100.
+
+
+4. Water
+--------
+
+Fill empty containers at a spring or a well; a larger container carries
+more. A camp's spring yields water every day.
+
+A pump makes a camp's spring give more. It works only when it lies in the
+room that holds the water source, and pumps do not add up: an industrial
+pump counts if there is one, otherwise a hand pump.
+
+- Classic: a hand pump gives the spring's yield plus a quarter (at least 3),
+  an industrial pump plus a half (at least 6).
+- Extended: a hand pump adds 2, an industrial pump 5.
+
+
+5. Food and camps
+-----------------
+
+Leave a follower in a place to make it your camp. The camp's people are fed
+first from what it makes; what is left is stored, up to 6 items.
+
+Traps and tools placed in the camp's rooms make food each day. Only what
+lies in the rooms counts, not what people carry.
+
+    Tool        counted   food a day with 1 / 2
+    rat trap    up to 2   3 / 4
+    snake trap  up to 2   4 / 5
+    trap        up to 2   5 / 7
+    knife       1         2 (3 with two or more people)
+
+The camp picks its best production by itself, as soon as it is founded,
+unless you choose one.
+
+A camp is defended by the people you leave in it: each one has to be beaten
+before the place is taken. A city cannot be your camp: there your people
+cannot be left behind or sent away.
+
+
+6. Dangers
+----------
+
+A place's INFO shows gas and radiation. Gas costs 0.5 health a second,
+radiation 1.35, less by the best protection in the person's own pack (a
+gas mask, a protective suit). Anyone who stays in or camps at such a place
+without full protection dies at the end of the day. One face is immune to
+gas; none is immune to radiation.
+
+
+7. People
+---------
+
+Talk to people to hire them. They ask for a snake, meat or a water bottle,
+or a particular item; the first of these found in your pack is paid. They
+join only if your leader is experienced enough (the leader's experience
+times 1.5 must reach theirs). A group holds five, the leader included.
+
+What a new recruit brings: in Classic 9 food and 5 water; in Extended what
+you paid them with if it is food, and some water by difficulty.
+
+Technicians build. Right click an item with a technician selected and, if
+it is the main part of something, he tells you what is needed. Rat traps,
+traps, pumps, the two-way radio and the protective suit only a technician
+can build; loading a rifle or a pistol anybody can. What he has told you
+once, the item's description remembers.
+
+Doctors heal the group they travel with or the camp they stay in (see 3).
+A city's doctor heals for medicine.
+
+A two-way radio reports what happens in the places next to where you stand
+and next to your camps that have a radio stored. It works while you carry
+one or one is stored in the camp where you stand; INFO there then also
+shows your people in that camp.
+
+
+8. Fighting
+-----------
+
+Experience has four tiers, one every 25 points, and a weapon's damage rises
+with the tier. Mercenaries (and traders) fight with their full experience,
+everybody else with half.
+
+Reach decides who strikes first: a defender whose weapon reaches a class
+further hits an approaching attacker before he arrives.
+
+Firearms do heavy damage and use one round a shot. When a gun is empty it
+reloads from ammunition in the pack, if there is any. Your people use a
+firearm only when you have selected it.
+
+Armour (a leather jacket, a helmet) counts only in Extended: it takes its percentage
+off each blow, never below 1.
+
+
+9. Trading
+----------
+
+Traders sit in the cities. A trade goes through when what you offer is worth at
+least what you ask. Your offer counts in full at the easiest difficulty, at
+90% and 80% at the harder ones. In Classic each trader keeps his own stock and restocks as
+in 1993; in Extended stocks are random, from the remaster 1.3's lists and
+prices. Cities are also where you recruit,
+eat, drink and see a doctor.
+
+
+10. Winning and losing
+----------------------
+
+You win by holding every place that lies on a road next to a city. Holding
+a place means having one of your people camped there. Only a living player
+wins; a player left alone when the last rival dies is offered the victory.
+
+You lose when your own character dies; your camps and followers are lost
+with him.
+
+
+11. Saving
+----------
+
+OPTIONS, then the Saves page: [NEW SAVE] writes a new one, a saved game is
+loaded or overwritten from the list. The autosaves are listed in brackets.
+On AROS the saves are kept in the Saves drawer of your data drawer (see
+ReadMe), so updating or removing the program leaves them.
+
+
+12. Controls
+------------
+
+The mouse plays as in the original: left click to walk, enter, take and
+choose; right click for the menu.
+
+The keyboard and a game controller play as the remaster 1.3 does:
+
+    arrows              walk the selected character, or move the selection
+    W A S D             pan the view
+    Tab, Shift+Tab      pick the next or previous target
+    Space               act on the target (talk, take, enter)
+    Q                   attack, or travel on the map
+    Shift+Left/Right    change the selected character
+    Escape              open the menu, or close what is open
+    T (held)            end the turn
+    O  H  I  R  C       options, statistics, inventory, information,
+                        fight or speak
+    V or M              the world map
+    F8                  the remaster's graphics or the original's
+    F11, Alt+Enter      window or full screen
+
+The full list, and the controller's buttons, are in settings.txt's
+[keyboard] and [gamepad] sections. This release is made for the mouse and
+the keyboard: the controller support has not been tried with a real
+controller.
+
+
+13. Settings and music
+----------------------
+
+OPTIONS, then Settings: the graphics (the remaster's or the original's,
+also F8), full screen (also F11), the input prompts and their glyphs, the
+language, the music (the remaster's DOS set, the Amiga set, or off) and the
+map music:
+
+- None: the maps are quiet;
+- Keep: the song of the scene you left carries on over the map, ends, and
+  the playlist follows;
+- List: the maps play a playlist in random order, paused while you are
+  away and resumed when you come back.
+
+Your choices are kept between games (ENV:Burntime/user.txt on AROS).

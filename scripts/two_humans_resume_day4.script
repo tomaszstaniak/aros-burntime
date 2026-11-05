@@ -1,0 +1,8 @@
+' Takes up the second cut of two_humans_full.script — Bob's turn on day 4,
+' 200 s left — in a new process, which starts on day 1, and plays the rest.
+' The clock is checked by the turn line; the file by the final save.
+load                     ' must say: turn: player 1 (Bob) plays day 4, 200 of 240 s left
+mapclick 61,355          ' Bob walks into Bearwoods
+wait 20
+day
+save

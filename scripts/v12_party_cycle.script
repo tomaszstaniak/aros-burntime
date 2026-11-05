@@ -1,0 +1,25 @@
+' Party cycling by keys (`preset classic|extended ai none seed 3 start 30 party`:
+' the leader and one companion handed over, a prepared state). In a place, in
+' group mode: Shift+Right selects the companion alone, Shift+Right again the
+' leader alone, Shift+Left the companion (single mode goes round), and a
+' click then walks only him: between the two saves the leader stays at
+' 64,160 and the companion goes from 63,147 to 148,148 (Classic). On the world
+' map the same keys go on from the selection (`CyclePartyCharacter`,
+' MapScene.cs:522-563): the companion is still selected, alone, so
+' Shift+Right takes the leader and again the companion; the map announces
+' no name (the log's `selected` lines only).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+press shift+right        ' the companion, alone
+press shift+right        ' the leader, alone
+press shift+left         ' the companion again
+save                     ' where both stand
+mapclick 150,150         ' only he walks
+wait 60
+save                     ' he has moved, the leader has not
+esc                      ' the world map
+wait 10
+press shift+right        ' from the companion: the leader
+press shift+right        ' and the companion again
+quit

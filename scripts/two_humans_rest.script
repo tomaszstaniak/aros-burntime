@@ -1,0 +1,15 @@
+' The rest of the two-human run, after the cut in Bob's turn on day 1.
+mapclick 61,355          ' Bob sets out for Bearwoods; setting out ends his turn
+' Day 2: Anna, a full clock, still inside New Sandez; Bob is on the road.
+clock 20000
+day
+' Day 3: Anna again; the day's end brings Bob in.
+day
+' Day 4: Anna, then Bob, who has arrived.
+day
+clock 40000              ' 40 s of Bob's day-4 turn: 200 left
+save                     ' the second cut, on a later day than a new process starts on
+mapclick 61,355          ' Bob walks into Bearwoods
+wait 20
+day
+save

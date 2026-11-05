@@ -1,0 +1,12 @@
+' Takes up v12_respawn_extended_part.script's save: in again, the return, and on.
+load
+wait 20
+mapclick 224,118         ' and in
+wait 120
+mapclick 309,108         ' the spring
+wait 60
+esc
+wait 10
+day
+wait 10
+save

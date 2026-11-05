@@ -1,0 +1,58 @@
+' UI-42 on INFO and the statistics (`preset classic|extended ai none seed 3
+' start 30 party window 640x480`, as it is and with `newgfx off`): the
+' companion camped at Paradise Camp, INFO opened, resized, switched to
+' fullscreen and back, and clicked after each change (`sceneclick` is the
+' screen's own 320 x 200, made a window pixel when the step is taken); then
+' the statistics the same way. v12_viewport_info_still (every resize and
+' switch a `resize 640x480`) must give the same game lines and save.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map
+mapclick 110,122         ' into Paradise Camp
+wait 60
+join                     ' camped here: the place is ours
+wait 10
+press r                  ' INFO
+wait 3
+snap info_640
+resize 1920x1080         ' 2x: 512 x 240
+wait 3
+snap info_1920
+sceneclick 240,115       ' the production: the first, by choice
+wait 3
+snap info_1920_chosen
+resize 600x449           ' the computed minimum: 320 x 200
+wait 3
+snap info_600
+sceneclick 240,115       ' the next production
+wait 3
+f11
+wait 3
+snap info_full
+sceneclick 240,115       ' and the next, in fullscreen
+wait 3
+f11
+wait 3
+snap info_back
+sceneclick 10,180        ' Back: INFO closed
+wait 3
+snap map_after_info
+press h                  ' the statistics
+wait 3
+snap stats_back
+resize 1280x720
+wait 3
+snap stats_1280
+f11
+wait 3
+snap stats_full
+f11
+wait 3
+resize 600x449
+wait 3
+snap stats_600
+sceneclick 160,100       ' any click closes them
+wait 3
+snap map_after_stats
+resize 640x480
+wait 3
+save
+quit

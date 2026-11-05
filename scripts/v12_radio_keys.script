@@ -1,0 +1,18 @@
+' The two-way radio at the keyboard (`preset extended ai amiga seed 12 give
+' item_two_way_radio`, v12_radio's world). With the radio every place that is
+' no city and not his can be selected (`SelectLocationInDirection` takes
+' what `CanShowInfo` allows): Right reaches One Man's Heaven and then
+' Outback, which no road from Hard Mans Death leads to; F gives Outback's
+' radio report, as v12_radio's click does. Without the radio the same keys
+' select only cities and the places a road leads to.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day
+wait 30
+press right              ' One Man's Heaven
+press right              ' Outback
+wait 2
+press f                  ' the radio's report
+wait 10
+talkline 2               ' Okay
+wait 5
+quit

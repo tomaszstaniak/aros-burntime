@@ -1,0 +1,49 @@
+' UI-42 in the intro and on the start screen it leads to: the window resized
+' and switched to fullscreen and back while the intro plays, then a click
+' to the start screen and its NOTES button clicked at the smallest size that
+' shows the whole interface (600 x 449, a 320 x 200 game). Run with `menu
+' seed 7 window 640x480`, as it is and with `newgfx off`. `menuclick` is made
+' a window pixel in the window as it is when the step is taken.
+wait 186
+snap intro_640            ' page 0, map 89, centred in 341 x 213
+resize 1280x720           ' 1.5x: 455 x 213
+wait 3
+snap intro_1280
+resize 600x449            ' the computed minimum: exactly 320 x 200
+wait 3
+snap intro_600
+f11                       ' fullscreen at the desktop's size
+wait 3
+snap intro_full
+f11                       ' back to the size the window opened at
+wait 3
+snap intro_back
+resize 1920x1080          ' 2x: 512 x 240, the intro going on
+wait 437
+snap intro_1920_ani       ' intro1.ani, laid out in the wider game
+menuclick 160,100         ' any click: the start screen
+wait 30
+snap menu_1920
+resize 600x449
+wait 3
+snap menu_600
+menuclick 12,163          ' a pixel left of NOTES (13,163 36x18): nothing
+wait 3
+snap menu_600_beside
+menuclick 13,163          ' NOTES' first pixel: the notes open
+wait 3
+snap notes_600
+press escape
+wait 3
+f11
+wait 3
+snap menu_full
+menuclick 48,180          ' NOTES' last pixel, in fullscreen: open
+wait 3
+snap notes_full
+press escape
+wait 3
+f11
+wait 3
+snap menu_back
+quit

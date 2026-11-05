@@ -1,0 +1,141 @@
+' A human's blow on a Modern camper, through the game (`preset classic ai modern
+' seed 37 start 27 give item_full_wineskin,item_meat`): the
+' human starts at Refinery and sets out at once for Paradise Camp, which
+' player 3 claims on day 1 with record 61 (`watch` shows it). On day 3 he goes
+' in, takes fight mode and strikes him: `RecordAttack`. The log says "player 3
+' will retaliate against Gregory after the attack at Paradise Camp" (day 3;
+' until day 23, `retaliation_turns` 20). He leaves through Refinery for Hard
+' Mans Death, whose spring is free, and lives there to day 25. The end is
+' silent, as in v1.2 (`Day <= retaliationUntilDay`, `AiState.cs:328`), and no
+' save holds it (`[NonSerialized]`, LOAD-8), so this run shows the start only;
+' the end is `modern_attack::a_human_who_strikes_first_may_be_attacked_back`.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' set out for Paradise Camp, two days
+wait 30
+wait 30
+mapclick 110,122         ' in
+wait 60
+fight
+clickon 61               ' player 3's camper
+wait 120
+save                     ' retaliating until day 23
+fight                    ' speak mode again
+esc                      ' out
+wait 10
+mapclick 153,101         ' Refinery, two days
+wait 30
+wait 30
+mapclick 224,118         ' Hard Mans Death, two days
+wait 30
+wait 30
+mapclick 224,118         ' in
+wait 60
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 40
+esc
+wait 5
+day
+wait 10
+save                     ' after day 23: over

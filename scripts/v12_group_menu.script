@@ -1,0 +1,25 @@
+' Secondary (F, pad X) in a place (`preset classic ai none seed 3 start 30
+' party`: a companion handed over, a prepared state). v1.2's
+' `LocationScene.OnInputAction` Secondary calls `ShowGroupMenu` at the
+' view's middle (LocationScene.cs:356-360, 997-1034): `AddGroupMenuLines`
+' alone, and only when there is a line. With the companion selected:
+' ALL, DISMISS, STAY THERE (snapshot); F again runs its first line
+' (`FirstLineAction`): ALL. In group mode with the leader: SINGLE. From the
+' actions menu (Escape), F swaps to the group menu (`OnMenuShortcut`).
+' Before: "(bound, not acted on yet)".
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+press shift+right        ' the companion, alone
+wait 100                 ' his name's notice gone
+press f                  ' the group menu
+wait 2
+snap group_menu
+press f                  ' its first line: ALL
+wait 2
+press escape             ' the actions menu
+press f                  ' the group menu instead: SINGLE
+wait 2
+snap group_menu_leader
+press escape
+quit

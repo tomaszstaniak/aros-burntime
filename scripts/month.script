@@ -1,0 +1,197 @@
+' An ordinary new game that can be watched for a month.
+'
+' The player hires one man, leaves his own knife on a room floor at Bearwoods
+' so the place makes something, and leaves the man holding it. After that he
+' lives the way a player lives: every three days he walks in, takes the maggot
+' the camp has made - a maggot is three days' food, and three days cost three
+' - and drinks at the spring, which refills every morning. Nothing is switched off and nothing is
+' edited; this is the upkeep the game already has.
+'
+' Holding one place is also what frees the opponent's second camp: it will not
+' get more than one ahead of a human.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot opens: face 0, and Max for a name
+menuclick 161,165        ' the rules toggle opens on extended; like the original
+menuclick 163,54         ' START
+mapclick 75,303          ' into New Sandez
+clickon 248
+hire
+wait 20
+esc
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355          ' walk in
+wait 60
+mapclick 402,230         ' a room to leave the knife in
+wait 40
+uiclick 132,211           ' the bottle goes down first
+wait 5
+uiclick 132,211           ' and the knife after it: the camp has a tool now
+wait 5
+uiclick 292,128          ' the bottle comes back
+wait 5
+esc
+wait 20
+esc
+join                     ' he stays: Bearwoods is ours
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+day
+day
+day
+mapclick 61,355          ' walk in for what the camp has made
+wait 40
+mapclick 436,200         ' the room the produce lands in
+wait 30
+uiclick 328,128
+wait 5
+esc
+wait 15
+mapclick 500,233         ' and the spring
+wait 20
+esc
+wait 10
+esc
+standing
+save

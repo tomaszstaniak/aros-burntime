@@ -1,0 +1,14 @@
+' A v1.2 human who dies on the map keeps his next turn (`preset classic ai
+' none seed 3 start 2`): he starts in Death Town, gas 95, unprotected, and
+' dies at the first day's end. In that turn he goes into his place:
+' `LocationScene`'s `Player.Update` sets `IsDead` once the death animation
+' has played (`Player.cs:338-346`) and the turn ends (`LocationScene.cs:
+' 555-559`); the next `World.Turn` then takes its `else` branch
+' (`World.cs:120-126`) and dismisses nobody: an `out` line, no `defeat`.
+' Compare `v12_dead_turn_next`.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day                      ' dies at the day's end
+wait 30
+mapclick 265,349         ' into Death Town, in his own turn
+wait 60
+quit

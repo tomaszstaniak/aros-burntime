@@ -1,0 +1,10 @@
+' Takes up selection_part.script's save: the selected camper is dismissed.
+load
+menu 320,150
+menuline 2                ' DISMISS the last camper (no ALL now: the group is the leader alone)
+wait 5
+talkline 0                ' "If you fire me you'll regret it…": the page turns
+wait 3
+talkline 2                ' yes: he goes, and Bearwoods is nobody's
+wait 10
+save

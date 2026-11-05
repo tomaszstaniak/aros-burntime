@@ -1,0 +1,25 @@
+' A trade by keys (`preset classic ai amiga seed 7`, the start of
+' v12_economy_classic_full: a man hired with the meat, then the trader). Left
+' lights the pack's first item, Right the second, Space offers it; Right to
+' the pack's edge and Right again crosses to the stock's first (the parked
+' strip is empty, so it is passed over: `TraderScene`'s `targetArea`), Space
+' asks for it, Q accepts: the same deal as the mouse's — 9 of yours for 5 of
+' theirs.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 354,317
+wait 60
+clickon 228
+hire
+trade
+trade
+trade
+wait 3
+press left               ' the pack's first
+press right
+press space
+press right
+press right
+press space
+press q                  ' accept
+wait 3
+quit

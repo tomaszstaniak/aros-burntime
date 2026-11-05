@@ -1,0 +1,19 @@
+' The start screen by keys (`menu seed 3`). The first Enter only shows the
+' selection, on the first player's slot; Enter again opens it (a face, the
+' name field); a name is typed; Shift+Right gives the next face; Down goes to
+' the difficulty, Right to the game mode, and Enter turns it to Classic; Up
+' back to the slot, Up to START, and Enter starts a v1.2 Classic game.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+press enter              ' the selection shows
+press enter              ' the first slot: in use
+type Anna
+press shift+right        ' the next face
+press down               ' the difficulty
+press right              ' the game mode
+press enter              ' Classic
+press up                 ' the first slot
+press up                 ' START
+press enter
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 10
+quit

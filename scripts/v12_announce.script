@@ -1,0 +1,17 @@
+' Party cycling in a place names the one chosen over his head, in his
+' colour, with his marks, for 1.5 s and fading over the last 0.35 s
+' (`AnnounceCharacter`, LocationScene.cs:34,718;
+' MapViewOverlayNearbyAction.cs:72-78,135-140,312-326) — not at the view's
+' centre. Run with `preset classic ai none seed 3 start 30 party` (the
+' leader and one companion handed over, a prepared state; the companion
+' has no name of his own, so his announcement is empty).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+press shift+right        ' the companion, alone
+wait 70                  ' past 1.5 s: gone
+snap announce_gone
+press shift+right        ' the leader, alone: "Gregory" over his head
+wait 2
+snap announce_leader
+quit

@@ -1,0 +1,21 @@
+' The intro (`IntroScene`) as the program starts, then skipped with a click
+' (`IntroScene.cs:135-139`). Run with `menu snaps <dir>`; add
+' `menushot <dir>/menu.png` (and leave out headless.sh's `do quit`) to see
+' the start screen it leads to. A scripted run's intro clock is 16 ms a
+' frame, so the times below are frames x 16 ms: page 1 begins at 6.1 s,
+' page 2 at 15.2, 3 at 22.3, 4 at 36.4, 5 at 41.6, 6 at 54.7.
+wait 186
+snap intro_03s_page0      ' map 89
+wait 437
+snap intro_10s_ani0       ' map 81, intro1.ani 0-2
+wait 498
+snap intro_18s_page2      ' map 80, scrolled left 30 px a second
+wait 467
+snap intro_25s_ani4       ' map 82, intro2.ani 0-2
+wait 779
+snap intro_38s_page4      ' map 90, in map 0's colours
+wait 467
+snap intro_45s_ani6       ' map 83 scrolling, intro3.ani 0-2
+wait 935
+snap intro_60s_ani10      ' map 84, intro4.ani 0-2
+menuclick 160,100         ' any click: the start screen

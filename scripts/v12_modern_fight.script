@@ -1,0 +1,7 @@
+' With `modern-fight gas|clear`: the prepared
+' state is in place; the human ends the first day, and Modern player 1's turn
+' decides and fights. The game prints each fighter's protection as the fight
+' ended (`modern ai: player 1 fought at ...`).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day
+wait 10

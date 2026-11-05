@@ -1,0 +1,81 @@
+' v1.2 Extended's bible and metal detector (`preset extended ai amiga seed 12
+' give item_bible,item_mine_detector` — the two given, a prepared scenario).
+' The human rests at Hard Mans Death: with a bible nothing is spent. On day 34
+' he walks the two days to Nameless Town: on the road food and water are
+' spent, and on arriving (day 36) the detector finds ammunition at the entry
+' (one chance in a hundred a day of the road, drawn for this seed and day).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+save                     ' the cut, day 30, before the road
+wait 20
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+mapclick 277,141         ' sets out for Nameless Town
+wait 60
+wait 60
+day
+wait 20
+save

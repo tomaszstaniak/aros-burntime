@@ -1,0 +1,81 @@
+' v1.2's respawn (`preset extended ai amiga seed 164`; 170 until v1.3 added New Village, which moves the draw): two men are hired and camped at Refinery —
+' radiation 87, no water, nothing made — and die on their first night there. Under
+' `amiga_location_cycle` with `npc_spawn` 4 one comes back on Refinery's day,
+' in a city below twelve free people if there is one, by taking the other's name.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 224,118         ' Hard Mans Death, where the draw starts him
+wait 60
+mapclick 271,92          ' a room with a water bottle in it
+wait 150
+uiclick 292,128
+wait 10
+esc
+wait 10
+clickon 293              ' a mercenary, paid with the meat
+hire
+wait 20
+clickon 294              ' another, paid with the water bottle
+hire
+wait 20
+mapclick 309,108         ' the spring
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 60
+esc
+wait 10
+day
+wait 10
+mapclick 309,108         ' the spring
+wait 60
+esc
+wait 10
+day
+wait 10
+esc
+wait 20
+mapclick 153,101         ' Refinery: no spring, nothing it can make
+mapclick 153,101         ' and in, two days on
+wait 120
+join                     ' camped there
+wait 10
+join                     ' and the other
+wait 10
+esc
+wait 20
+mapclick 224,118         ' back to his start, two days on the road
+wait 60
+day                      ' back, day 11, on the map
+wait 20
+save                     ' the cut, day 12, before the return
+wait 20
+mapclick 224,118         ' and in
+wait 120
+mapclick 309,108         ' the spring
+wait 60
+esc
+wait 10
+day
+wait 10
+save

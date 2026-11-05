@@ -1,0 +1,17 @@
+' Takes up v12_items_part.script's save: four more days, the road, the find.
+load
+wait 20
+day
+wait 5
+day
+wait 5
+day
+wait 5
+day
+wait 5
+mapclick 277,141         ' sets out for Nameless Town
+wait 60
+wait 60
+day
+wait 20
+save

@@ -1,0 +1,119 @@
+' A v1.2 game with Amiga opponents (`preset extended ai amiga seed 7`; 3 before New Village moved the draw), watched from
+' Sherwood, where the preset's draw starts the human: he does nothing but
+' drink at the spring and end the day, so the opponents' hiring, camps, travel
+' and duels are what changes the world. He starves at about day 22; the run
+' ends before.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 13,124          ' in
+wait 60
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+save                     ' the cut, as the part script makes it
+wait 20
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+mapclick 208,135         ' the spring
+wait 40
+esc
+wait 10
+day
+wait 10
+save

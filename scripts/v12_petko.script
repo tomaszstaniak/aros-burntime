@@ -1,0 +1,37 @@
+' v1.2's `/petko` (`MapScene.OnKeyPress`, `ShowCheatDialog`,
+' `OnDialogHidden`), typed on the map in an ordinary game: run with `preset
+' classic ai amiga seed 7 health 40 savefile <f>` (the human at Stove Vent,
+' prepared wounded so that Refill shows). Each answer, the statistics' line
+' and a save; `v12_petko_resume` loads it. Add `piles` to see Items' pile.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+press h                  ' statistics, before: no cheats line
+snap petko_stats_clean
+press escape
+type /p
+press e                  ' while typing, a bound key is the command's: no pack
+type et
+press escape             ' Escape drops what is typed: no menu either
+type ko                  ' not the word any more: nothing
+type /petko              ' the dialog
+snap petko_dialog
+talkline 1               ' Refill: food 9, water 5, health 100
+type /petko
+talkline 2               ' Items: [debug] insert_items_1..3 at Stove Vent's entry
+mapclick 354,317         ' in, where they lie
+wait 30
+esc                      ' out to the map
+wait 10
+type /petko
+press escape             ' Back: nothing chosen
+type /petko
+talkline 0               ' Travel: the fast-travel cursor
+snap petko_travel
+mapclick 75,303          ' New Sandez, no road and no day: there, and in
+wait 30
+esc
+wait 10
+press h                  ' statistics: "- Cheats active -"
+snap petko_stats
+press escape
+day
+save

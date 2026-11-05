@@ -1,0 +1,13 @@
+' The loaded rifle built on the ground comes back with the save. Run on the save ground_part.script writes.
+load
+wait 3
+menu 150,160
+menuline 1
+wait 3
+snap h2_after_load
+uiclick 266,118          ' pick the loaded rifle up
+wait 3
+esc
+wait 3
+save
+quit

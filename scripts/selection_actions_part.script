@@ -1,0 +1,54 @@
+' The selected one acts himself (v0.9.1 `LocationScene` works on
+' `SelectedCharacter`): a companion walks up to somebody who wanders, waits
+' out his thirty seconds for the others and speaks (only TALK and EXIT: no
+' hiring when it is not the player's own character asking); a companion
+' strikes a dog alone; a camper walks where the click was, to a pile, and his
+' own inventory opens, one page, him. The start is group_part.script's.
+mapclick 75,303          ' walk into New Sandez
+clickon 248              ' walk up to a mercenary, wherever he has wandered, and ask
+hire                     ' he takes the meat
+trade                    ' walk over to the trader, who waits for you
+trade
+uiclick 204,211          ' the canteen out of the pack, keeping the knife
+uiclick 318,128          ' for a meat off the trader's table
+deal                     ' a deal closes the table by itself
+esc                      ' the trader's scene stays after a deal (OnButtonAccept); leave it
+clickon 63               ' and a second mercenary, paid with that meat
+hire
+clickfriend 1            ' select him: single mode, he is the one who walks
+wait 5
+mapclick 160,120         ' away from the trader, alone
+wait 150
+clickon 69               ' he walks up to another mercenary and follows him while he wanders
+wait 2400                ' the others are not coming: the wait runs its thirty seconds, then he speaks
+talkline 0               ' the greeting pages
+wait 5
+talkline 0
+wait 5
+snap companion_talks     ' "What's up?" and "End conversation." — nothing else
+talkline 2               ' end it
+wait 5
+group                    ' the group again (SelectGroup): the leader is selected
+esc                      ' back out onto the world map, the group with you
+mapclick 61,355          ' sets out for Bearwoods
+mapclick 61,355          ' in, all of you at the entry
+mapclick 300,120         ' walk in among the dogs
+wait 150
+clickfriend 1            ' him again
+wait 5
+fight
+clickon 142              ' the dog: he walks up and strikes alone (Attack joins the group only for the player's character)
+wait 30
+fight                    ' speak mode
+wait 5
+menu 320,150
+menuline 4               ' STAY THERE: Bearwoods is ours, and he is still selected — now a camper
+wait 10
+mapclick 224,300         ' the camper walks to the pile, and his inventory opens there
+wait 150
+snap camper_inventory    ' one page, numbered 1: his group is himself
+uiclick 266,118          ' he picks up the sweater
+wait 5
+esc                      ' back into his camp, with it
+wait 5
+save                     ' the cut

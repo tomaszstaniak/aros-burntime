@@ -1,0 +1,36 @@
+' The first half of `v12_production_choice`, to its first save (`preset classic|extended ai amiga seed 3 start 30 party give
+' item_rat_trap`: a prepared state, not the game's): the companion `party` hands
+' over is camped at Paradise Camp, where the human starts, and the given rat
+' trap is put down in the tent. Rats now make at least as much
+' as maggots. In INFO the camp is automatic (no slot chosen); a left click picks
+' the first product, maggots: the player's own choice (`SelectProduction`), which
+' the day keeps while it makes anything — two days later it is still maggots
+' (the save says `production 0 … manual`). Then a right click on the first slot
+' gives the choice back (`SelectAutomaticFoodProduction`): the best is taken
+' and the save no longer says `manual`. `v12_production_choice_part` stops at
+' the first save.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+join                     ' camped here: the place is ours
+wait 10
+mapclick 177,150         ' the tent
+wait 200
+uiclick 168,248          ' the rat trap put down
+wait 5
+esc
+wait 10
+menu 300,150
+menuline 1               ' INFO (v1.2's menu: FIGHT first)
+wait 3
+sceneclick 246,121       ' automatic, so the first product: maggots, by choice
+wait 3
+sceneclick 20,185        ' back
+wait 5
+esc
+wait 20
+day
+wait 30
+day
+wait 30
+save                     ' day 3: still maggots, manual

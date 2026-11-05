@@ -1,0 +1,14 @@
+' Takes up v12_victory_part.script's save: B falls, then the offer, declined.
+load
+wait 2700                ' B is killed where he stands
+day                      ' his day ends: his death settled, its film, and A's turn with the offer
+wait 30
+clock 300000             ' the turn's time runs out while it asks: nothing happens
+wait 30
+talkline 1               ' "Finish what I started": declined, play on
+wait 20
+day
+wait 30
+day
+wait 30
+save

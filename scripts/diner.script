@@ -1,0 +1,31 @@
+' The pub and the restaurant. Hire a mercenary and leave him standing; pay for a
+' meal the full leader has no room for while he is too far off to share; take the
+' ammunition out of a room as the next payment. Call him back, save. Two days on,
+' drink in the pub with him beside you, both thirsty, from the knife; then leave
+' him at the pub and eat alone in the restaurant with the ammunition.
+mapclick 75,303          ' walk into New Sandez, fed and watered
+clickon 248              ' a mercenary, hired with the meat
+hire
+group                    ' alone: he stays where he stands
+mapclick 375,197         ' the restaurant, walked to: the leader waits for him in vain
+uiclick 132,211           ' the bottle on the table
+deal                     ' the leader is full and he is out of reach: paid, all wasted
+esc
+mapclick 309,168         ' room 0, where the ammunition lies
+uiclick 256,128          ' into the pack: the next payment
+esc
+group                    ' as a group: he follows again
+save                     ' the cut
+day
+day
+mapclick 309,264         ' the pub, and he comes along
+esc                      ' the pub's film (`ImageScene`) first
+uiclick 132,211           ' the knife on the table
+deal                     ' both thirsty, both beside it: shared a level at a time
+esc
+group                    ' alone: he stays by the pub
+mapclick 375,197         ' the restaurant, too far from him
+uiclick 168,211          ' the ammunition on the table
+deal                     ' the leader eats, he is out of reach
+esc
+save

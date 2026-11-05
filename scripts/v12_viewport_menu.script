@@ -1,0 +1,40 @@
+' UI-42 on the start screen: the window resized, and clicks at the edges of
+' its controls landing on them, or just beside them, at each size; then the
+' game, opened at the size the start screen's window was left (one window,
+' as v1.2 has). Run with `menu seed 7 window 640x480`, as it is and with
+' `newgfx off`. The pointer goes through the window's own transform here:
+' `menuclick` is made a window pixel in the window as it is when the step
+' is taken.
+menuclick 160,100        ' the intro: a click goes to the start screen
+wait 30
+resize 1280x720          ' 1.5x: a 853 x 480 backbuffer, the screen centred in 455 x 213
+wait 3
+snap menu_1280
+menuclick 12,163         ' a pixel left of NOTES (13,163 36x18): nothing
+wait 3
+menuclick 13,163         ' NOTES' first pixel: the notes open
+wait 3
+snap notes_1280
+press escape             ' and close
+wait 3
+resize 1920x1080         ' 2x: 960 x 540, 512 x 240
+wait 3
+snap menu_1920
+menuclick 48,181         ' a pixel below NOTES' last: nothing
+wait 3
+menuclick 48,180         ' NOTES' last pixel: open
+wait 3
+press escape
+wait 3
+resize 1000x700          ' an odd size: 1.5x, 667 x 467, 356 x 208
+wait 3
+snap menu_1000
+menuclick 49,163         ' a pixel right of NOTES: nothing
+wait 3
+menuclick 60,104         ' player one's name field
+menuclick 163,54         ' START
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map
+wait 3
+snap game_1000
+save
+quit

@@ -1,0 +1,46 @@
+' A controller's sticks (`HandleGamePadInput`; `preset classic|extended ai
+' none seed 3 start 30`, Paradise Camp), sent as the window's axis events
+' (`stick AXIS VALUE`). The left stick held right walks the leader directly
+' as the arrow does (from 64,160); the right stick held down pans the
+' place's camera as S does; in the tent the left stick's push moves the
+' grid's focus, diagonally there (`UseDiagonalGamepadNavigation`); on the
+' world map a push down and right selects the place that way. A push is one
+' press until the stick comes back to the middle. The axes are read once a
+' frame, as v1.2 reads the pad: `stick` lines in a row move them together.
+' How far the pan goes depends on the window: the camera stops at the
+' place's edge (0,20 at the host's 1280x720, 0,33 at AROS's 640x480).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+stick 0 32767            ' left stick right: walk
+wait 29                  ' about 80 px at v1.2's 50 px/s (CONTROLLED_WALK_SPEED): short of the tent, which the click below opens
+stick 0 0
+wait 2
+save                     ' the leader moved right
+stick 3 32767            ' right stick down: pan
+wait 30
+stick 3 0
+wait 2
+mapclick 177,150         ' the tent
+wait 200
+stick 0 32767            ' a push right: the floor's first item
+wait 2
+stick 0 0
+wait 2
+stick 0 -32767           ' left and down together: a diagonal
+stick 1 32767
+wait 2
+stick 0 0
+stick 1 0
+wait 2
+press escape
+wait 10
+esc                      ' the world map
+wait 10
+stick 0 32767            ' down and right together: one press, diagonal
+stick 1 32767
+wait 2
+stick 0 0
+stick 1 0
+wait 2
+quit

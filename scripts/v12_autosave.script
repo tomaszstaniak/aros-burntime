@@ -1,0 +1,35 @@
+' v1.2's autosave before a journey (`AutosaveManager`, `MapScene.TravelToLocation`;
+' `preset classic ai none seed 3 start 30 savefile autosave-1.sav`, so that
+' `load` takes the first slot). Setting out for Refinery writes
+' `autosave-1` (day 1), the way back `autosave-2` (day 3). `load` takes up
+' `autosave-1`: the next journey goes without one (`OnGameLoaded`), the one
+' after writes over the slot saved longest ago, `autosave-1`. On the Saves
+' page both show in brackets and cannot be deleted (`autosaves`).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+press up
+press right              ' Refinery
+press q                  ' autosave-1, then the road
+wait 30
+wait 30
+wait 30
+mapclick 110,122         ' back: autosave-2
+wait 30
+wait 30
+wait 30
+load                     ' autosave-1, day 1
+wait 5
+press up
+press right
+press q                  ' no autosave this time
+wait 30
+wait 30
+wait 30
+mapclick 110,122         ' autosave-1 again, the older slot
+wait 30
+wait 30
+wait 30
+press o
+wait 5
+snap autosaves
+quit

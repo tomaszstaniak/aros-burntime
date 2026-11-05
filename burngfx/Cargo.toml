@@ -1,0 +1,12 @@
+[package]
+name = "burngfx"
+version = "0.1.0"
+edition = "2021"
+
+# No dependencies on purpose: this crate has to build for AROS, where the
+# dependency graph is the expensive part. `std` is only used by the tests.
+[features]
+default = []
+
+[dev-dependencies]
+png = "0.17"

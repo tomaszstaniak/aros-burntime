@@ -1,0 +1,47 @@
+' frozen.script's pause without the sixty frames: its last save must be
+' frozen.script's last save.
+mapclick 75,303
+wait 10
+save
+wait 60
+save
+clickon 248
+save
+wait 60
+save
+esc
+mapclick 309,168
+save
+wait 60
+save
+esc
+mapclick 375,196
+save
+wait 60
+save
+esc
+mapclick 309,264
+esc
+save
+wait 60
+save
+esc
+mapclick 245,231
+save
+wait 60
+save
+esc
+wait 60
+save
+clickon 248
+hire
+trade
+trade
+save
+wait 60
+save
+esc
+save
+pause
+pause
+save

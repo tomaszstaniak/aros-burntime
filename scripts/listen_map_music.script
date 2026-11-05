@@ -1,0 +1,20 @@
+' For listening (A6): v1.2's map music, scene by scene, long enough to hear
+' (`preset classic ai none seed 3 start 30 music remaster map_music N`, N 0
+' None, 1 Keep, 2 List; about 60 frames a second). The world map 15 s,
+' Paradise Camp 8 s, its tent (the room's song) 12 s, the camp again 8 s,
+' Options (the radio) 8 s, the camp 8 s, the world map 10 s.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 900                 ' the world map
+mapclick 110,122         ' Paradise Camp
+wait 480
+mapclick 177,150         ' the tent: its song
+wait 720
+esc                      ' the camp again
+wait 480
+press o                  ' Options: the radio
+wait 480
+press escape             ' the camp
+wait 480
+esc                      ' the world map
+wait 600
+quit

@@ -1,0 +1,14 @@
+' A v1.2 human who dies on the map keeps his next turn (`preset classic ai
+' none seed 3 start 2`): he starts in Death Town, gas 95, unprotected, and
+' dies at the first day's end (`HazardRules.ApplyDaily`). v1.2 activates his
+' client again (`GameServer.cs:59-64`) and `MapScene` ends the turn only on
+' the clock or NEXT (`MapScene.cs:441-447`). Here he presses NEXT: the next
+' `World.Turn` finds his character dead and puts him out, dismissing his
+' people (`World.cs:97-118`): a `defeat` line. Compare
+' `v12_dead_turn_enter`.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day                      ' dies at the day's end
+wait 30
+day                      ' his own turn, ended
+wait 30
+quit

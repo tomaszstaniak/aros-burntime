@@ -1,0 +1,14 @@
+' As v12_victory_full.script, but the offer is taken: the game is won. B
+' falls in Nob Hill in his own turn; his day's end settles it and shows the
+' film, and A's turn opens with the offer.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+day                      ' A's first day
+wait 30
+mapclick 19,292          ' B walks into Nob Hill: radiation and mutants
+wait 60
+wait 3000                ' B is killed where he stands
+day                      ' his day ends: his death settled, its film, and A's turn with the offer
+wait 30
+talkline 0               ' "That's enough": the offer, taken
+wait 300
+quit

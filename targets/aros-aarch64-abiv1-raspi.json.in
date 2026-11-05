@@ -1,0 +1,48 @@
+{
+  "arch": "aarch64",
+  "code-model": "large",
+  "cpu": "cortex-a53",
+  "crt-objects-fallback": "false",
+  "crt-static-default": false,
+  "crt-static-respected": false,
+  "data-layout": "e-m:e-p270:32:32-p271:32:32-p272:64:64-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128-Fn32",
+  "default-uwtable": false,
+  "disable-redzone": true,
+  "dynamic-linking": false,
+  "eh-frame-header": false,
+  "emit-debug-gdb-scripts": false,
+  "env": "",
+  "executables": true,
+  "features": "+v8a,+neon,+reserve-x18",
+  "has-thread-local": false,
+  "linker": "@CC@",
+  "linker-flavor": "gnu-cc",
+  "linker-is-gnu": false,
+  "llvm-target": "aarch64-unknown-none-elf",
+  "max-atomic-width": 128,
+  "no-default-libraries": false,
+  "os": "aros",
+  "panic-strategy": "abort",
+  "plt-by-default": false,
+  "position-independent-executables": false,
+  "post-link-args": {
+    "gnu-cc": [
+      "-Wl,--no-gc-sections"
+    ]
+  },
+  "pre-link-args": {
+    "gnu-cc": [
+      "-L@DEPS@/lib"
+    ]
+  },
+  "relocation-model": "static",
+  "stack-probes": {
+    "kind": "inline"
+  },
+  "static-position-independent-executables": false,
+  "target-family": [
+    "unix"
+  ],
+  "target-pointer-width": 64,
+  "vendor": "unknown"
+}

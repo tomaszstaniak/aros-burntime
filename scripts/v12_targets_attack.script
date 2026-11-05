@@ -1,0 +1,19 @@
+' Tab and Q on a person (`preset classic ai modern seed 7 start 27`):
+' the human reaches Paradise Camp on day 3 as in
+' v12_modern_retaliation, walks up to player 3's camper (record 61) and
+' leaves the talk; Tab targets him and Q strikes him (`AttackCharacter`),
+' which starts player 3's retaliation as a click in fight mode does.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' set out for Paradise Camp, two days
+wait 30
+wait 30
+mapclick 110,122         ' in
+wait 60
+clickon 61               ' up to him, in speak mode
+wait 1
+esc
+wait 5
+press tab                ' target: technician (record 61)
+press q                  ' the blow
+wait 120
+quit

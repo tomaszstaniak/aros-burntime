@@ -1,0 +1,8 @@
+' The day's clock, handed time by the script rather than by the wall: a new
+' game from the start screen, 100 of the 240 seconds used, then saved.
+' `turn_clock_resume.script` takes it up in a new process.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot opens
+menuclick 163,54         ' START
+clock 100000             ' a hundred seconds of the turn
+save

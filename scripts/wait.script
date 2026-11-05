@@ -1,0 +1,6 @@
+' Walk into Bearwoods, walk in among the dogs, and then stand still: the dogs decide what happens next.
+mapclick 61,355          ' sets out; the days on the road pass by themselves (v0.9.1 skips a travelling player's turns)
+mapclick 61,355
+mapclick 300,120
+wait 500
+save

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Upstream's own path search, compiled from the v1.2 tree named by
+       UPSTREAM (the checkout's `source` directory), with stubs for what it
+       leans on. See Program.cs. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>CS0162;CS0414;CS0649;CS0169;CS8632</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(UPSTREAM)/Burntime.Platform/Math/Vector2.cs" />
+    <Compile Include="$(UPSTREAM)/Burntime.Platform/Math/Rect.cs" />
+    <Compile Include="$(UPSTREAM)/Burntime.Remaster/PathFinding/PathState.cs" />
+    <Compile Include="$(UPSTREAM)/Burntime.Remaster/PathFinding/ComplexPath.cs" />
+  </ItemGroup>
+</Project>

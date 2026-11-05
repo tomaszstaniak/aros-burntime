@@ -1,0 +1,17 @@
+[package]
+name = "aros-game"
+version = "1.3.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+burngfx = { path = "../burngfx" }
+sdlmini = { path = "../sdlmini" }
+
+[target.'cfg(target_os = "aros")'.dependencies]
+aros = { path = "../../rust-aros/aros" }
+
+# Host only, and only so the program can photograph its own window instead of
+# anyone taking a picture of the screen. Never reaches the AROS build.
+[target.'cfg(not(target_os = "aros"))'.dependencies]
+png = "0.17"

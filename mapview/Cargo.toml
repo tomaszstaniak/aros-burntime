@@ -1,0 +1,11 @@
+[package]
+name = "mapview"
+version = "0.1.0"
+edition = "2021"
+
+# Host-only: it reads PNG tiles from disk, which the no_std side cannot do.
+# The map parsing it uses is the same burngfx code that builds for AROS.
+[dependencies]
+burngfx = { path = "../burngfx" }
+sdlmini = { path = "../sdlmini" }
+png = "0.17"

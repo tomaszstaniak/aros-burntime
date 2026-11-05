@@ -1,0 +1,14 @@
+' diner.script up to the cut.
+mapclick 75,303
+clickon 248
+hire
+group
+mapclick 375,197
+uiclick 132,211
+deal
+esc
+mapclick 309,168
+uiclick 256,128
+esc
+group
+save

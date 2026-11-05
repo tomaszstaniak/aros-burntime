@@ -1,0 +1,14 @@
+' Two humans in a v1.2 game from the start screen. Run with `menu seed 7
+' start 0 start2 1 savefile <f>`: player 0 in New Sandez, player 1 in Sana.
+' Cut in the second player's turn.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 60,104         ' player one's slot
+type Anna
+menuclick 250,104        ' player two's slot
+type Bob
+menuclick 163,54         ' START
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+wait 3
+day                      ' Anna ends day 1: Bob's turn
+wait 10
+save                     ' in the second player's turn

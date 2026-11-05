@@ -1,0 +1,25 @@
+' v1.2's set-aside strip at the trader (`temporarySpace`; `preset classic ai
+' none seed 3 start 0`, New Sandez). A right click sets the bottle aside;
+' EXIT clears only the exchange grids and the next visit clears the strip
+' (`TraderScene.cs:230, 284-290`): the bottle is in no pack, on no ground and
+' in no save. Back at the trader the strip is empty.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 75,303          ' into New Sandez
+wait 60
+mapclick 224,305         ' the trader: film_05
+wait 120
+press space              ' the film closed: the trader
+wait 10
+rsceneclick 88,119       ' the bottle aside
+wait 3
+snap set_aside
+esc                      ' leave: the bottle is lost
+wait 10
+save
+mapclick 224,305         ' back
+wait 120
+press space
+wait 10
+snap strip_empty
+esc
+quit

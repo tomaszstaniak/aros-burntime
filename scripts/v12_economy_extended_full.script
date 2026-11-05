@@ -1,0 +1,35 @@
+' v1.2's player economy, extended (`preset extended ai amiga seed 5`): an ordinary start —
+' the start drawn by the preset, the human set up by its rules — then a hire, a
+' deal, days for the trader's stock to turn over, and a second visit.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 13,124          ' into the start location
+wait 60
+clickon 105              ' a man the leader's experience may hire (3/2 x 37 = 55)
+hire                     ' paid with the meat
+trade                    ' over to the trader
+trade
+trade
+uiclick 168,211          ' the second thing in the pack
+uiclick 246,128          ' for the trader's first
+deal
+esc
+wait 10
+day
+wait 10
+day
+wait 10
+save                     ' the cut, day 3
+wait 20
+day
+wait 10
+day
+wait 10
+trade                    ' back to the trader, whose stock has turned over
+trade
+trade
+uiclick 132,211          ' the first thing in the pack
+uiclick 246,128          ' for the trader's first: too little
+deal
+esc
+wait 10
+save

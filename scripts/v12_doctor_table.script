@@ -1,0 +1,23 @@
+' v1.2's surgery table (`ServiceScene`; `preset classic ai none seed 3
+' start 0 party health 40`: New Sandez, the leader at 40, the companion
+' handed over). The meat goes onto the table from the leader's page and the
+' table stays when the page changes (`OnUpdate`); taken off on the
+' companion's page it goes into his pack, and from there onto the table
+' again. Back on the leader's page HEAL treats the page shown with it: the
+' leader 40 -> 76, the meat gone from the companion's pack (`CommitOffer`).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 75,303          ' into New Sandez
+wait 60
+mapclick 245,231         ' the doctor
+wait 150
+sceneclick 52,119        ' the meat, from the leader's page
+pack                     ' the companion's page: the table stays
+sceneclick 176,181       ' the meat off the table: into the companion's pack
+sceneclick 52,119        ' and from his page onto the table
+pack                     ' the leader's page again
+treat                    ' HEAL: the leader, with the companion's meat
+wait 3
+snap doc_table
+esc
+wait 5
+save

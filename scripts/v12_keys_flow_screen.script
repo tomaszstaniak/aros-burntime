@@ -1,0 +1,17 @@
+' A key held through another scene (`preset classic|extended ai none seed 3
+' start 30`). The right arrow held 1000 ms in Paradise Camp; five frames in, R
+' opens INFO, which takes the scene for about twenty frames — he does not
+' walk under it — then its map button closes it and he walks on while the
+' key is down: the save has him at 148,160, not the 188 of a walk that went
+' on under INFO.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+holdkey right 1000
+wait 5
+press r                  ' INFO
+wait 20
+sceneclick 20,185        ' back
+wait 60
+save                     ' 148,160
+quit

@@ -1,0 +1,24 @@
+'  rival.script from the cut, taken up from the start screen in a new process.
+' Nothing on the command line and nothing on the screen says which mode this
+' is: the rules, the difficulty, the opponent and the scenario all come out of
+' the file.
+menuclick 160,100        ' the intro: a click goes to the start screen (IntroScene.cs:135-139)
+menuclick 163,27         ' LOAD
+mapclick 150,318         ' walk in, where their man holds the place
+wait 120
+fight                    ' speak or fight, and this is a fight
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+clickon 38
+save                     ' and what fourteen blows with a knife come to

@@ -1,0 +1,10 @@
+' v12_two_humans_part's save taken up in a new process, in Bob's turn,
+' then the rest of v12_two_humans_full.
+load
+day                      ' Bob ends day 1: the machines, then day 2
+wait 10
+day
+wait 10
+day
+wait 10
+save

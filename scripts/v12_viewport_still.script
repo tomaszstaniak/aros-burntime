@@ -1,0 +1,69 @@
+' UI-42's control: v12_viewport.script with every `resize` and `f11` a
+' `resize 640x480` instead, run with the same arguments. The window is
+' 640 x 480 already, so the step is taken (a step is a frame, as in the
+' other script) and nothing is laid out again. Its game lines and its save
+' are what v12_viewport's must be: a resize lays the scene out again and
+' changes nothing of the game.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map
+wait 3
+snap map_640
+resize 640x480
+wait 3
+snap map_1280
+resize 640x480
+wait 3
+snap map_full
+resize 640x480
+wait 3
+snap map_back
+resize 640x480
+wait 3
+snap map_200
+resize 640x480
+wait 3
+mapclick 110,122         ' into Paradise Camp
+wait 60
+resize 640x480
+wait 3
+snap place_1920
+resize 640x480
+wait 3
+clickon 106              ' the mercenary: his talk
+wait 30
+snap talk_640
+resize 640x480
+wait 3
+snap talk_1280
+resize 640x480
+wait 3
+esc                      ' the talk closed
+wait 5
+join                     ' camped here: the place is ours
+wait 10
+mapclick 177,150         ' the tent
+wait 200
+snap room_640
+resize 640x480
+wait 3
+snap room_1920
+resize 640x480
+wait 3
+uiclick 168,248          ' the rat trap put down, at the size the script was written for
+wait 5
+esc
+wait 10
+press o                  ' Options
+wait 5
+snap options_640
+resize 640x480
+wait 3
+snap options_1280
+resize 640x480
+wait 3
+snap options_full
+resize 640x480
+wait 3
+press escape             ' Back: the scene closes
+wait 5
+save
+quit

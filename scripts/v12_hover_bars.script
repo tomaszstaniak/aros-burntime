@@ -1,0 +1,44 @@
+' v1.2's marks on labels (`MapViewOverlayHoverText`, `GuiTextBars`;
+' `preset classic|extended ai none seed 3 start 30 party give item_rat_trap`,
+' the companion camped at Paradise Camp and the rat trap laid in the tent, as
+' v12_production_choice prepares it). The mouse over the mercenary (record
+' 106, nobody's): his tier as dots. In the place, Tab's targets: a
+' character's label shows his experience tier as dots, and for the
+' player's own people his health in seven steps; a door of the player's own
+' camp what its room holds and the trap there. On the world map, by keyboard,
+' the camp's label on half-black: its people, its food a day, the trap and
+' the water.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+pointon 106              ' the mercenary, nobody's: his tier
+wait 2
+snap nobodys
+join                     ' camped here: the place is ours
+wait 10
+mapclick 177,150         ' the tent
+wait 200
+uiclick 168,248          ' the rat trap put down
+wait 5
+esc
+wait 10
+press tab                ' the nearest targets, one after another
+wait 3
+snap target1
+press tab
+wait 3
+snap target2
+press tab
+wait 3
+snap target3
+press tab
+wait 3
+snap target4
+esc                      ' the world map
+wait 20
+press right
+wait 3
+press left               ' back to the camp
+wait 3
+snap camp_label
+quit

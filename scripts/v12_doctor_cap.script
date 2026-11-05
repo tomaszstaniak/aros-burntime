@@ -1,0 +1,15 @@
+' The doctor's words after HEAL at the cap (`UpdateDoctorText`; `preset
+' classic ai none seed 3 start 0 health 80`). 80 + 36 stops at the cap of
+' 95; the gain worked out again after the treatment, with the offer still on
+' the table, is 0: "burn?522", not the "<= 95" line 510.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 75,303          ' into New Sandez
+wait 60
+mapclick 245,231         ' the doctor
+wait 150
+sceneclick 52,119        ' the meat onto the table
+treat                    ' 80 -> 95
+wait 3
+snap doc_cap
+esc
+quit

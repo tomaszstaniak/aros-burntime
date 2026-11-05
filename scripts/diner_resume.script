@@ -1,0 +1,14 @@
+' diner.script from the cut, in a new process.
+load
+day
+day
+mapclick 309,264
+uiclick 132,211
+deal
+esc
+group
+mapclick 375,197
+uiclick 168,211
+deal
+esc
+save

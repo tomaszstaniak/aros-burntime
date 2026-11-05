@@ -1,0 +1,16 @@
+' F9 (`preset classic ai none seed 3 start 30 music remaster`): v1.2's
+' `Application.OnProcess` toggles the music set while music is not off
+' (`ToggleMusicMode`, Application.cs:225-238, 478-495): the remaster's set
+' becomes the Amiga's and back, never off. Logged `f9: music amiga`, then
+' `f9: music remaster`, in a place and on the world map alike (when the
+' Amiga set is not on disk: `f9: nothing`). With `music off`: `f9: nothing`.
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 30
+f9                       ' the Amiga set
+wait 5
+esc                      ' the world map
+wait 10
+f9                       ' the remaster's set again
+wait 5
+quit

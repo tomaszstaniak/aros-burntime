@@ -1,0 +1,62 @@
+' Acting through a selected camper (`preset classic ai none seed 3 start 30
+' party`: a companion handed over, a prepared state; the mercenary, record
+' 106, hired as in v12_dismiss_question and left camped at Paradise Camp,
+' then selected by a click on him). v1.2 acts through `SelectedCharacter`
+' whoever he is (LocationScene.cs:222-275, 1224-1245, 1309-1386):
+'  - the tent's door: he walks to it and the room opens on him, his page
+'    alone (`SetScene("InventoryScene", SelectedCharacter)`);
+'  - the technician (61): he walks over and the conversation opens with him
+'    as the boss, so with TALK and EXIT only (`boss.IsPlayerCharacter` is
+'    false, Dialog.cs:115-122);
+'  - in fight mode the dog that came for him (307): an encounter with him alone as the
+'    attacker (`TryAttack`: `new[] { attacker }`): "the mercenary hits the
+'    dog" and the dog's answer to him, nobody else.
+' Before, each logged "through a camper: … not in this port yet".
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 110,122         ' into Paradise Camp
+wait 60
+mapclick 72,152          ' the snake lying here
+wait 150
+uiclick 266,118
+wait 10
+esc
+wait 10
+clickon 106              ' the mercenary: the talk opens
+wait 30
+press down
+press down               ' "Would you like to work for me?"
+press space
+wait 3
+press space              ' the first answer lit
+press down               ' "OK, you'll get snake"
+press space              ' hired
+wait 20
+join                     ' he stays: Paradise Camp is ours
+wait 10
+clickon 106              ' the camper, selected
+wait 5
+fight                    ' fight mode
+wait 200                 ' a dog comes for him
+clickon 307              ' the dog: he alone attacks
+wait 30
+snap camper_fight
+wait 200
+fight                    ' speak mode
+wait 5
+mapclick 177,150         ' the tent: he walks there and goes in
+wait 300
+snap camper_room
+esc
+wait 10
+clickon 61               ' the technician: he walks over and talks
+wait 400
+snap camper_talk
+talkline 0               ' "( continue... )"
+wait 3
+talkline 0
+wait 3
+snap camper_answers      ' TALK and EXIT only
+talkline 2               ' EXIT
+wait 10
+save
+quit

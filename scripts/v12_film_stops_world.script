@@ -1,0 +1,21 @@
+' Nothing moves under a door's film (`ImageScene.OnUpdate`, ImageScene.cs:
+' 72-82, runs only its subtitles; `World.Update` is MapScene's,
+' LocationScene's and InventoryScene's): run with `preset classic ai none
+' seed 3 start 0 savefile <f>` (New Sandez). Near the pub's door, a save;
+' the door, 300 frames of its film, Escape to the pub, Escape out, and a
+' save: between the two the place's people have moved only while he walked
+' the last steps to the door (about 18 steps), not through the film's 300
+' frames (the build before this moved them to new targets meanwhile).
+press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
+mapclick 75,303          ' into New Sandez
+wait 60
+mapclick 290,300         ' near the pub's door
+wait 90
+save
+mapclick 309,264         ' the pub: film_06
+wait 300
+press escape             ' the film closed: the pub
+wait 2
+esc                      ' out of the pub
+save
+quit
