@@ -37,10 +37,3 @@ version of the standard needs a new decision.
    restart, and on AROS mainline the first program that opens it leaves its
    output stream to later programs of its Shell
    ([AROS issue 2100](https://github.com/aros-development-team/AROS/issues/2100)).
-
-## Exceptions
-
-1. **The contributor test harness keeps internal terms.** `tools/b7_suite.py`
-   and some scripts name the author's internal acceptance suite (B7) and test
-   machines; comments keep dated references to it. Review: on the next
-   documentation pass.

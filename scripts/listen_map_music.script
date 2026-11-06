@@ -1,4 +1,4 @@
-' For listening (A6): v1.2's map music, scene by scene, long enough to hear
+' For listening: v1.2's map music, scene by scene, long enough to hear
 ' (`preset classic ai none seed 3 start 30 music remaster map_music N`, N 0
 ' None, 1 Keep, 2 List; about 60 frames a second). The world map 15 s,
 ' Paradise Camp 8 s, its tent (the room's song) 12 s, the camp again 8 s,

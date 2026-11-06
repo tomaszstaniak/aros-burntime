@@ -24,8 +24,7 @@ fn the_shipped_presets_need_no_fallback() {
     }
 }
 
-/// The two presets the start screen offers, as the audit tabled them
-/// (`docs/audit-v1.2.md`).
+/// The two rule presets offered by the start screen.
 #[test]
 fn classic_and_extended_differ_where_the_audit_says() {
     let (Some(c), Some(e)) = (book(RuleSet::Classic), book(RuleSet::Extended)) else { return };

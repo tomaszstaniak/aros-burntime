@@ -1,7 +1,7 @@
 //! The Modern opponent's state between turns (`ClassicAiState`'s fields).
 //!
 //! **A save keeps what v1.2's keeps, and a load does what v1.2's does**
-//! (conflict C1, the owner's decision). At tag `v1.2` only the settings
+//! At tag `v1.2` only the settings
 //! (`AiState.cs:38`), the slump grants used (`:73-74`), the target
 //! (`headedLocation`, `:37`), the reserve (`itemPool`, `:42`) and the
 //! leader's weapon and protection (`Character.cs:40-41`) survive a save.

@@ -1,7 +1,7 @@
 ' v1.2's map music, mode none (`preset classic ai none seed 3 start 30 music remaster map_music 0`):
 ' the world map, Paradise Camp, its tent and back, Options and back. The log
 ' says what the playback does (`music: play`, `playlist`, `remember … @n`,
-' `resume … @n`, `stop`): see docs/audit-b6.md, A1–A4. A scripted run is
+' `resume … @n`, `stop`). A scripted run is
 ' silent unless it names `music`; on the host SDL's dummy driver plays it.
 press escape             ' Back closes the manual v1.2 opens on a new game's first world map (MapScene.cs:687-691)
 wait 60

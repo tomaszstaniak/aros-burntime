@@ -8971,7 +8971,7 @@ fn run_session() {
         (None, _) => println_("no gam.dat in the pack: the world cannot be laid out"),
     }
     // v1.3's `LocationPopulationCreator`, after the initial items, a new
-    // v1.2-preset game only (docs/compliance-v1.3.md M5).
+    // v1.2-preset game only.
     if rule_book.is_some() && matches!(scenario, Scenario::NewGame | Scenario::Camp | Scenario::Party) {
         let done = populate_new_game(&pack, &mut gam, &mut people, &mut ground, &mut rooms, &mut springs, &world,
                                      &item_types, &rules, &mut game_rng);
@@ -13511,7 +13511,7 @@ fn run_session() {
                     continue;
                 }
                 // **Only in the legacy game.** v1.2 has no pause: nothing
-                // under `Scenes/` sets `PauseScene` (`docs/audit-b6.md` §1),
+                // under `Scenes/` sets `PauseScene`,
                 // so in a v1.2 game the key does nothing.
                 Event::KeyDown(PAUSE_KEY) if rule_book.is_none() => {
                     paused = true;
@@ -21127,8 +21127,7 @@ fn open_game_screen() -> Result<(sdlmini::Screen, gfx::Target), &'static str> {
 /// **How the first window's size is chosen without `window WxH`.** v1.2
 /// opens at half the desktop; on AROS the window is grown where that would
 /// crop the interface and kept inside the usable desktop with its frame
-/// ([`gfx::scaled::aros_first_window`]; the deviation and its evidence are
-/// in `docs/compliance-v1.2.md`, UI-43). Elsewhere v1.2's rule as it is.
+/// ([`gfx::scaled::aros_first_window`]). Other platforms use the remaster's rule.
 #[cfg(target_os = "aros")]
 fn first_window_rule() -> Option<fn(&sdlmini::Fit) -> (i32, i32)> {
     fn rule(f: &sdlmini::Fit) -> (i32, i32) {
@@ -21373,8 +21372,7 @@ fn v12_text<'a>(pack: &Pack<'a>, preset: burngfx::rules::RuleSet, kind: &str) ->
 
 /// All four of a preset's files, and an item table the game would accept.
 fn v12_ready(pack: &Pack, preset: burngfx::rules::RuleSet) -> Result<(), String> {
-    // The remaster's tables and texts the game plays are v1.3's
-    // (docs/compliance-v1.3.md M4): a pack made from v1.2's files alone
+    // The remaster's tables and texts are v1.3's: a pack made from v1.2's files alone
     // would mix v1.3's code with v1.2's prices, stock and texts.
     if !pack.contains("v13/source") {
         let mut why = String::from("v1.2 ");
@@ -25400,7 +25398,7 @@ mod v12_burial {
     }
 
     /// INFO's item tooltips look through `SelectedCharacter`
-    /// (`new ItemGridTooltip(app, () => SelectedCharacter)`, InfoScene.cs:
+    /// (`new ItemGridTooltip(app, => SelectedCharacter)`, InfoScene.cs:
     /// 114-115): a selected camper is the viewer, not the leader.
     #[test]
     fn a_selected_camper_views_infos_items() {
@@ -25649,7 +25647,7 @@ mod v12_day_rules {
         assert_eq!(fell, Exposed::default());
     }
 
-    /// **Between nought and one** (RULE-41): `IsDead` is the float's
+    /// **Between nought and one**: `IsDead` is the float's
     /// `health <= 0` (`Character.cs:351-354`), asked by
     /// `ApplyContinuousHazard` after `health -= …` (`:949-952`) and by the
     /// setter (`:200`); nothing in v1.2 asks the getter `(int)h` about
@@ -25694,7 +25692,7 @@ mod v12_day_rules {
     }
 }
 
-/// v1.3's radio (`docs/compliance-v1.3.md`, M3; `RadioIntel` at `v1.3`):
+/// v1.3's radio (`RadioIntel`):
 /// access through a radio carried or stored where the player stands, reach
 /// through his neighbours and his own stations, and INFO's health view.
 #[cfg(test)]

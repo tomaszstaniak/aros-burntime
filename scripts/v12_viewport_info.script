@@ -1,4 +1,4 @@
-' UI-42 on INFO and the statistics (`preset classic|extended ai none seed 3
+' Viewport: INFO and the statistics (`preset classic|extended ai none seed 3
 ' start 30 party window 640x480`, as it is and with `newgfx off`): the
 ' companion camped at Paradise Camp, INFO opened, resized, switched to
 ' fullscreen and back, and clicked after each change (`sceneclick` is the

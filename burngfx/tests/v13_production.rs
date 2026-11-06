@@ -1,4 +1,4 @@
-//! v1.3's production changes (`docs/compliance-v1.3.md`, M2): the tie on
+//! v1.3's production changes: the tie on
 //! the automatic choice (`36ecfc3`) and the refresh when a camp is made
 //! (`758f323`), on Extended's tables (`production.txt` is the same at
 //! `v1.2` and `v1.3`).

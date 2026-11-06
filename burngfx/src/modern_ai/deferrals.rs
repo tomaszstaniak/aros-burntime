@@ -1,8 +1,7 @@
 //! Targets put aside: `TerritorialTargetDeferrals`. At tag `v1.2`,
 //! `AI/PlayerBehavior/Expansion/TerritorialTargetDeferrals.cs`.
 //!
-//! Upstream keeps these out of the save; here they are saved (see
-//! `docs/audit-modern-ai.md`, "Differences"). A blocker is read off the
+//! Deferred targets are transient and are cleared on load. A blocker is read off the
 //! reason's sentence exactly as upstream reads it ([`classify`]), so the
 //! caller passes the sentence as written with names ([`Reason::text`]).
 

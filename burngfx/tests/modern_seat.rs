@@ -852,7 +852,7 @@ fn the_fallen_reach_the_ground_in_the_order_of_the_blows() {
     assert_eq!(returns, [8, 7]);
 }
 
-// --- v1.2's load step (conflict C1) ---------------------------------------
+// --- v1.2's load step  ---------------------------------------
 //
 // `ClassicGame.InitAfterLoad` → `ClassicAiState.InitAfterLoad`
 // (`AI/PlayerBehavior/Core/AiState.cs:171-178`): what v1.2 serializes is

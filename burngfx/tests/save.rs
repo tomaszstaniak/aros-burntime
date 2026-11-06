@@ -2256,8 +2256,7 @@ fn a_version_22_file_reads_without_the_movement() {
     assert_eq!(parse(&text, PACK, game.identity, None), Ok(game));
 }
 
-/// **A v1.2 save reads back as v1.2 loads it** (conflict C1, owner's
-/// decision): what v1.2 serializes comes back as it was; every field it
+/// **A v1.2 save reads back as v1.2 loads it** : what v1.2 serializes comes back as it was; every field it
 /// leaves out of its save (`[NonSerialized]`, or a static weak table) comes
 /// back at the value the CLR gives it after `Deserialize`, before
 /// `InitAfterLoad` runs. One assertion per field, each with the C# field it
@@ -2448,7 +2447,7 @@ fn a_v12_save_keeps_the_float_health() {
     }
 }
 
-/// v1.3's `populated` line (M5): written only when some place was peopled,
+/// v1.3's `populated` line: written only when some place was peopled,
 /// read back; a save without it (every save before it) has none.
 #[test]
 fn populated_places_round_trip_and_default_to_none() {

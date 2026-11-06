@@ -2,7 +2,7 @@
 ' none seed 3 start 30 music remaster`). O, Tab, Down to Settings (past
 ' the Jukebox), Left into the page — on its first enabled line, the
 ' graphics (OptionsSettingsPage.cs:106-115; enabled since the look can be
-' switched, UI-19) — Down past Fullscreen (it can be switched under SDL's
+' switched) — Down past Fullscreen (it can be switched under SDL's
 ' dummy driver), then Down twice to
 ' "Map Music NONE", Space: "Map Music KEEP" and its hint (`settings`); the
 ' choice is written to `user.txt` (a scripted run writes it where it runs,

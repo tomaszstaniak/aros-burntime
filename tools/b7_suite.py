@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""B7's scripted acceptance: one list of runs, played on AROS and on the host.
+"""Scripted regression suite: one list of runs, played on AROS and on the host.
 
     tools/b7_suite.py aros PREFIX PROGRAM [ID...] > run
                                                   an AROS batch: each run's log
@@ -20,7 +20,7 @@ same game writes its own. Both play in a 640 x 480 window (`window
 depends on the view (a camera's pan) is the same. On AROS the saves go to
 the data drawer's `Saves/b7/`.
 
-**A resume is not its straight run** (conflict C1, the owner's decision):
+**A resume is not its straight run**:
 the save holds what v1.2's holds, and a load applies v1.2's load step — the
 Modern opponent's short-term memory, the creatures' timers, a flight, the
 followers' formation are gone, and no save carries the generator. So the
@@ -29,8 +29,7 @@ randomness that makes the run deterministic, and the same on the host and
 on AROS. What a resume run shows is that it is deterministic and that the
 host equals AROS, not that it equals its straight run.
 
-Nothing here judges a result: `compare` says which runs differ and how; the
-acceptance (docs/release-readiness.md) says what they show.
+`compare` reports differences in logs and save digests for review.
 """
 import os
 import re
@@ -48,7 +47,7 @@ REPO = Path(__file__).resolve().parent.parent
 # drawn too, so one standing in a door can take a click meant for it.
 MODERN = "ai modern seed 15"
 AMIGA7 = "preset classic ai amiga seed 86"
-# Extended/Amiga from seed 7, not 3 (aros8): under 3 v1.3's New Village moved
+# Extended/Amiga from seed 7, not 3: under 3 v1.3's New Village moved
 # the world's draw and the resume ended in the human's death on day 13
 # instead of a save on day 19; 7 starts him at Sherwood and plays the long
 # resume to day 19 again (part 113 lines, resume 145, full 213).
@@ -120,7 +119,7 @@ RUNS = [
     ("respawn-c-part", "v12_respawn_classic_part", "preset classic ai amiga seed 11", "respawn-c"),
     ("respawn-c-resume", "v12_respawn_classic_resume", "seed 11", "respawn-c"),
     # 164, not 170: v1.3's New Village is one more place for the world's
-    # draw, and under 170 the second hire and the spring walk miss (aros7).
+    # draw, and under 170 the second hire and the spring walk miss.
     ("respawn-e-full", "v12_respawn_extended_full", "preset extended ai amiga seed 164", "respawn-e-full"),
     ("respawn-e-part", "v12_respawn_extended_part", "preset extended ai amiga seed 164", "respawn-e"),
     ("respawn-e-resume", "v12_respawn_extended_resume", "seed 164", "respawn-e"),

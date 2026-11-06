@@ -1,4 +1,4 @@
-' For listening (A6): the rooms' films and effects over the music
+' For listening: the rooms' films and effects over the music
 ' (`preset classic ai none seed 3 start 0 music remaster map_music 2`, New
 ' Sandez). The pub's film (the pub's song) 10 s, the pub 6 s; the trader's
 ' film (`sounds/trader.ogg` once, over silence) 10 s, the trader (his song)

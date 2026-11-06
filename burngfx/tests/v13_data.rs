@@ -1,4 +1,4 @@
-//! v1.3's Extended tables (`docs/compliance-v1.3.md` M4, `e31128a`
+//! v1.3's Extended tables (upstream commit `e31128a`
 //! "rebalance trader stock"), read the way the game reads them. They come
 //! from the player's files (`testdata/v1.3`, see its README); a missing one
 //! fails the test, or skips it with `BURNTIME_ALLOW_MISSING_TESTDATA`

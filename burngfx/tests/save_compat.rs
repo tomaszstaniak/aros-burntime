@@ -1,7 +1,6 @@
 //! The first release is the baseline of save compatibility: a save from
 //! an earlier test build (here `0.1.0-aros6`'s, v1.2 rules, another pack)
-//! is refused, and the refusal says so in words. The owner's decision of
-//! 2026-11-03 (docs/compliance-v1.3.md, "Saves").
+//! is refused with an error describing the incompatible data pack.
 mod common;
 
 use burngfx::pack::Pack;

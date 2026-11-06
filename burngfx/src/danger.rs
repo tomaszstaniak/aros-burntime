@@ -104,7 +104,7 @@ pub fn spend(health: &mut i32, e: &mut Exposure) {
 /// **Two games, two meanings.** A legacy game keeps its integer health and
 /// `carried` is the damage taken past the last whole point paid, as v0.9.1's
 /// port always kept it ([`Exposure::step`]). **A v1.2 game holds v1.2's float
-/// health exactly** (RULE-41): the health number is the getter, `(int)h`,
+/// health exactly**: the health number is the getter, `(int)h`,
 /// and `carried` is `h` above it, in [`UNIT`]s — reads are never a point
 /// high, a write through the setter drops the fraction ([`spend`]), and
 /// leaving the danger leaves it as it is ([`Exposure::wear`]).

@@ -1,4 +1,4 @@
-' UI-42 in the intro and on the start screen it leads to: the window resized
+' Viewport: the intro and on the start screen it leads to: the window resized
 ' and switched to fullscreen and back while the intro plays, then a click
 ' to the start screen and its NOTES button clicked at the smallest size that
 ' shows the whole interface (600 x 449, a 320 x 200 game). Run with `menu

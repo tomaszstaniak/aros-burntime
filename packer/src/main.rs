@@ -46,8 +46,7 @@ fn testdata() -> PathBuf {
 /// added (its rule presets, `newburn.txt`, `tooltip.txt`, `BURN.TXT`,
 /// `setupnotes.txt`, `MEN_054.TXT`, their German copies), taken at the tag
 /// `DIR/v1.3/SOURCE` names. Pictures, fonts and NewGfx stay v1.2's: v1.3's
-/// new ones are presentation this port does not take
-/// (docs/compliance-v1.3.md).
+/// experimental character artwork is not included.
 struct Remaster {
     v12: PathBuf,
     v13: PathBuf,
@@ -192,8 +191,7 @@ const PROFILES: &[(&str, &[&str])] = &[
 /// v1.2: a road of three days to location 8). It has no `mat_038.raw`
 /// either: its rooms' kinds come from the `.txt` and its tiles from the
 /// remaster's rendered `tiles/` pictures, which is how the remaster draws
-/// every map. (Until 2026-10-29 it was left out as unreachable: wrong for
-/// v1.2, which builds it, docs/compliance-v1.3.md D2.)
+/// every map.
 ///
 /// Written out rather than generated from a range so that the list is a
 /// list — a map that stops parsing should be a failure, not a gap nobody
@@ -1193,7 +1191,7 @@ fn main() {
             }
             Err(_) => println!("v1.2 presets: no SOURCE — say which tag the files were taken from"),
         }
-        // v1.3's files over v1.2's (`v1.3/`, docs/compliance-v1.3.md M4):
+        // v1.3's files over v1.2's (`v1.3/`):
         // what the game plays is v1.3, and the pack says so.
         match src::read_to_string(dir.join("v1.3/SOURCE")) {
             Ok(source) => {

@@ -1,4 +1,4 @@
-' UI-42 at a service and the trader (`preset classic ai none seed 3 start 0
+' Viewport: a service and the trader (`preset classic ai none seed 3 start 0
 ' window 640x480`, New Sandez; as it is and with `newgfx off`): the pub's
 ' table and the trader's exchange resized, switched to fullscreen and back,
 ' and clicked after each change. `sceneclick` is in the scene's own

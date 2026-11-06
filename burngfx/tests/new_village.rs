@@ -1,6 +1,5 @@
 //! New Village (`MAT_038`): the location the remaster adds after the 37 of
-//! `gam.dat` (`LocationCreator.Create` since v1.2; docs/compliance-v1.3.md
-//! D2), checked against the real `gam.dat` and v1.3's `MAT_038.txt`.
+//! `gam.dat` (`LocationCreator.Create` since v1.2), checked against the real `gam.dat` and v1.3's `MAT_038.txt`.
 
 mod common;
 

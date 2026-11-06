@@ -1,5 +1,5 @@
 #!/bin/sh
-# The host recordings for the listening test (A6, docs/listening.md).
+# Record host audio for manual listening checks.
 #
 #   scripts/listen_record.sh OUTDIR [BIN]
 #
@@ -9,8 +9,7 @@
 # time in seconds from the start. BIN is a host build with the game data
 # built in (default target/debug/aros-game). A scripted run steps once a
 # frame and the dummy video driver does not wait, so the pace is the
-# build's: a debug build runs about 90 frames a second, the times in
-# docs/listening.md; a release build races through in seconds. The WAVs
+# build speed; compare recordings made with the same build configuration. The WAVs
 # hold Burntime's music: keep them local, never commit or share them.
 set -eu
 [ $# -ge 1 ] || { echo "usage: $0 OUTDIR [BIN]" >&2; exit 2; }

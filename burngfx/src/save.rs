@@ -158,14 +158,13 @@ pub const MAGIC: &str = "burntime-rs-save";
 /// 24: both of version 23's sets together. Nothing new is written; a file
 /// of 22 or either 23 reads as having none of what it lacks.
 ///
-/// 25: **a v1.2 save holds what v1.2's holds** (conflict C1, the owner's
-/// decision; [`Save::forget_unserialized`]). No generator: v1.2's is the
+/// 25: **a v1.2 save holds what v1.2's holds** ([`Save::forget_unserialized`]). No generator: v1.2's is the
 /// process's static `Random`, never saved, and a load continues the
 /// process's own. No `motion` or `flight` line, and on the `standing` and
 /// companion lines the fields v1.2 keeps out of its save are written as
 /// the value a v1.2 load gives them, nought. The Modern opponent writes only
 /// `settings`, `target`, `reserve` and `kit` ([`crate::modern_ai::state`]).
-/// 26: **a v1.2 game's health is v1.2's float** (RULE-41): `needs`'
+/// 26: **a v1.2 game's health is v1.2's float**: `needs`'
 /// health is the getter, `(int)h`, and the `exposure`/`exposed` numbers the
 /// float above it, plus one [`crate::danger::UNIT`] for one alive below a
 /// point ([`crate::danger::Exposure`]). A v1.2 file of 25 or before is
@@ -392,7 +391,7 @@ pub struct Save {
     /// was created (New Village: its residents, `populated 37`). Their
     /// residents are records after `gam.dat`'s, rebuilt on load only where
     /// this says so; a game from before v1.3, or one made from an older
-    /// save, has none (docs/compliance-v1.3.md M5, D1). Written only when
+    /// save, has none. Written only when
     /// not empty, so other saves are as before.
     pub populated: alloc::vec::Vec<usize>,
 
@@ -573,7 +572,7 @@ impl Save {
         }
     }
 
-    /// **What a v1.2 load leaves of this game** (conflict C1): every field
+    /// **What a v1.2 load leaves of this game**: every field
     /// v1.2 keeps out of its save at the value its `Deserialize` gives it —
     /// the CLR default — and the rest as it is. The writer saves a v1.2 game
     /// through this, and the parser applies it to an older file, so a v1.2

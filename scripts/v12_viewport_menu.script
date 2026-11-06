@@ -1,4 +1,4 @@
-' UI-42 on the start screen: the window resized, and clicks at the edges of
+' Viewport: the start screen: the window resized, and clicks at the edges of
 ' its controls landing on them, or just beside them, at each size; then the
 ' game, opened at the size the start screen's window was left (one window,
 ' as v1.2 has). Run with `menu seed 7 window 640x480`, as it is and with

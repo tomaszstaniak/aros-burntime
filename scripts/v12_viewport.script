@@ -1,4 +1,4 @@
-' UI-42: the window resized and switched to fullscreen and back in the
+' Viewport: the window resized and switched to fullscreen and back in the
 ' middle of a game — the world map, a place, a talk dialog, a room, Options —
 ' each scene laid out again at the new size and the game going on as if
 ' nothing had happened. Run with `preset classic ai none seed 3 start 30

@@ -1,4 +1,4 @@
-//! v1.3's `LocationPopulationCreator` (M5) on its real input, New Village's
+//! v1.3's `LocationPopulationCreator` on its real input, New Village's
 //! `MAT_038.txt` at `v1.3`, and `gam.dat`'s templates.
 
 mod common;

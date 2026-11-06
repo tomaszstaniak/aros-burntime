@@ -1,4 +1,4 @@
-' A6's memory check: ten cycles of v1.2's map music in List mode (`preset
+' Repeated music playback: ten cycles of v1.2's map music in List mode (`preset
 ' classic ai none seed 3 start 30 music remaster map_music 2`). Each cycle:
 ' into Paradise Camp (a map scene: the playlist plays on), into its tent
 ' (the room's song; the playlist's place remembered), out again (the

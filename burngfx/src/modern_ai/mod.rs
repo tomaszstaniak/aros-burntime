@@ -1,7 +1,5 @@
-//! v1.2's Modern opponent (`ClassicAiState` and `AI/PlayerBehavior/`), at
-//! tag `v1.2`. Built a part at a time; `AiProfile::Modern` stays unavailable
-//! until the turn controller is wired to both presets. The audit and the
-//! order of the parts: `docs/audit-modern-ai.md`.
+//! Modern opponent based on `ClassicAiState` and `AI/PlayerBehavior/`
+//! from Burntime Remastered v1.2. The controller serves both rule presets.
 
 pub mod attack;
 pub mod camps;

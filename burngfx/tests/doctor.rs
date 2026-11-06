@@ -383,7 +383,7 @@ fn v12_the_line_after_heal_at_the_cap_is_522() {
 
 /// HEAL writes `Health = CalculateDoctorResult(Health, offer)`
 /// (`ServiceScene.cs:219-220`): even with nothing on the table the setter
-/// runs, so a danger's fraction is gone — 40.65 becomes 40 (RULE-41).
+/// runs, so a danger's fraction is gone — 40.65 becomes 40.
 #[test]
 fn v12_heal_drops_the_float_s_fraction() {
     use burngfx::danger::{Exposure, UNIT};
