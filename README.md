@@ -8,8 +8,20 @@ follows the remaster's version 1.3: its rules (Classic and Extended, the
 Modern, Amiga and None opponents, New Village) and its look (the original
 graphics or the remaster's, four player colours).
 
-It contains none of the game's data. You need your own copy of Burntime and
+The program downloads do not include game data. You need your own copy of Burntime and
 the remaster's files, from which you make one data file, `burntime.pack`.
+
+## Screenshots
+
+Screenshots from the desktop build of this port, using the remastered graphics.
+
+![Start screen with player selection](docs/images/start-screen.png)
+
+![Travelling across the world map](docs/images/world-map.png)
+
+![Collecting water at a well](docs/images/water-supply.png)
+
+Game artwork belongs to its respective owners; see [NOTICE](NOTICE) for credits.
 
 ## Downloads
 
