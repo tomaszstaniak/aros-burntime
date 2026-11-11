@@ -22,7 +22,3 @@ Cargo.lock
 # Static SDL2/SDL2_mixer/libiconv built by scripts/deps.py, and their
 # downloaded sources.
 /deps/
-
-# Local agent instructions are not part of the public source.
-AGENTS.md
-CLAUDE.md
